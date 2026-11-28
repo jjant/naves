@@ -1,0 +1,414 @@
+{
+ "floor_concrete": {
+  "tile": 3,
+  "files": {
+   "albedo": "floor_concrete/albedo.ktx2",
+   "arm": "floor_concrete/arm.ktx2",
+   "normal": "floor_concrete/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+  "license": "CC0",
+  "notes": "Poly Haven concrete_floor_worn_001 (3 x 3 m scan), regraded to a light sealed/polished grey, roughness lowered to 0.3-0.58, faint power-trowel swirl added to albedo/roughness. Saw-cut joints are modelled separately.",
+  "avg_color": "#8e8e8d",
+  "roughness_mean": 0.399,
+  "files_mobile": {
+   "albedo": "floor_concrete/albedo_512.jpg",
+   "normal": "floor_concrete/normal_512.jpg",
+   "arm": "floor_concrete/arm_512.jpg"
+  }
+ },
+ "wall_precast": {
+  "tile": 3.2,
+  "files": {
+   "albedo": "wall_precast/albedo.ktx2",
+   "arm": "wall_precast/arm.ktx2",
+   "normal": "wall_precast/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "https://polyhaven.com/a/plastered_wall_04",
+  "license": "CC0",
+  "notes": "Poly Haven plastered_wall_04 (3.2 m scan of a smooth grey industrial wall): its large horizontal bands were flattened (they betrayed the repeat) and the tone warmed to a light grey-beige precast panel. Panel joints are modelled separately.",
+  "avg_color": "#b1ada1",
+  "roughness_mean": 0.835,
+  "files_mobile": {
+   "albedo": "wall_precast/albedo_512.jpg",
+   "normal": "wall_precast/normal_512.jpg",
+   "arm": "wall_precast/arm_512.jpg"
+  }
+ },
+ "wall_block": {
+  "tile": 1.2,
+  "files": {
+   "albedo": "wall_block/albedo.ktx2",
+   "arm": "wall_block/arm.ktx2",
+   "normal": "wall_block/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "procedural (numpy, tools/naves3d/blender/textures/_src/procgen.py)",
+  "license": "CC0",
+  "notes": "Painted concrete block wall: 40 x 20 cm blocks (390 x 190 + 10 mm joints), running bond, 3 blocks x 6 courses per repeat, concave joints, porous block face under white/cream paint. Align V so courses are horizontal.",
+  "avg_color": "#ece4da",
+  "roughness_mean": 0.802,
+  "files_mobile": {
+   "albedo": "wall_block/albedo_512.jpg",
+   "normal": "wall_block/normal_512.jpg",
+   "arm": "wall_block/arm_512.jpg"
+  }
+ },
+ "roof_metal": {
+  "tile": 2,
+  "files": {
+   "albedo": "roof_metal/albedo.ktx2",
+   "arm": "roof_metal/arm.ktx2",
+   "normal": "roof_metal/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "https://polyhaven.com/a/box_profile_metal_sheet",
+  "license": "CC0",
+  "notes": "Poly Haven box_profile_metal_sheet (2 m scan, trapezoidal ribs run along V), repainted from red to light-grey pre-lacquered steel (metalness 0, roughness 0.38-0.62). Use as the underside of the roof sheet; ribs run along the texture V axis.",
+  "avg_color": "#c9caca",
+  "roughness_mean": 0.481,
+  "files_mobile": {
+   "albedo": "roof_metal/albedo_512.jpg",
+   "normal": "roof_metal/normal_512.jpg",
+   "arm": "roof_metal/arm_512.jpg"
+  }
+ },
+ "plywood": {
+  "tile": 0.5,
+  "files": {
+   "albedo": "plywood/albedo.ktx2",
+   "arm": "plywood/arm.ktx2",
+   "normal": "plywood/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "https://polyhaven.com/a/plywood",
+  "license": "CC0",
+  "notes": "Poly Haven plywood (0.5 m scan), lightened to a natural birch/pine structural-plywood tone for ramp sides and quarter-pipe deck. Face grain runs along U (horizontal in the image).",
+  "avg_color": "#bc9d76",
+  "roughness_mean": 0.669,
+  "files_mobile": {
+   "albedo": "plywood/albedo_512.jpg",
+   "normal": "plywood/normal_512.jpg",
+   "arm": "plywood/arm_512.jpg"
+  }
+ },
+ "turf": {
+  "tile": 0.5,
+  "files": {
+   "albedo": "turf/albedo.ktx2",
+   "arm": "turf/arm.ktx2",
+   "normal": "turf/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "procedural (numpy, tools/naves3d/blender/textures/_src/procgen.py)",
+  "license": "CC0",
+  "notes": "Lime two-tone artificial grass (run-out / margins, like the Vida run-out): ~40 mm pile, tufts in rows 9.5 mm x 6 mm, olive thatch underneath. No CC0 artificial-turf scan found on Poly Haven/ambientCG.",
+  "avg_color": "#79a234",
+  "roughness_mean": 0.531,
+  "files_mobile": {
+   "albedo": "turf/albedo_512.jpg",
+   "normal": "turf/normal_512.jpg",
+   "arm": "turf/arm_512.jpg"
+  }
+ },
+ "brush": {
+  "tile": 0.5,
+  "files": {
+   "albedo": "brush/albedo.ktx2",
+   "arm": "brush/arm.ktx2",
+   "normal": "brush/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "procedural (numpy, tools/naves3d/blender/textures/_src/procgen.py)",
+  "license": "CC0",
+  "notes": "Dense synthetic bristle mat (Vida Brush Parks style, dark green): tufts on a staggered 12.5 mm grid, ~400 bristles per 12 mm tuft, tufts almost touching, slight splay. One repeat = 0.5 m (40 x 40 tufts).",
+  "avg_color": "#335f29",
+  "roughness_mean": 0.62,
+  "files_mobile": {
+   "albedo": "brush/albedo_512.jpg",
+   "normal": "brush/normal_512.jpg",
+   "arm": "brush/arm_512.jpg"
+  }
+ },
+ "neveplast": {
+  "tile": 1,
+  "module": [
+   0.23,
+   0.4
+  ],
+  "files": {
+   "albedo": "neveplast/albedo.jpg",
+   "albedo_far": "neveplast/albedo_far.jpg",
+   "albedo_green": "neveplast/albedo_green.jpg",
+   "albedo_green_far": "neveplast/albedo_green_far.jpg",
+   "arm": "neveplast/arm.jpg",
+   "arm_far": "neveplast/arm_far.jpg",
+   "fringe": "neveplast/fringe.ktx2",
+   "fringe_alpha": "neveplast/fringe_alpha.ktx2",
+   "fringe_green": "neveplast/fringe_green.ktx2",
+   "height": "neveplast/height.ktx2",
+   "normal": "neveplast/normal.ktx2",
+   "sheen": "neveplast/sheen.ktx2"
+  },
+  "res": 2048,
+  "source": "procedural (Blender + numpy, tools/naves3d/tex/neveplast.py)",
+  "license": "CC0",
+  "notes": "Neveplast NP30, one real module per repeat: 230 mm across x 400 mm along the fall line (square image, UV in metres with repeat 1/0.23, 1/0.40). 4 x 7 rings of 18 + 22 conical bristles (19 mm on an 8.5 mm base) around 35 mm holes, 4 mm screw holes, 1.5 mm seam. albedo / albedo_green = NEAR look (view >= 45 deg): cavity baked in (hole floor #3b3a37 / #1d2a22, base and bristle roots x0.6 in shadow), because three.js aoMap only darkens indirect light; *_far (512 px) = GRAZING look (bristles hide holes and base). The viewer builds the albedo/arm mip chains blending near -> far by the distance each mip is used at (materials.js npMips); Cycles blends by view angle (render.py). arm R = AO (hole 0.25), G = roughness, B = 0; sheen = linear sheen weight; height 16-bit (0 = hole floor, 1 = 28.2 mm) for Cycles bump/displacement.",
+  "avg_color": "#a2a19d",
+  "avg_color_green": "#19683e",
+  "avg_color_far": "#dcdbd5",
+  "avg_color_green_far": "#1f9658",
+  "roughness_mean": 0.694
+ },
+ "net": {
+  "tile": 0.18,
+  "files": {
+   "alpha": "net/alpha.png",
+   "normal": "net/normal.ktx2"
+  },
+  "res": 512,
+  "source": "procedural (Blender + numpy, tools/naves3d/tex/net.py)",
+  "license": "CC0",
+  "notes": "Knotted black PE safety net hung on the square: 45 mm mesh, 3.5 mm twisted thread, ~8 mm knots, 4 x 4 meshes per repeat (0.18 m; UV in metres). alpha = thread coverage (alphaMap + alphaHash in the viewer, mean 0.15), normal = round threads, twist and knots."
+ },
+ "painted_ply": {
+  "tile": 2.44,
+  "files": {
+   "albedo": "painted_ply/albedo.ktx2",
+   "arm": "painted_ply/arm.ktx2",
+   "normal": "painted_ply/normal.ktx2"
+  },
+  "res": 2048,
+  "source": "procedural (Blender + numpy, tools/naves3d/tex/features.py)",
+  "license": "CC0",
+  "notes": "Painted plywood side walls of park features, 2.44 x 2.44 m (boxUV tile 2.44, V = height from the floor): two 2440 x 1220 sheets laid landscape with 2 mm dirty joints, painted-over countersunk screws (sheet perimeter every 150 mm, studs every 610 mm), a few chipped heads, pine grain telegraphing through the paint, roller stipple, grey board scuffs (mostly 0.1-0.6 m high) and a dirt band at the bottom (0-0.2 m). Neutral albedo: tinted by the material colour (tintable).",
+  "tintable": true
+ },
+ "hdpe": {
+  "tile": 1,
+  "files": {
+   "albedo": "hdpe/albedo.ktx2",
+   "arm": "hdpe/arm.ktx2",
+   "normal": "hdpe/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "procedural (Blender + numpy, tools/naves3d/tex/features.py)",
+  "license": "CC0",
+  "notes": "Scuffed, waxed HDPE slide surface (box tops, tubes), 1 x 1 m; V = slide direction: fine edge streaks along V, smoother wax smears, grey scuffs. Neutral albedo, tinted by the material colour; arm G is the final roughness (armRough 1).",
+  "tintable": true
+ },
+ "rail": {
+  "tile": 1,
+  "files": {
+   "albedo": "rail/albedo.ktx2",
+   "arm": "rail/arm.ktx2",
+   "normal": "rail/normal.ktx2"
+  },
+  "res": [
+   256,
+   1024
+  ],
+  "source": "procedural (Blender + numpy, tools/naves3d/tex/features.py)",
+  "license": "CC0",
+  "notes": "Yellow painted round rail, U = around the tube (0 = top), V = along (1 m): the top +-35 deg polished to bare scratched steel by the boards, chipped paint edges, dust underneath. arm B = 1 on the bare steel (metalnessMap)."
+ },
+ "rubber_floor": {
+  "tile": 0.5,
+  "files": {
+   "albedo": "rubber_floor/albedo.ktx2",
+   "arm": "rubber_floor/arm.ktx2",
+   "normal": "rubber_floor/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "https://ambientcg.com/view?id=Rubber002",
+  "license": "CC0",
+  "notes": "ambientCG Rubber002: black rubber gym flooring with blue EPDM flecks; base neutralised to near-black, flecks toned down (-20 % brightness, -20 % saturation). ambientCG publishes no physical size; 0.5 m per repeat gives 2-6 mm flecks like real gym tiles.",
+  "avg_color": "#212526",
+  "roughness_mean": 0.811,
+  "files_mobile": {
+   "albedo": "rubber_floor/albedo_512.jpg",
+   "normal": "rubber_floor/normal_512.jpg",
+   "arm": "rubber_floor/arm_512.jpg"
+  }
+ },
+ "asphalt": {
+  "tile": 2.1,
+  "files": {
+   "albedo": "asphalt/albedo.ktx2",
+   "arm": "asphalt/arm.ktx2",
+   "normal": "asphalt/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "https://polyhaven.com/a/clean_asphalt",
+  "license": "CC0",
+  "notes": "Poly Haven clean_asphalt (2.1 m scan of fine-grained road asphalt), lifted slightly to a weathered mid-grey. Chosen over asphalt_02, whose long cracks repeat as parallel lines every 3 m on a street.",
+  "avg_color": "#5b5c5b",
+  "roughness_mean": 0.834,
+  "files_mobile": {
+   "albedo": "asphalt/albedo_512.jpg",
+   "normal": "asphalt/normal_512.jpg",
+   "arm": "asphalt/arm_512.jpg"
+  }
+ },
+ "sidewalk": {
+  "tile": 0.8,
+  "files": {
+   "albedo": "sidewalk/albedo.ktx2",
+   "arm": "sidewalk/arm.ktx2",
+   "normal": "sidewalk/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "procedural (numpy, tools/naves3d/blender/textures/_src/procgen.py)",
+  "license": "CC0",
+  "notes": "Barcelona grey cement \"panot de flor\": 4 x 4 tiles of 20 x 20 cm per repeat (one tile = 0.2 m), grooved flower relief (centre circle, 4 petals, corner quarter-circles), per-tile tone, dirt in the grooves.",
+  "avg_color": "#96958e",
+  "roughness_mean": 0.763,
+  "files_mobile": {
+   "albedo": "sidewalk/albedo_512.jpg",
+   "normal": "sidewalk/normal_512.jpg",
+   "arm": "sidewalk/arm_512.jpg"
+  }
+ },
+ "wood_veneer": {
+  "tile": 1.83,
+  "files": {
+   "albedo": "wood_veneer/albedo.ktx2",
+   "arm": "wood_veneer/arm.ktx2",
+   "normal": "wood_veneer/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "https://polyhaven.com/a/oak_veneer_01",
+  "license": "CC0",
+  "notes": "Poly Haven oak_veneer_01 (1.83 m scan), lightened/desaturated to a light natural oak and given a satin-lacquer roughness (0.38-0.55) for counters, benches and locker doors. Grain runs along V.",
+  "avg_color": "#c49f73",
+  "roughness_mean": 0.469,
+  "files_mobile": {
+   "albedo": "wood_veneer/albedo_512.jpg",
+   "normal": "wood_veneer/normal_512.jpg",
+   "arm": "wood_veneer/arm_512.jpg"
+  }
+ },
+ "painted_metal": {
+  "tile": 1,
+  "files": {
+   "albedo": "painted_metal/albedo.ktx2",
+   "arm": "painted_metal/arm.ktx2",
+   "normal": "painted_metal/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "procedural (numpy, tools/naves3d/blender/textures/_src/procgen.py)",
+  "license": "CC0",
+  "notes": "Neutral near-white albedo: multiply by the paint colour (material.color). Orange-peel normal, faint scratches, roughness 0.29-0.43 (mean 0.36). arm.jpg B = 1 on purpose (2026-11-23): materials.js uses arm as roughnessMap AND metalnessMap (one shared ORM image in the GLB), so B must be 1 for the steel_painted_* metalness factor (0.2-0.35) to apply. Re-running procgen.py must keep B = 1.",
+  "avg_color": "#e0e0df",
+  "roughness_mean": 0.362,
+  "tintable": true,
+  "files_mobile": {
+   "albedo": "painted_metal/albedo_512.jpg",
+   "normal": "painted_metal/normal_512.jpg",
+   "arm": "painted_metal/arm_512.jpg"
+  }
+ },
+ "fabric": {
+  "tile": 0.25,
+  "files": {
+   "albedo": "fabric/albedo.ktx2",
+   "arm": "fabric/arm.ktx2",
+   "normal": "fabric/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "procedural (numpy, tools/naves3d/blender/textures/_src/procgen.py)",
+  "license": "CC0",
+  "notes": "PVC-coated polyester / nylon plain weave (1 mm threads) for airbag and padding. Neutral light-grey albedo: multiply by the fabric colour. Semi-gloss coating, roughness ~0.45.",
+  "avg_color": "#d3d3d1",
+  "roughness_mean": 0.46,
+  "tintable": true,
+  "files_mobile": {
+   "albedo": "fabric/albedo_512.jpg",
+   "normal": "fabric/normal_512.jpg",
+   "arm": "fabric/arm_512.jpg"
+  }
+ },
+ "tiles_wc": {
+  "tile": 0.8,
+  "files": {
+   "albedo": "tiles_wc/albedo.ktx2",
+   "arm": "tiles_wc/arm.ktx2",
+   "normal": "tiles_wc/normal.ktx2"
+  },
+  "res": 1024,
+  "source": "procedural (numpy, tools/naves3d/blender/textures/_src/procgen.py)",
+  "license": "CC0",
+  "notes": "Glossy white ceramic wall tiles 40 x 20 cm (landscape, stack bond), 2 mm light-grey grout, 2 x 4 tiles per repeat, cushion edges and slight per-tile warp so reflections ripple like a real tiled wall.",
+  "avg_color": "#efefee",
+  "roughness_mean": 0.09,
+  "files_mobile": {
+   "albedo": "tiles_wc/albedo_512.jpg",
+   "normal": "tiles_wc/normal_512.jpg",
+   "arm": "tiles_wc/arm_512.jpg"
+  }
+ },
+ "exterior/bark_platanus": {
+  "files": {
+   "albedo": "exterior/bark_platanus/albedo.ktx2",
+   "arm": "exterior/bark_platanus/arm.ktx2",
+   "normal": "exterior/bark_platanus/normal.ktx2"
+  },
+  "source": "ver exterior/CREDITS.md",
+  "license": "CC0"
+ },
+ "exterior/concrete_floor_02": {
+  "files": {
+   "albedo": "exterior/concrete_floor_02/albedo.ktx2",
+   "arm": "exterior/concrete_floor_02/arm.ktx2",
+   "normal": "exterior/concrete_floor_02/normal.ktx2"
+  },
+  "source": "ver exterior/CREDITS.md",
+  "license": "CC0"
+ },
+ "exterior/foliage": {
+  "files": {
+   "albedo": "exterior/foliage/albedo.webp",
+   "normal": "exterior/foliage/normal.ktx2"
+  },
+  "source": "ver exterior/CREDITS.md",
+  "license": "CC0"
+ },
+ "exterior/gravel_concrete_04": {
+  "files": {
+   "albedo": "exterior/gravel_concrete_04/albedo.ktx2",
+   "arm": "exterior/gravel_concrete_04/arm.ktx2",
+   "normal": "exterior/gravel_concrete_04/normal.ktx2"
+  },
+  "source": "ver exterior/CREDITS.md",
+  "license": "CC0"
+ },
+ "exterior/red_brick_03": {
+  "files": {
+   "albedo": "exterior/red_brick_03/albedo.ktx2",
+   "arm": "exterior/red_brick_03/arm.ktx2",
+   "normal": "exterior/red_brick_03/normal.ktx2"
+  },
+  "source": "ver exterior/CREDITS.md",
+  "license": "CC0"
+ },
+ "hdri": {
+  "interior": {
+   "name": "empty_warehouse_01",
+   "file": "hdri/empty_warehouse_01_1k.hdr",
+   "format": "Radiance .hdr (RGBE), equirectangular",
+   "source": "https://polyhaven.com/a/empty_warehouse_01",
+   "license": "CC0",
+   "notes": "Empty industrial warehouse lit by fluorescent tubes and skylights. Use as interior IBL (environment/reflections); not meant to be shown as background."
+  },
+  "exterior": {
+   "name": "kloofendal_48d_partly_cloudy_puresky",
+   "file": "hdri/kloofendal_48d_partly_cloudy_puresky_1k.hdr",
+   "format": "Radiance .hdr (RGBE), equirectangular",
+   "source": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+   "license": "CC0",
+   "notes": "Midday partly cloudy sky with a strong sun, pure sky (no ground objects baked in, lower hemisphere is a plain ground tone): stands in for a Mediterranean industrial estate (polígono) in daylight. Rotate so the sun comes from the south."
+  }
+ }
+}

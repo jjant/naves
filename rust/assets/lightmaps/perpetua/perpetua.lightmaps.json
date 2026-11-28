@@ -1,0 +1,4535 @@
+{
+  "atlases": [
+    {
+      "file": "lm0.bc6h.ktx2",
+      "height": 4096,
+      "width": 4096,
+      "format": "bc6h"
+    },
+    {
+      "file": "lm1.bc6h.ktx2",
+      "height": 4096,
+      "width": 4096,
+      "format": "bc6h"
+    },
+    {
+      "file": "lm2.bc6h.ktx2",
+      "height": 4096,
+      "width": 4096,
+      "format": "bc6h"
+    },
+    {
+      "file": "lm3.bc6h.ktx2",
+      "height": 1996,
+      "width": 4096,
+      "format": "bc6h"
+    }
+  ],
+  "bake": {
+    "generated": "2026-11-25T07:23:59",
+    "blender": "5.1.1",
+    "units": "texel = radiancia saliente / albedo de Cycles (W/m2/sr, 1 W = 683 lm), sin balance de blancos (lo pone el postproceso del motor)",
+    "white_balance_K": null,
+    "atlases": {
+      "0": {
+        "bytes": 30453381,
+        "p10_50_90_99": [
+          0.0,
+          0.00034,
+          24.29516,
+          32.32691
+        ]
+      },
+      "1": {
+        "bytes": 18099351,
+        "p10_50_90_99": [
+          0.00005,
+          5.04778,
+          30.20548,
+          33.25873
+        ]
+      },
+      "2": {
+        "bytes": 29797308,
+        "p10_50_90_99": [
+          0.00001,
+          0.08683,
+          28.32834,
+          31.81985
+        ]
+      },
+      "3": {
+        "bytes": 11298715,
+        "p10_50_90_99": [
+          0.00002,
+          0.18578,
+          27.51052,
+          35.05799
+        ]
+      }
+    },
+    "passes": {
+      "0": {
+        "passes": [
+          [
+            4,
+            22.5
+          ],
+          [
+            16,
+            78.6
+          ],
+          [
+            152,
+            534.3
+          ]
+        ],
+        "samples": 172,
+        "bake_s": 635.4,
+        "denoised": true,
+        "post_s": 27.6,
+        "ns_per_texel_sample": 301.4,
+        "covered": 0.793
+      },
+      "1": {
+        "passes": [
+          [
+            4,
+            20.3
+          ],
+          [
+            16,
+            54.9
+          ],
+          [
+            256,
+            654.3
+          ]
+        ],
+        "samples": 276,
+        "bake_s": 729.5,
+        "denoised": true,
+        "post_s": 25.3,
+        "ns_per_texel_sample": 219.9,
+        "covered": 0.771
+      },
+      "2": {
+        "passes": [
+          [
+            4,
+            21.6
+          ],
+          [
+            16,
+            53.2
+          ],
+          [
+            152,
+            433.7
+          ]
+        ],
+        "samples": 172,
+        "bake_s": 508.5,
+        "denoised": true,
+        "post_s": 21.8,
+        "ns_per_texel_sample": 251.9,
+        "covered": 0.737
+      },
+      "3": {
+        "passes": [
+          [
+            4,
+            8.7
+          ],
+          [
+            16,
+            17.0
+          ],
+          [
+            54,
+            52.5
+          ]
+        ],
+        "samples": 74,
+        "bake_s": 78.2,
+        "denoised": true,
+        "post_s": 10.3,
+        "ns_per_texel_sample": 170.0,
+        "covered": 0.288
+      }
+    },
+    "bake_total_s": 2045.3,
+    "setup_s": 23.7,
+    "total_s": 2119.5
+  },
+  "batches": [
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "246994ebcfa0745f",
+      "key": "wall_precast",
+      "px": [
+        0,
+        0,
+        4047,
+        3913
+      ],
+      "rect": [
+        0,
+        0,
+        64751,
+        62607
+      ],
+      "triangles": 1952
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "1be6cd0c6ea91445",
+      "key": "roof_metal",
+      "px": [
+        0,
+        0,
+        4003,
+        3844
+      ],
+      "rect": [
+        0,
+        0,
+        64047,
+        61503
+      ],
+      "triangles": 1822
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "bcce08fa60c49d91",
+      "key": "asphalt",
+      "px": [
+        0,
+        0,
+        3830,
+        3461
+      ],
+      "rect": [
+        0,
+        0,
+        61279,
+        55375
+      ],
+      "triangles": 582
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "2f4224afb1232d6b",
+      "key": "steel_painted_grey",
+      "px": [
+        0,
+        0,
+        1425,
+        1348
+      ],
+      "rect": [
+        0,
+        0,
+        22800,
+        44259
+      ],
+      "triangles": 5676
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "c3e99727f3201b87",
+      "key": "plywood_red_eeece6",
+      "px": [
+        1425,
+        0,
+        643,
+        760
+      ],
+      "rect": [
+        22800,
+        0,
+        33087,
+        24953
+      ],
+      "triangles": 8130
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "9530634e32ddc59c",
+      "key": "concrete_precast",
+      "px": [
+        0,
+        3461,
+        830,
+        587
+      ],
+      "rect": [
+        0,
+        55375,
+        13280,
+        64767
+      ],
+      "triangles": 348
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "7a315376acda3a1d",
+      "key": "wall_precast_b9bab5",
+      "px": [
+        830,
+        3461,
+        639,
+        586
+      ],
+      "rect": [
+        13280,
+        55375,
+        23504,
+        64751
+      ],
+      "triangles": 324
+    },
+    {
+      "atlas": 2,
+      "class": "exterior",
+      "hash": "e96c00be301a7112",
+      "key": "sealant_joint",
+      "px": [
+        1469,
+        3461,
+        629,
+        562
+      ],
+      "rect": [
+        23504,
+        55375,
+        33567,
+        64367
+      ],
+      "triangles": 5940
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "09da5db4790e0db3",
+      "key": "wall_plaster",
+      "px": [
+        2098,
+        3461,
+        443,
+        552
+      ],
+      "rect": [
+        33567,
+        55375,
+        40655,
+        64207
+      ],
+      "triangles": 96
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "6d132694284e16ac",
+      "key": "rope_black",
+      "px": [
+        2541,
+        3461,
+        592,
+        510
+      ],
+      "rect": [
+        40655,
+        55375,
+        50127,
+        63535
+      ],
+      "triangles": 13500
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "a96cff0de76e0c07",
+      "key": "?",
+      "px": [
+        3133,
+        3461,
+        547,
+        470
+      ],
+      "rect": [
+        50127,
+        55375,
+        58879,
+        62895
+      ],
+      "triangles": 36194
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "9ebefd5307115ed3",
+      "key": "steel_painted_dark",
+      "px": [
+        2068,
+        0,
+        470,
+        436
+      ],
+      "rect": [
+        33087,
+        0,
+        40607,
+        14315
+      ],
+      "triangles": 4500
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "3a44c82234aaae9d",
+      "key": "?",
+      "px": [
+        2538,
+        0,
+        492,
+        430
+      ],
+      "rect": [
+        40607,
+        0,
+        48479,
+        14118
+      ],
+      "triangles": 18568
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "770953e133f555d0",
+      "key": "wall_plaster",
+      "px": [
+        3030,
+        0,
+        441,
+        430
+      ],
+      "rect": [
+        48479,
+        0,
+        55535,
+        14118
+      ],
+      "triangles": 372
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "8d92eb2e5aca2967",
+      "key": "wall_precast_mean_9e9f9c",
+      "px": [
+        2538,
+        430,
+        832,
+        423
+      ],
+      "rect": [
+        40607,
+        14118,
+        53919,
+        28007
+      ],
+      "triangles": 126
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "f7e928d9223f43b8",
+      "key": "wood_veneer",
+      "px": [
+        3471,
+        0,
+        445,
+        397
+      ],
+      "rect": [
+        55535,
+        0,
+        62655,
+        13035
+      ],
+      "triangles": 3456
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "e57870ee985d7304",
+      "key": "plywood",
+      "px": [
+        3680,
+        3461,
+        414,
+        383
+      ],
+      "rect": [
+        58879,
+        55375,
+        65503,
+        61503
+      ],
+      "triangles": 2060
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "1c653fe123a889f4",
+      "key": "steel_painted_grey",
+      "px": [
+        3471,
+        397,
+        406,
+        364
+      ],
+      "rect": [
+        55535,
+        13035,
+        62031,
+        24986
+      ],
+      "triangles": 2532
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "a454e441e22fd11f",
+      "key": "wall_precast_b9bab5",
+      "px": [
+        1425,
+        760,
+        832,
+        360
+      ],
+      "rect": [
+        22800,
+        24953,
+        36111,
+        36773
+      ],
+      "triangles": 30
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "09ca4ea4d6d7d73e",
+      "key": "wall_plaster",
+      "px": [
+        3370,
+        761,
+        389,
+        360
+      ],
+      "rect": [
+        53919,
+        24986,
+        60143,
+        36806
+      ],
+      "triangles": 180
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "6d3f1be433a7ee21",
+      "key": "steel_painted_dark",
+      "px": [
+        2257,
+        853,
+        407,
+        357
+      ],
+      "rect": [
+        36111,
+        28007,
+        42623,
+        39728
+      ],
+      "triangles": 4500
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "127782b4f66d7da0",
+      "key": "?",
+      "px": [
+        2664,
+        853,
+        404,
+        352
+      ],
+      "rect": [
+        42623,
+        28007,
+        49087,
+        39564
+      ],
+      "triangles": 15612
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "33beba9559753d54",
+      "key": "plywood_black",
+      "px": [
+        1425,
+        1120,
+        466,
+        348
+      ],
+      "rect": [
+        22800,
+        36773,
+        30256,
+        48199
+      ],
+      "triangles": 8130
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "25db4554a6d300b5",
+      "key": "?",
+      "px": [
+        3068,
+        1121,
+        379,
+        328
+      ],
+      "rect": [
+        49087,
+        36806,
+        55151,
+        47575
+      ],
+      "triangles": 13180
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "c7d10cee003cf632",
+      "key": "tiles_wc",
+      "px": [
+        3759,
+        761,
+        320,
+        310
+      ],
+      "rect": [
+        60143,
+        24986,
+        65263,
+        35164
+      ],
+      "triangles": 228
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "436e4178a884f2db",
+      "key": "?",
+      "px": [
+        1891,
+        1120,
+        354,
+        306
+      ],
+      "rect": [
+        30256,
+        36773,
+        35919,
+        46820
+      ],
+      "triangles": 10142
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "e948cb3145ade4fa",
+      "key": "steel_painted_white",
+      "px": [
+        3447,
+        1121,
+        341,
+        306
+      ],
+      "rect": [
+        55151,
+        36806,
+        60607,
+        46853
+      ],
+      "triangles": 920
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "42bacd8b1d76aa58",
+      "key": "plywood_red",
+      "px": [
+        2664,
+        1205,
+        312,
+        291
+      ],
+      "rect": [
+        42623,
+        39564,
+        47615,
+        49118
+      ],
+      "triangles": 7134
+    },
+    {
+      "atlas": 3,
+      "class": "exterior",
+      "hash": "2e26f1129f569fdc",
+      "key": "rubber_black",
+      "px": [
+        2245,
+        1210,
+        317,
+        278
+      ],
+      "rect": [
+        35919,
+        39728,
+        40991,
+        48856
+      ],
+      "triangles": 7136
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "6eabe9fb80f5ea1b",
+      "key": "steel_painted_red",
+      "px": [
+        0,
+        1348,
+        315,
+        276
+      ],
+      "rect": [
+        0,
+        44259,
+        5040,
+        53321
+      ],
+      "triangles": 12740
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "4420512475ca6e29",
+      "key": "floor_concrete",
+      "px": [
+        315,
+        1348,
+        832,
+        266
+      ],
+      "rect": [
+        5040,
+        44259,
+        18352,
+        52993
+      ],
+      "triangles": 2
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "72f4029484476b83",
+      "key": "#8d9294",
+      "px": [
+        2976,
+        1449,
+        832,
+        266
+      ],
+      "rect": [
+        47615,
+        47575,
+        60927,
+        56309
+      ],
+      "triangles": 6128
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "e3fd78252c0c508b",
+      "key": "roof_metal",
+      "px": [
+        1147,
+        1468,
+        832,
+        266
+      ],
+      "rect": [
+        18352,
+        48199,
+        31664,
+        56933
+      ],
+      "triangles": 6128
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "03443ba288b3f9b8",
+      "key": "rubber_floor",
+      "px": [
+        3808,
+        1071,
+        248,
+        266
+      ],
+      "rect": [
+        60927,
+        35164,
+        64895,
+        43898
+      ],
+      "triangles": 48
+    },
+    {
+      "atlas": 3,
+      "class": "exterior",
+      "hash": "2b68f3a35a7902bb",
+      "key": "steel_door_ribbed",
+      "px": [
+        3808,
+        1337,
+        283,
+        259
+      ],
+      "rect": [
+        60927,
+        43898,
+        65455,
+        52402
+      ],
+      "triangles": 516
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "f71e2125816a7c3f",
+      "key": "neveplast_f7f6f2",
+      "px": [
+        1979,
+        1488,
+        286,
+        257
+      ],
+      "rect": [
+        31664,
+        48856,
+        36239,
+        57294
+      ],
+      "triangles": 2590
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "29973cebdf1df517",
+      "key": "steel_door_ribbed_c6c9cb",
+      "px": [
+        0,
+        3844,
+        222,
+        252
+      ],
+      "rect": [
+        0,
+        61503,
+        3552,
+        65535
+      ],
+      "triangles": 144
+    },
+    {
+      "atlas": 1,
+      "class": "exterior",
+      "hash": "46d03fedba8ef59a",
+      "key": "sidewalk",
+      "px": [
+        222,
+        3844,
+        285,
+        250
+      ],
+      "rect": [
+        3552,
+        61503,
+        8112,
+        65503
+      ],
+      "triangles": 516
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "58a461a4f16af606",
+      "key": "plastic_black",
+      "px": [
+        507,
+        3844,
+        282,
+        248
+      ],
+      "rect": [
+        8112,
+        61503,
+        12624,
+        65471
+      ],
+      "triangles": 4532
+    },
+    {
+      "atlas": 1,
+      "class": "exterior",
+      "hash": "469001102b9eaad4",
+      "key": "wall_block",
+      "px": [
+        789,
+        3844,
+        248,
+        232
+      ],
+      "rect": [
+        12624,
+        61503,
+        16592,
+        65215
+      ],
+      "triangles": 640
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "19cb16f2b821b0d1",
+      "key": "neveplast_fbfaf7",
+      "px": [
+        1037,
+        3844,
+        244,
+        229
+      ],
+      "rect": [
+        16592,
+        61503,
+        20496,
+        65167
+      ],
+      "triangles": 2038
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "26c01ba57c7de63f",
+      "key": "#b5121b",
+      "px": [
+        1281,
+        3844,
+        254,
+        226
+      ],
+      "rect": [
+        20496,
+        61503,
+        24560,
+        65119
+      ],
+      "triangles": 12640
+    },
+    {
+      "atlas": 1,
+      "class": "exterior",
+      "hash": "ebbc6f5a9b618c42",
+      "key": "concrete_yard",
+      "px": [
+        1535,
+        3844,
+        211,
+        224
+      ],
+      "rect": [
+        24560,
+        61503,
+        27936,
+        65087
+      ],
+      "triangles": 108
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "33655f12ddb049e3",
+      "key": "steel_painted_dark",
+      "px": [
+        1746,
+        3844,
+        236,
+        220
+      ],
+      "rect": [
+        27936,
+        61503,
+        31712,
+        65023
+      ],
+      "triangles": 1904
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "584838d2244bacd6",
+      "key": "concrete_precast",
+      "px": [
+        1982,
+        3844,
+        237,
+        217
+      ],
+      "rect": [
+        31712,
+        61503,
+        35503,
+        64975
+      ],
+      "triangles": 180
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "ce4d554d65576b23",
+      "key": "#1d1f22",
+      "px": [
+        2219,
+        3844,
+        246,
+        216
+      ],
+      "rect": [
+        35503,
+        61503,
+        39439,
+        64959
+      ],
+      "triangles": 2910
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "6e407014a0dfdb96",
+      "key": "rubber_black",
+      "px": [
+        2465,
+        3844,
+        243,
+        216
+      ],
+      "rect": [
+        39439,
+        61503,
+        43327,
+        64959
+      ],
+      "triangles": 5708
+    },
+    {
+      "atlas": 1,
+      "class": "exterior",
+      "hash": "4db9b740635fb690",
+      "key": "car_paint",
+      "px": [
+        2708,
+        3844,
+        237,
+        211
+      ],
+      "rect": [
+        43327,
+        61503,
+        47119,
+        64879
+      ],
+      "triangles": 9934
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "3f62227ef21abdfc",
+      "key": "rubber_floor",
+      "px": [
+        2945,
+        3844,
+        238,
+        209
+      ],
+      "rect": [
+        47119,
+        61503,
+        50927,
+        64847
+      ],
+      "triangles": 630
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "001ebcde3c75462a",
+      "key": "paint_night",
+      "px": [
+        3183,
+        3844,
+        227,
+        203
+      ],
+      "rect": [
+        50927,
+        61503,
+        54559,
+        64751
+      ],
+      "triangles": 560
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "961438488dcde5d7",
+      "key": "wall_precast_mean_9e9f9c",
+      "px": [
+        315,
+        1614,
+        832,
+        201
+      ],
+      "rect": [
+        5040,
+        52993,
+        18352,
+        59592
+      ],
+      "triangles": 100
+    },
+    {
+      "atlas": 1,
+      "class": "exterior",
+      "hash": "1759b2d06f4ff4f4",
+      "key": "wall_precast",
+      "px": [
+        3410,
+        3844,
+        516,
+        195
+      ],
+      "rect": [
+        54559,
+        61503,
+        62815,
+        64623
+      ],
+      "triangles": 676
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "d4ffd66e4c38889c",
+      "key": "steel_door_ribbed",
+      "px": [
+        3926,
+        3844,
+        156,
+        195
+      ],
+      "rect": [
+        62815,
+        61503,
+        65311,
+        64623
+      ],
+      "triangles": 24
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "84c508493ff3e2ce",
+      "key": "neveplast_f9f7f1",
+      "px": [
+        3680,
+        3844,
+        214,
+        193
+      ],
+      "rect": [
+        58879,
+        61503,
+        62303,
+        64591
+      ],
+      "triangles": 1450
+    },
+    {
+      "atlas": 0,
+      "class": "exterior",
+      "hash": "e9dc6012af9fbf09",
+      "key": "rubber_black",
+      "px": [
+        0,
+        3913,
+        203,
+        182
+      ],
+      "rect": [
+        0,
+        62607,
+        3248,
+        65519
+      ],
+      "triangles": 732
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "ec9c7cb811ce6184",
+      "key": "rubber_black",
+      "px": [
+        203,
+        3913,
+        109,
+        182
+      ],
+      "rect": [
+        3248,
+        62607,
+        4992,
+        65519
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "ceb6211e557e8342",
+      "key": "#e7eef2",
+      "px": [
+        312,
+        3913,
+        222,
+        176
+      ],
+      "rect": [
+        4992,
+        62607,
+        8544,
+        65423
+      ],
+      "triangles": 16
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "951786a8e9f0d7e8",
+      "key": "neveplast_ebe9e2",
+      "px": [
+        534,
+        3913,
+        191,
+        176
+      ],
+      "rect": [
+        8544,
+        62607,
+        11600,
+        65423
+      ],
+      "triangles": 944
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "d7707c6d404bd908",
+      "key": "steel_painted_dark",
+      "px": [
+        725,
+        3913,
+        194,
+        175
+      ],
+      "rect": [
+        11600,
+        62607,
+        14704,
+        65407
+      ],
+      "triangles": 696
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "da0ed326b4251879",
+      "key": "?",
+      "px": [
+        919,
+        3913,
+        186,
+        175
+      ],
+      "rect": [
+        14704,
+        62607,
+        17680,
+        65407
+      ],
+      "triangles": 2724
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "64c536c2957ea40d",
+      "key": "neveplast_e6e3dc",
+      "px": [
+        1105,
+        3913,
+        613,
+        173
+      ],
+      "rect": [
+        17680,
+        62607,
+        27488,
+        65375
+      ],
+      "triangles": 3980
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "d05aaa028b84e7c0",
+      "key": "wall_plaster",
+      "px": [
+        1718,
+        3913,
+        154,
+        172
+      ],
+      "rect": [
+        27488,
+        62607,
+        29952,
+        65359
+      ],
+      "triangles": 84
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "4a3c41f11dcf2f3c",
+      "key": "steel_door_ribbed_c6c9cb",
+      "px": [
+        1872,
+        3913,
+        126,
+        168
+      ],
+      "rect": [
+        29952,
+        62607,
+        31968,
+        65295
+      ],
+      "triangles": 48
+    },
+    {
+      "atlas": 0,
+      "class": "exterior",
+      "hash": "a6a45f9abb68728b",
+      "key": "window_dark",
+      "px": [
+        1998,
+        3913,
+        190,
+        167
+      ],
+      "rect": [
+        31968,
+        62607,
+        35007,
+        65279
+      ],
+      "triangles": 864
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "64fe0c70aa7b15b1",
+      "key": "wall_precast_b9bab5",
+      "px": [
+        2188,
+        3913,
+        832,
+        165
+      ],
+      "rect": [
+        35007,
+        62607,
+        48319,
+        65247
+      ],
+      "triangles": 24
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "cb80340a924370ab",
+      "key": "plywood",
+      "px": [
+        3020,
+        3913,
+        171,
+        162
+      ],
+      "rect": [
+        48319,
+        62607,
+        51055,
+        65199
+      ],
+      "triangles": 1356
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "a410f655b6d94593",
+      "key": "paint_yellow",
+      "px": [
+        3191,
+        3913,
+        178,
+        158
+      ],
+      "rect": [
+        51055,
+        62607,
+        53903,
+        65135
+      ],
+      "triangles": 480
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "c7e27ae754dfa5c3",
+      "key": "plastic_hdpe_black",
+      "px": [
+        3369,
+        3913,
+        121,
+        156
+      ],
+      "rect": [
+        53903,
+        62607,
+        55839,
+        65103
+      ],
+      "triangles": 480
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "6726e8de4b8318b4",
+      "key": "paint_night",
+      "px": [
+        3490,
+        3913,
+        162,
+        154
+      ],
+      "rect": [
+        55839,
+        62607,
+        58431,
+        65071
+      ],
+      "triangles": 332
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "8f91045654c00869",
+      "key": "#2b2e33",
+      "px": [
+        3652,
+        3913,
+        168,
+        152
+      ],
+      "rect": [
+        58431,
+        62607,
+        61119,
+        65039
+      ],
+      "triangles": 1964
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "0d88a4005c1990e5",
+      "key": "paint_white",
+      "px": [
+        3820,
+        3913,
+        175,
+        151
+      ],
+      "rect": [
+        61119,
+        62607,
+        63919,
+        65023
+      ],
+      "triangles": 1316
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "4886050955ad13e7",
+      "key": "plastic_black",
+      "px": [
+        3894,
+        3844,
+        161,
+        150
+      ],
+      "rect": [
+        62303,
+        61503,
+        64879,
+        63903
+      ],
+      "triangles": 1656
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "eedb633e791bb583",
+      "key": "neveplast_efede7",
+      "px": [
+        3133,
+        3931,
+        161,
+        149
+      ],
+      "rect": [
+        50127,
+        62895,
+        52703,
+        65279
+      ],
+      "triangles": 874
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "2ed6b19dc6d20ac7",
+      "key": "steel_painted_dark",
+      "px": [
+        3294,
+        3931,
+        168,
+        144
+      ],
+      "rect": [
+        52703,
+        62895,
+        55391,
+        65199
+      ],
+      "triangles": 144
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "732412663ad4a6be",
+      "key": "#b48a5a",
+      "px": [
+        3462,
+        3931,
+        160,
+        144
+      ],
+      "rect": [
+        55391,
+        62895,
+        57951,
+        65199
+      ],
+      "triangles": 528
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "da7f638523b1f09d",
+      "key": "steel_painted_dark",
+      "px": [
+        2265,
+        1488,
+        144,
+        142
+      ],
+      "rect": [
+        36239,
+        48856,
+        38543,
+        53518
+      ],
+      "triangles": 1392
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "1edb392e30e6e01c",
+      "key": "hpl_compact",
+      "px": [
+        2409,
+        1488,
+        134,
+        140
+      ],
+      "rect": [
+        38543,
+        48856,
+        40687,
+        53452
+      ],
+      "triangles": 108
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "826df07f72dd76e0",
+      "key": "hpl_compact",
+      "px": [
+        2543,
+        1496,
+        134,
+        140
+      ],
+      "rect": [
+        40687,
+        49118,
+        42831,
+        53715
+      ],
+      "triangles": 108
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "a146afda6333c2c5",
+      "key": "#8e8a80",
+      "px": [
+        2265,
+        1715,
+        832,
+        138
+      ],
+      "rect": [
+        36239,
+        56309,
+        49551,
+        60840
+      ],
+      "triangles": 324
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "a6d427766e8bb8dc",
+      "key": "steel_painted_yellow",
+      "px": [
+        3808,
+        1596,
+        166,
+        138
+      ],
+      "rect": [
+        60927,
+        52402,
+        63583,
+        56933
+      ],
+      "triangles": 48
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "bd32fed2fe77b484",
+      "key": "turf",
+      "px": [
+        0,
+        1624,
+        157,
+        138
+      ],
+      "rect": [
+        0,
+        53321,
+        2512,
+        57852
+      ],
+      "triangles": 36
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "1737af886975e2a6",
+      "key": "#2a241c",
+      "px": [
+        157,
+        1624,
+        156,
+        138
+      ],
+      "rect": [
+        2512,
+        53321,
+        5008,
+        57852
+      ],
+      "triangles": 1190
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "17952cf7ca91a9e6",
+      "key": "neveplast_f4f5f4",
+      "px": [
+        3097,
+        1715,
+        154,
+        138
+      ],
+      "rect": [
+        49551,
+        56309,
+        52015,
+        60840
+      ],
+      "triangles": 730
+    },
+    {
+      "atlas": 3,
+      "class": "exterior",
+      "hash": "f969add052a789b8",
+      "key": "plywood",
+      "px": [
+        3251,
+        1715,
+        153,
+        138
+      ],
+      "rect": [
+        52015,
+        56309,
+        54463,
+        60840
+      ],
+      "triangles": 960
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "2c8ad9f64200f189",
+      "key": "plastic_white",
+      "px": [
+        3404,
+        1715,
+        152,
+        138
+      ],
+      "rect": [
+        54463,
+        56309,
+        56895,
+        60840
+      ],
+      "triangles": 3208
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "ee2a0037f04c2011",
+      "key": "ceramic_white",
+      "px": [
+        3556,
+        1715,
+        150,
+        138
+      ],
+      "rect": [
+        56895,
+        56309,
+        59295,
+        60840
+      ],
+      "triangles": 6292
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "5af95af4b1f6d6ee",
+      "key": "#e6e2da",
+      "px": [
+        1147,
+        1734,
+        129,
+        136
+      ],
+      "rect": [
+        18352,
+        56933,
+        20416,
+        61398
+      ],
+      "triangles": 176
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "0d0c98465dca0f38",
+      "key": "tiles_floor",
+      "px": [
+        3974,
+        1596,
+        116,
+        134
+      ],
+      "rect": [
+        63583,
+        52402,
+        65439,
+        56801
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "3794e026ae3cc970",
+      "key": "tiles_floor",
+      "px": [
+        3974,
+        1730,
+        116,
+        134
+      ],
+      "rect": [
+        63583,
+        56801,
+        65439,
+        61201
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "da67a43e4ae79234",
+      "key": "plastic_black",
+      "px": [
+        1276,
+        1734,
+        140,
+        127
+      ],
+      "rect": [
+        20416,
+        56933,
+        22656,
+        61103
+      ],
+      "triangles": 1060
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "2f33a15595f5df5e",
+      "key": "rubber_black",
+      "px": [
+        1416,
+        1734,
+        133,
+        126
+      ],
+      "rect": [
+        22656,
+        56933,
+        24784,
+        61070
+      ],
+      "triangles": 4060
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "f8115c8b5274fb2a",
+      "key": "#c9b48f",
+      "px": [
+        1549,
+        1734,
+        133,
+        126
+      ],
+      "rect": [
+        24784,
+        56933,
+        26912,
+        61070
+      ],
+      "triangles": 180
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "f02980d3c907ae14",
+      "key": "#7c8288",
+      "px": [
+        2541,
+        3971,
+        135,
+        125
+      ],
+      "rect": [
+        40655,
+        63535,
+        42815,
+        65535
+      ],
+      "triangles": 520
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "93ed19cf8364e8b0",
+      "key": "#9c7448",
+      "px": [
+        2676,
+        3971,
+        134,
+        125
+      ],
+      "rect": [
+        42815,
+        63535,
+        44959,
+        65535
+      ],
+      "triangles": 396
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "e6616aa99225af72",
+      "key": "neveplast",
+      "px": [
+        3995,
+        3913,
+        97,
+        125
+      ],
+      "rect": [
+        63919,
+        62607,
+        65471,
+        64607
+      ],
+      "triangles": 62
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "2bd73dd448bc9546",
+      "key": "plastic_white",
+      "px": [
+        2810,
+        3971,
+        130,
+        120
+      ],
+      "rect": [
+        44959,
+        63535,
+        47039,
+        65455
+      ],
+      "triangles": 408
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "47ab2e8720a5b0ca",
+      "key": "?",
+      "px": [
+        2940,
+        3971,
+        132,
+        118
+      ],
+      "rect": [
+        47039,
+        63535,
+        49151,
+        65423
+      ],
+      "triangles": 2928
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "4d31500203378e33",
+      "key": "plastic_yellow",
+      "px": [
+        1682,
+        1734,
+        127,
+        115
+      ],
+      "rect": [
+        26912,
+        56933,
+        28944,
+        60709
+      ],
+      "triangles": 1844
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "94cf441ad63ffffb",
+      "key": "#7d7a74",
+      "px": [
+        0,
+        1815,
+        830,
+        114
+      ],
+      "rect": [
+        0,
+        59592,
+        13280,
+        63335
+      ],
+      "triangles": 120
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "0558bc6a3357f128",
+      "key": "hdpe_box",
+      "px": [
+        1809,
+        1734,
+        116,
+        114
+      ],
+      "rect": [
+        28944,
+        56933,
+        30800,
+        60676
+      ],
+      "triangles": 324
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "a76e16d75b7af3e2",
+      "key": "plastic_white",
+      "px": [
+        3706,
+        1734,
+        116,
+        114
+      ],
+      "rect": [
+        59295,
+        56933,
+        61151,
+        60676
+      ],
+      "triangles": 180
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "601f65be578bda72",
+      "key": "foliage",
+      "px": [
+        3822,
+        1734,
+        116,
+        109
+      ],
+      "rect": [
+        61151,
+        56933,
+        63007,
+        60512
+      ],
+      "triangles": 312
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "9aebc3bf393f8e10",
+      "key": "paint_pink",
+      "px": [
+        1925,
+        1745,
+        120,
+        108
+      ],
+      "rect": [
+        30800,
+        57294,
+        32720,
+        60840
+      ],
+      "triangles": 446
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "aae2dac386e6eedd",
+      "key": "#1d1f22",
+      "px": [
+        2045,
+        1745,
+        118,
+        108
+      ],
+      "rect": [
+        32720,
+        57294,
+        34607,
+        60840
+      ],
+      "triangles": 2028
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "d1c17f9e1984b2e0",
+      "key": "steel_painted_red",
+      "px": [
+        830,
+        1815,
+        112,
+        105
+      ],
+      "rect": [
+        13280,
+        59592,
+        15072,
+        63040
+      ],
+      "triangles": 1784
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "2320145a06b1f81e",
+      "key": "plastic_white",
+      "px": [
+        942,
+        1815,
+        115,
+        103
+      ],
+      "rect": [
+        15072,
+        59592,
+        16912,
+        62974
+      ],
+      "triangles": 676
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "8292b85978e94624",
+      "key": "tiles_floor",
+      "px": [
+        3622,
+        3931,
+        47,
+        102
+      ],
+      "rect": [
+        57951,
+        62895,
+        58703,
+        64527
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "a6a9a61a50a430a1",
+      "key": "fabric_duct",
+      "px": [
+        1682,
+        1853,
+        680,
+        101
+      ],
+      "rect": [
+        26912,
+        60840,
+        37791,
+        64156
+      ],
+      "triangles": 240
+    },
+    {
+      "atlas": 2,
+      "class": "exterior",
+      "hash": "4086e453ae116cec",
+      "key": "sign_panels",
+      "px": [
+        3894,
+        3994,
+        96,
+        93
+      ],
+      "rect": [
+        62303,
+        63903,
+        63839,
+        65391
+      ],
+      "triangles": 94
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "1b01df23a551cbe4",
+      "key": "paint_white",
+      "px": [
+        3990,
+        3994,
+        104,
+        92
+      ],
+      "rect": [
+        63839,
+        63903,
+        65503,
+        65375
+      ],
+      "triangles": 384
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "58e987855078bdde",
+      "key": "steel_painted_grey",
+      "px": [
+        3822,
+        1843,
+        97,
+        92
+      ],
+      "rect": [
+        61151,
+        60512,
+        62703,
+        63532
+      ],
+      "triangles": 176
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "38a00d51a85d3ab6",
+      "key": "#c9b9a0",
+      "px": [
+        3706,
+        1848,
+        104,
+        89
+      ],
+      "rect": [
+        59295,
+        60676,
+        60959,
+        63598
+      ],
+      "triangles": 252
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "94ca8add706315db",
+      "key": "paint_pink",
+      "px": [
+        2362,
+        1853,
+        91,
+        88
+      ],
+      "rect": [
+        37791,
+        60840,
+        39247,
+        63729
+      ],
+      "triangles": 156
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "9b8bfb610a2050f1",
+      "key": "paint_night",
+      "px": [
+        2453,
+        1853,
+        91,
+        85
+      ],
+      "rect": [
+        39247,
+        60840,
+        40703,
+        63631
+      ],
+      "triangles": 288
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "b813e430ffa5a232",
+      "key": "plastic_hdpe_blue",
+      "px": [
+        2098,
+        4013,
+        91,
+        83
+      ],
+      "rect": [
+        33567,
+        64207,
+        35023,
+        65535
+      ],
+      "triangles": 188
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "2e16b4f039671983",
+      "key": "neveplast_f1f0eb",
+      "px": [
+        2189,
+        4013,
+        85,
+        83
+      ],
+      "rect": [
+        35023,
+        64207,
+        36383,
+        65535
+      ],
+      "triangles": 226
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "6f2d326d0ad133d9",
+      "key": "paint_pink",
+      "px": [
+        2274,
+        4013,
+        80,
+        79
+      ],
+      "rect": [
+        36383,
+        64207,
+        37663,
+        65471
+      ],
+      "triangles": 782
+    },
+    {
+      "atlas": 2,
+      "class": "exterior",
+      "hash": "9c0a59d85ec00451",
+      "key": "car_taillight",
+      "px": [
+        2354,
+        4013,
+        88,
+        78
+      ],
+      "rect": [
+        37663,
+        64207,
+        39071,
+        65455
+      ],
+      "triangles": 424
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "cebb481abe570539",
+      "key": "?",
+      "px": [
+        2442,
+        4013,
+        83,
+        78
+      ],
+      "rect": [
+        39071,
+        64207,
+        40399,
+        65455
+      ],
+      "triangles": 244
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "782295e59c300f59",
+      "key": "sealant_joint",
+      "px": [
+        2544,
+        1853,
+        831,
+        76
+      ],
+      "rect": [
+        40703,
+        60840,
+        53999,
+        63335
+      ],
+      "triangles": 1204
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "6bcfc1a6d77d117e",
+      "key": "#b48a5a",
+      "px": [
+        1057,
+        1815,
+        84,
+        75
+      ],
+      "rect": [
+        16912,
+        59592,
+        18256,
+        62055
+      ],
+      "triangles": 176
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "134a1e9d4f81861a",
+      "key": "#5b6066",
+      "px": [
+        3375,
+        1853,
+        78,
+        75
+      ],
+      "rect": [
+        53999,
+        60840,
+        55247,
+        63302
+      ],
+      "triangles": 180
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "a7a09e5a4be35f1a",
+      "key": "#3a6ea5",
+      "px": [
+        3453,
+        1853,
+        78,
+        75
+      ],
+      "rect": [
+        55247,
+        60840,
+        56495,
+        63302
+      ],
+      "triangles": 180
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "fb1592cdbe570334",
+      "key": "#1f5fae",
+      "px": [
+        3531,
+        1853,
+        80,
+        74
+      ],
+      "rect": [
+        56495,
+        60840,
+        57775,
+        63270
+      ],
+      "triangles": 2788
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "6dda55c97296acae",
+      "key": "hdpe_tube_blue_1b1c1e",
+      "px": [
+        3072,
+        3971,
+        56,
+        74
+      ],
+      "rect": [
+        49151,
+        63535,
+        50047,
+        64719
+      ],
+      "triangles": 288
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "5250db8515f93a8e",
+      "key": "?",
+      "px": [
+        1469,
+        4023,
+        79,
+        73
+      ],
+      "rect": [
+        23504,
+        64367,
+        24768,
+        65535
+      ],
+      "triangles": 896
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "6baaecd3584aa040",
+      "key": "concrete_precast",
+      "px": [
+        1548,
+        4023,
+        68,
+        73
+      ],
+      "rect": [
+        24768,
+        64367,
+        25856,
+        65535
+      ],
+      "triangles": 320
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "cf768e1cbf441190",
+      "key": "paint_white",
+      "px": [
+        1616,
+        4023,
+        266,
+        72
+      ],
+      "rect": [
+        25856,
+        64367,
+        30112,
+        65519
+      ],
+      "triangles": 48
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "300f85b35c249457",
+      "key": "steel_painted_night",
+      "px": [
+        1882,
+        4023,
+        78,
+        72
+      ],
+      "rect": [
+        30112,
+        64367,
+        31360,
+        65519
+      ],
+      "triangles": 96
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "309eebc725b537ac",
+      "key": "#b6babe",
+      "px": [
+        1960,
+        4023,
+        54,
+        72
+      ],
+      "rect": [
+        31360,
+        64367,
+        32224,
+        65519
+      ],
+      "triangles": 36
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "b2ad861c5860fb3c",
+      "key": "#b6babe",
+      "px": [
+        2014,
+        4023,
+        54,
+        72
+      ],
+      "rect": [
+        32224,
+        64367,
+        33087,
+        65519
+      ],
+      "triangles": 36
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "86cdb0c3e6d1f703",
+      "key": "#FFE53D",
+      "px": [
+        3611,
+        1853,
+        81,
+        71
+      ],
+      "rect": [
+        57775,
+        60840,
+        59071,
+        63171
+      ],
+      "triangles": 444
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "b1f2816a35ef28d6",
+      "key": "fabric_pad_blue",
+      "px": [
+        1416,
+        1860,
+        98,
+        70
+      ],
+      "rect": [
+        22656,
+        61070,
+        24224,
+        63368
+      ],
+      "triangles": 1148
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "dd2c859f21688248",
+      "key": "steel_painted_green",
+      "px": [
+        1514,
+        1860,
+        70,
+        70
+      ],
+      "rect": [
+        24224,
+        61070,
+        25344,
+        63368
+      ],
+      "triangles": 156
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "690c8ec9053effa8",
+      "key": "plywood_phenolic",
+      "px": [
+        1584,
+        1860,
+        59,
+        68
+      ],
+      "rect": [
+        25344,
+        61070,
+        26288,
+        63302
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "995324733c218a58",
+      "key": "tiles_mosaic",
+      "px": [
+        3919,
+        1843,
+        50,
+        68
+      ],
+      "rect": [
+        62703,
+        60512,
+        63503,
+        62744
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "cca0052bceb21eb8",
+      "key": "tiles_mosaic",
+      "px": [
+        1276,
+        1861,
+        50,
+        68
+      ],
+      "rect": [
+        20416,
+        61103,
+        21216,
+        63335
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "4ad788ea82e52bd3",
+      "key": "#8e8a80",
+      "px": [
+        0,
+        1929,
+        832,
+        66
+      ],
+      "rect": [
+        0,
+        63335,
+        13312,
+        65502
+      ],
+      "triangles": 144
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "d846b671c26b98d4",
+      "key": "fabric_pad_pink",
+      "px": [
+        1326,
+        1861,
+        74,
+        66
+      ],
+      "rect": [
+        21216,
+        61103,
+        22400,
+        63270
+      ],
+      "triangles": 204
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "b8795753de6b9dac",
+      "key": "plywood_phenolic",
+      "px": [
+        3969,
+        1864,
+        70,
+        66
+      ],
+      "rect": [
+        63503,
+        61201,
+        64623,
+        63368
+      ],
+      "triangles": 60
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "97f5c7f5cfc2b853",
+      "key": "#3a3f47",
+      "px": [
+        1141,
+        1870,
+        66,
+        66
+      ],
+      "rect": [
+        18256,
+        61398,
+        19312,
+        63565
+      ],
+      "triangles": 88
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "187d358be87a9573",
+      "key": "#2f3236",
+      "px": [
+        1207,
+        1870,
+        64,
+        66
+      ],
+      "rect": [
+        19312,
+        61398,
+        20336,
+        63565
+      ],
+      "triangles": 120
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "582715af39899c40",
+      "key": "steel_painted_white",
+      "px": [
+        4039,
+        1864,
+        56,
+        65
+      ],
+      "rect": [
+        64623,
+        61201,
+        65519,
+        63335
+      ],
+      "triangles": 36
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "ee0b8b2175258b18",
+      "key": "steel_painted_white",
+      "px": [
+        1057,
+        1890,
+        56,
+        65
+      ],
+      "rect": [
+        16912,
+        62055,
+        17808,
+        64189
+      ],
+      "triangles": 36
+    },
+    {
+      "atlas": 3,
+      "class": "exterior",
+      "hash": "fab431999bd9efa7",
+      "key": "window_dark_ext",
+      "px": [
+        942,
+        1918,
+        60,
+        61
+      ],
+      "rect": [
+        15072,
+        62974,
+        16032,
+        64977
+      ],
+      "triangles": 44
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "8f7f6fb9d9c6050e",
+      "key": "#127a3e",
+      "px": [
+        832,
+        1920,
+        62,
+        60
+      ],
+      "rect": [
+        13312,
+        63040,
+        14304,
+        65010
+      ],
+      "triangles": 2112
+    },
+    {
+      "atlas": 3,
+      "class": "interior",
+      "hash": "36f76d48aa518f10",
+      "key": "steel_painted_yellow",
+      "px": [
+        3611,
+        1924,
+        60,
+        60
+      ],
+      "rect": [
+        57775,
+        63171,
+        58735,
+        65141
+      ],
+      "triangles": 48
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "3b5412c9645fbba8",
+      "key": "paint_yellow",
+      "px": [
+        3622,
+        4033,
+        56,
+        60
+      ],
+      "rect": [
+        57951,
+        64527,
+        58847,
+        65487
+      ],
+      "triangles": 60
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "1ca6c28bc0106ee4",
+      "key": "#1d1f22",
+      "px": [
+        3995,
+        4038,
+        61,
+        58
+      ],
+      "rect": [
+        63919,
+        64607,
+        64895,
+        65535
+      ],
+      "triangles": 72
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "70209a2b571cabed",
+      "key": "#b3262d",
+      "px": [
+        3678,
+        4037,
+        58,
+        58
+      ],
+      "rect": [
+        58847,
+        64591,
+        59775,
+        65519
+      ],
+      "triangles": 224
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "69044da4241837a9",
+      "key": "leather_black",
+      "px": [
+        3736,
+        4037,
+        57,
+        58
+      ],
+      "rect": [
+        59775,
+        64591,
+        60687,
+        65519
+      ],
+      "triangles": 600
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "b59361dc2292d9a4",
+      "key": "#c8b48a",
+      "px": [
+        4056,
+        4038,
+        40,
+        58
+      ],
+      "rect": [
+        64895,
+        64607,
+        65535,
+        65535
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "cfa35b1e4de5a898",
+      "key": "wood_veneer",
+      "px": [
+        3793,
+        4037,
+        40,
+        58
+      ],
+      "rect": [
+        60687,
+        64591,
+        61327,
+        65519
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "e4925df40215bd44",
+      "key": "wood_veneer",
+      "px": [
+        3833,
+        4037,
+        40,
+        58
+      ],
+      "rect": [
+        61327,
+        64591,
+        61967,
+        65519
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 1,
+      "class": "exterior",
+      "hash": "a6a16462c5337d68",
+      "key": "metal_cast_iron",
+      "px": [
+        3410,
+        4039,
+        60,
+        57
+      ],
+      "rect": [
+        54559,
+        64623,
+        55519,
+        65535
+      ],
+      "triangles": 332
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "b90a3fdb81a3f821",
+      "key": "#c8102e",
+      "px": [
+        3470,
+        4039,
+        59,
+        57
+      ],
+      "rect": [
+        55519,
+        64623,
+        56463,
+        65535
+      ],
+      "triangles": 1856
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "9092c1de18fd0d3a",
+      "key": "plastic_hdpe_black",
+      "px": [
+        3529,
+        4039,
+        56,
+        56
+      ],
+      "rect": [
+        56463,
+        64623,
+        57359,
+        65519
+      ],
+      "triangles": 96
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "3d003a6bc441eb45",
+      "key": "quartz_counter",
+      "px": [
+        3585,
+        4039,
+        60,
+        55
+      ],
+      "rect": [
+        57359,
+        64623,
+        58319,
+        65503
+      ],
+      "triangles": 264
+    },
+    {
+      "atlas": 1,
+      "class": "exterior",
+      "hash": "43291db0f010f35d",
+      "key": "steel_painted_grey",
+      "px": [
+        3645,
+        4039,
+        55,
+        55
+      ],
+      "rect": [
+        58319,
+        64623,
+        59199,
+        65503
+      ],
+      "triangles": 84
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "156dfb184157b1a2",
+      "key": "plastic_hdpe_black",
+      "px": [
+        3700,
+        4039,
+        54,
+        55
+      ],
+      "rect": [
+        59199,
+        64623,
+        60063,
+        65503
+      ],
+      "triangles": 360
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "93d6c5609a61bc32",
+      "key": "paint_white",
+      "px": [
+        3754,
+        4039,
+        60,
+        54
+      ],
+      "rect": [
+        60063,
+        64623,
+        61023,
+        65487
+      ],
+      "triangles": 1276
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "30140c38c1be42a2",
+      "key": "fabric_pad_grey",
+      "px": [
+        3814,
+        4039,
+        58,
+        54
+      ],
+      "rect": [
+        61023,
+        64623,
+        61951,
+        65487
+      ],
+      "triangles": 600
+    },
+    {
+      "atlas": 1,
+      "class": "exterior",
+      "hash": "91180db421e32af0",
+      "key": "steel_painted_yellow",
+      "px": [
+        3872,
+        4039,
+        56,
+        54
+      ],
+      "rect": [
+        61951,
+        64623,
+        62847,
+        65487
+      ],
+      "triangles": 192
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "4be287b3ee03b87c",
+      "key": "#d9dcdf",
+      "px": [
+        3928,
+        4039,
+        30,
+        54
+      ],
+      "rect": [
+        62847,
+        64623,
+        63327,
+        65487
+      ],
+      "triangles": 24
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "9db4b4707810119b",
+      "key": "alarm_red",
+      "px": [
+        3958,
+        4039,
+        55,
+        48
+      ],
+      "rect": [
+        63327,
+        64623,
+        64207,
+        65391
+      ],
+      "triangles": 96
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "c2ae4e98cb37b78c",
+      "key": "#2a5ca8",
+      "px": [
+        4013,
+        4039,
+        55,
+        48
+      ],
+      "rect": [
+        64207,
+        64623,
+        65087,
+        65391
+      ],
+      "triangles": 60
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "f16cda2c4c47b658",
+      "key": "#7c8288",
+      "px": [
+        3183,
+        4047,
+        55,
+        48
+      ],
+      "rect": [
+        50927,
+        64751,
+        51807,
+        65519
+      ],
+      "triangles": 60
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "a57f304e50afa6c4",
+      "key": "plastic_yellow",
+      "px": [
+        3238,
+        4047,
+        54,
+        48
+      ],
+      "rect": [
+        51807,
+        64751,
+        52671,
+        65519
+      ],
+      "triangles": 360
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "f1d930b0c4fa355b",
+      "key": "#1a9b3a",
+      "px": [
+        3292,
+        4047,
+        48,
+        48
+      ],
+      "rect": [
+        52671,
+        64751,
+        53439,
+        65519
+      ],
+      "triangles": 120
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "b4a71d6565f0c310",
+      "key": "#3a3f47",
+      "px": [
+        3340,
+        4047,
+        45,
+        48
+      ],
+      "rect": [
+        53439,
+        64751,
+        54159,
+        65519
+      ],
+      "triangles": 60
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "2f9073a2ff987597",
+      "key": "#5a3a24",
+      "px": [
+        3072,
+        4045,
+        47,
+        46
+      ],
+      "rect": [
+        49151,
+        64719,
+        49903,
+        65455
+      ],
+      "triangles": 144
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "0a6c0426d5c3f49b",
+      "key": "#6b3fa0",
+      "px": [
+        830,
+        4047,
+        49,
+        45
+      ],
+      "rect": [
+        13280,
+        64751,
+        14064,
+        65471
+      ],
+      "triangles": 676
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "6000ab4b6d231eab",
+      "key": "steel_painted_yellow",
+      "px": [
+        879,
+        4047,
+        49,
+        45
+      ],
+      "rect": [
+        14064,
+        64751,
+        14848,
+        65471
+      ],
+      "triangles": 676
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "e4c1af257a9f4f4b",
+      "key": "steel_painted_green",
+      "px": [
+        928,
+        4047,
+        49,
+        45
+      ],
+      "rect": [
+        14848,
+        64751,
+        15632,
+        65471
+      ],
+      "triangles": 676
+    },
+    {
+      "atlas": 2,
+      "class": "interior",
+      "hash": "b1dddc0ebee742bf",
+      "key": "#efeee9",
+      "px": [
+        977,
+        4047,
+        48,
+        45
+      ],
+      "rect": [
+        15632,
+        64751,
+        16400,
+        65471
+      ],
+      "triangles": 1152
+    },
+    {
+      "atlas": 2,
+      "class": "exterior",
+      "hash": "1c980c8ec5f8fe4f",
+      "key": "sign_panels",
+      "px": [
+        1025,
+        4047,
+        47,
+        44
+      ],
+      "rect": [
+        16400,
+        64751,
+        17152,
+        65455
+      ],
+      "triangles": 62
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "0b2fe465acfc38b7",
+      "key": "#b8323a",
+      "px": [
+        2945,
+        4053,
+        42,
+        43
+      ],
+      "rect": [
+        47119,
+        64847,
+        47791,
+        65535
+      ],
+      "triangles": 168
+    },
+    {
+      "atlas": 1,
+      "class": "exterior",
+      "hash": "895fd460f7fe0ba8",
+      "key": "window_dark",
+      "px": [
+        2987,
+        4053,
+        49,
+        42
+      ],
+      "rect": [
+        47791,
+        64847,
+        48575,
+        65519
+      ],
+      "triangles": 264
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "9c2eddac7482027c",
+      "key": "steel_painted_dark",
+      "px": [
+        3036,
+        4053,
+        44,
+        42
+      ],
+      "rect": [
+        48575,
+        64847,
+        49279,
+        65519
+      ],
+      "triangles": 72
+    },
+    {
+      "atlas": 1,
+      "class": "exterior",
+      "hash": "e64e8f1af0f2edc7",
+      "key": "steel_painted_red",
+      "px": [
+        3080,
+        4053,
+        44,
+        42
+      ],
+      "rect": [
+        49279,
+        64847,
+        49983,
+        65519
+      ],
+      "triangles": 248
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "e4030543e8f451f0",
+      "key": "steel_painted_yellow",
+      "px": [
+        3124,
+        4053,
+        40,
+        42
+      ],
+      "rect": [
+        49983,
+        64847,
+        50623,
+        65519
+      ],
+      "triangles": 48
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "aa9f8440f8c80760",
+      "key": "#1d6f74",
+      "px": [
+        2708,
+        4055,
+        33,
+        41
+      ],
+      "rect": [
+        43327,
+        64879,
+        43855,
+        65535
+      ],
+      "triangles": 132
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "d430f2627c07e010",
+      "key": "paint_pink",
+      "px": [
+        2741,
+        4055,
+        42,
+        38
+      ],
+      "rect": [
+        43855,
+        64879,
+        44527,
+        65487
+      ],
+      "triangles": 24
+    },
+    {
+      "atlas": 1,
+      "class": "exterior",
+      "hash": "e6ef7c570217a197",
+      "key": "steel_painted_green",
+      "px": [
+        2783,
+        4055,
+        40,
+        37
+      ],
+      "rect": [
+        44527,
+        64879,
+        45167,
+        65471
+      ],
+      "triangles": 160
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "2539486e1d93c9b4",
+      "key": "#f2c200",
+      "px": [
+        2823,
+        4055,
+        42,
+        36
+      ],
+      "rect": [
+        45167,
+        64879,
+        45839,
+        65455
+      ],
+      "triangles": 72
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "635cd0ae20ce1820",
+      "key": "#2f6fb0",
+      "px": [
+        2865,
+        4055,
+        42,
+        36
+      ],
+      "rect": [
+        45839,
+        64879,
+        46511,
+        65455
+      ],
+      "triangles": 72
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "c09cfeb1ea1b93a4",
+      "key": "#c8102e",
+      "px": [
+        2219,
+        4060,
+        42,
+        36
+      ],
+      "rect": [
+        35503,
+        64959,
+        36175,
+        65535
+      ],
+      "triangles": 72
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "d07cd266ca6d8086",
+      "key": "#f2c200",
+      "px": [
+        2907,
+        4055,
+        36,
+        36
+      ],
+      "rect": [
+        46511,
+        64879,
+        47087,
+        65455
+      ],
+      "triangles": 704
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "08872c4117c007e8",
+      "key": "#B537DA",
+      "px": [
+        2261,
+        4060,
+        35,
+        36
+      ],
+      "rect": [
+        36175,
+        64959,
+        36735,
+        65535
+      ],
+      "triangles": 44
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "a326c7751a4b7b84",
+      "key": "#1d4f8c",
+      "px": [
+        2296,
+        4060,
+        35,
+        36
+      ],
+      "rect": [
+        36735,
+        64959,
+        37295,
+        65535
+      ],
+      "triangles": 44
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "a37b8f14abad8680",
+      "key": "#8a8f96",
+      "px": [
+        2331,
+        4060,
+        35,
+        36
+      ],
+      "rect": [
+        37295,
+        64959,
+        37855,
+        65535
+      ],
+      "triangles": 44
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "d6c137078d10c44c",
+      "key": "#2a5ca8",
+      "px": [
+        2366,
+        4060,
+        35,
+        36
+      ],
+      "rect": [
+        37855,
+        64959,
+        38415,
+        65535
+      ],
+      "triangles": 44
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "c34b55f3d2bd9e42",
+      "key": "plastic_yellow",
+      "px": [
+        2401,
+        4060,
+        38,
+        35
+      ],
+      "rect": [
+        38415,
+        64959,
+        39023,
+        65519
+      ],
+      "triangles": 40
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "08790b01a4224d20",
+      "key": "quartz_counter",
+      "px": [
+        2439,
+        4060,
+        36,
+        34
+      ],
+      "rect": [
+        39023,
+        64959,
+        39599,
+        65503
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "6e8b9ebf172053d8",
+      "key": "#0d0e10",
+      "px": [
+        2475,
+        4060,
+        36,
+        34
+      ],
+      "rect": [
+        39599,
+        64959,
+        40175,
+        65503
+      ],
+      "triangles": 24
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "709e2f195d76bd40",
+      "key": "#c9ccd0",
+      "px": [
+        2511,
+        4060,
+        36,
+        33
+      ],
+      "rect": [
+        40175,
+        64959,
+        40751,
+        65487
+      ],
+      "triangles": 36
+    },
+    {
+      "atlas": 0,
+      "class": "exterior",
+      "hash": "021c81107ad38abc",
+      "key": "paint_road",
+      "px": [
+        3652,
+        4065,
+        312,
+        31
+      ],
+      "rect": [
+        58431,
+        65039,
+        63423,
+        65535
+      ],
+      "triangles": 94
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "da1b07a01f26fd25",
+      "key": "fabric_pad_blue",
+      "px": [
+        2547,
+        4060,
+        32,
+        31
+      ],
+      "rect": [
+        40751,
+        64959,
+        41263,
+        65455
+      ],
+      "triangles": 96
+    },
+    {
+      "atlas": 1,
+      "class": "exterior",
+      "hash": "887ecdd46811911d",
+      "key": "plastic_yellow",
+      "px": [
+        2579,
+        4060,
+        36,
+        30
+      ],
+      "rect": [
+        41263,
+        64959,
+        41839,
+        65439
+      ],
+      "triangles": 96
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "9000feacc45d7cc0",
+      "key": "steel_painted_green",
+      "px": [
+        2615,
+        4060,
+        32,
+        30
+      ],
+      "rect": [
+        41839,
+        64959,
+        42351,
+        65439
+      ],
+      "triangles": 52
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "448142af3f309138",
+      "key": "plastic_white",
+      "px": [
+        3964,
+        4064,
+        27,
+        30
+      ],
+      "rect": [
+        63423,
+        65023,
+        63855,
+        65503
+      ],
+      "triangles": 24
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "303b7737dc895334",
+      "key": "#1d1f22",
+      "px": [
+        4068,
+        4039,
+        26,
+        30
+      ],
+      "rect": [
+        65087,
+        64623,
+        65503,
+        65103
+      ],
+      "triangles": 24
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "20dfc878aa8403c7",
+      "key": "#e8e2d8",
+      "px": [
+        3385,
+        4047,
+        24,
+        30
+      ],
+      "rect": [
+        54159,
+        64751,
+        54543,
+        65231
+      ],
+      "triangles": 96
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "ee72e10c3a7ae7fc",
+      "key": "bin_lid",
+      "px": [
+        3490,
+        4067,
+        30,
+        28
+      ],
+      "rect": [
+        55839,
+        65071,
+        56319,
+        65519
+      ],
+      "triangles": 24
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "213aef42fd280cfc",
+      "key": "quartz_counter",
+      "px": [
+        3520,
+        4067,
+        22,
+        28
+      ],
+      "rect": [
+        56319,
+        65071,
+        56671,
+        65519
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "e0298c27f03391a0",
+      "key": "paint_yellow",
+      "px": [
+        3542,
+        4067,
+        18,
+        26
+      ],
+      "rect": [
+        56671,
+        65071,
+        56959,
+        65487
+      ],
+      "triangles": 68
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "e7f5d9f9b0842814",
+      "key": "decal_logo",
+      "px": [
+        3560,
+        4067,
+        13,
+        26
+      ],
+      "rect": [
+        56959,
+        65071,
+        57167,
+        65487
+      ],
+      "triangles": 4
+    },
+    {
+      "atlas": 1,
+      "class": "interior",
+      "hash": "e43fa79ad0fcdd0a",
+      "key": "neveplast_2f8fd8",
+      "px": [
+        1535,
+        4068,
+        613,
+        25
+      ],
+      "rect": [
+        24560,
+        65087,
+        34367,
+        65487
+      ],
+      "triangles": 568
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "8546f0602c8fc378",
+      "key": "plastic_hdpe_blue",
+      "px": [
+        3573,
+        4067,
+        56,
+        24
+      ],
+      "rect": [
+        57167,
+        65071,
+        58063,
+        65455
+      ],
+      "triangles": 16
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "451db27bbb611fec",
+      "key": "#2a5ca8",
+      "px": [
+        3629,
+        4067,
+        20,
+        24
+      ],
+      "rect": [
+        58063,
+        65071,
+        58383,
+        65455
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "913ce1df24f6aea6",
+      "key": "lamp_red",
+      "px": [
+        3369,
+        4069,
+        20,
+        24
+      ],
+      "rect": [
+        53903,
+        65103,
+        54223,
+        65487
+      ],
+      "triangles": 64
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "584172b6c34f61f8",
+      "key": "#1a9b3a",
+      "px": [
+        3389,
+        4069,
+        18,
+        24
+      ],
+      "rect": [
+        54223,
+        65103,
+        54511,
+        65487
+      ],
+      "triangles": 24
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "5ca6823de17739af",
+      "key": "lock_green",
+      "px": [
+        3407,
+        4069,
+        18,
+        24
+      ],
+      "rect": [
+        54511,
+        65103,
+        54799,
+        65487
+      ],
+      "triangles": 24
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "75cb515ff3027732",
+      "key": "lock_green",
+      "px": [
+        3425,
+        4069,
+        18,
+        24
+      ],
+      "rect": [
+        54799,
+        65103,
+        55087,
+        65487
+      ],
+      "triangles": 24
+    },
+    {
+      "atlas": 0,
+      "class": "exterior",
+      "hash": "d2c60c5aa8871886",
+      "key": "plastic_black",
+      "px": [
+        3443,
+        4069,
+        18,
+        24
+      ],
+      "rect": [
+        55087,
+        65103,
+        55375,
+        65487
+      ],
+      "triangles": 40
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "7114af041c99c148",
+      "key": "#b3262d",
+      "px": [
+        3461,
+        4069,
+        17,
+        24
+      ],
+      "rect": [
+        55375,
+        65103,
+        55647,
+        65487
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "637061badbfeaf70",
+      "key": "#2f3236",
+      "px": [
+        3191,
+        4071,
+        22,
+        22
+      ],
+      "rect": [
+        51055,
+        65135,
+        51407,
+        65487
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "5c0d7e1c57baa774",
+      "key": "#3b2516",
+      "px": [
+        3213,
+        4071,
+        22,
+        21
+      ],
+      "rect": [
+        51407,
+        65135,
+        51759,
+        65471
+      ],
+      "triangles": 72
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "141a6bfe61ca130f",
+      "key": "plastic_hdpe_black",
+      "px": [
+        3235,
+        4071,
+        18,
+        18
+      ],
+      "rect": [
+        51759,
+        65135,
+        52047,
+        65423
+      ],
+      "triangles": 13
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "d029073dc0c06178",
+      "key": "#c9a56b",
+      "px": [
+        3253,
+        4071,
+        18,
+        18
+      ],
+      "rect": [
+        52047,
+        65135,
+        52335,
+        65423
+      ],
+      "triangles": 12
+    },
+    {
+      "atlas": 0,
+      "class": "interior",
+      "hash": "b8811886b8bbf3f8",
+      "key": "lock_green",
+      "px": [
+        3478,
+        4069,
+        12,
+        18
+      ],
+      "rect": [
+        55647,
+        65103,
+        55839,
+        65391
+      ],
+      "triangles": 12
+    }
+  ],
+  "id": "perpetua",
+  "occluders": "8038d1ccf4d4f041",
+  "scale": 683.0,
+  "signature": "509be951e8439ead",
+  "unwrap": 1,
+  "version": 2,
+  "views_ev": {
+    "calle": -3.81,
+    "calle-360": -2.98,
+    "entrada": 2.89,
+    "entrada-360": 2.59,
+    "plataforma": -0.34,
+    "plataforma-360": -0.54,
+    "final": -0.21,
+    "recepcion": 2.45,
+    "alquiler": 3.06,
+    "gym": 1.4,
+    "taquillas": 0.45,
+    "lounge": 0.28,
+    "hero": -0.28,
+    "hero-360": -0.07,
+    "mirador": 0.65,
+    "mirador-360": 1.65,
+    "maqueta": -2.96
+  },
+  "source": {
+    "engine": "binario /local/home/jjantdev/personal/snowpark/park3d-orch/crates/park3d-web/target/release/examples/lightmap_export",
+    "layout_sha256": "2d4b02e0813e22faea63d79fef18aa07942a923c07d5445d22e5611f7bd2c360"
+  },
+  "opal": {
+    "diffuse_t": 0.5,
+    "reflect": 0.1,
+    "exponent": 1.0
+  },
+  "sky": {
+    "model": "clear",
+    "elevation": 35.0,
+    "azimuth": 232.0,
+    "scene_rotation": 232.0,
+    "sun_normal_lux": 87471,
+    "sky_horizontal_lux": 9121,
+    "global_horizontal_lux": 59292
+  },
+  "pack": {
+    "version": 2,
+    "tool": "tools/lmpack",
+    "recipe": {
+      "codec": "bc6h",
+      "quality": "veryslow",
+      "zstd": 19
+    },
+    "from": {
+      "perpetua.lightmaps.json": "2c48bf0a5cb7ece52b6da1a1a16ea30aa51a064768f913ed1903789c01c89fdd",
+      "lm0.ktx2": "6b6e1462988edd6f7c27c411ddd533d50637873eeb9f7445ee598139b1ccd274",
+      "lm1.ktx2": "bf580993f456534b5f5e824dc80ff1383cc040c26b97079a6ad2240b5366b5ea",
+      "lm2.ktx2": "729975ccb326780621fa4575f465338923b0c74562abab6ad1b33f1317741b97",
+      "lm3.ktx2": "ccd3d28d516b62eef571939ee520470c1c11e07a4fc273c6df3dc48302ff3065"
+    },
+    "atlases": [
+      {
+        "file": "lm0.bc6h.ktx2",
+        "from": "lm0.ktx2",
+        "bytes": 9871178,
+        "from_bytes": 30453381,
+        "unused": 0.1478,
+        "charts_mask": true
+      },
+      {
+        "file": "lm1.bc6h.ktx2",
+        "from": "lm1.ktx2",
+        "bytes": 6694360,
+        "from_bytes": 18099351,
+        "unused": 0.1674,
+        "charts_mask": true
+      },
+      {
+        "file": "lm2.bc6h.ktx2",
+        "from": "lm2.ktx2",
+        "bytes": 10584321,
+        "from_bytes": 29797308,
+        "unused": 0.1928,
+        "charts_mask": true
+      },
+      {
+        "file": "lm3.bc6h.ktx2",
+        "from": "lm3.ktx2",
+        "bytes": 4223930,
+        "from_bytes": 11298715,
+        "unused": 0.4285,
+        "charts_mask": true
+      }
+    ],
+    "bytes": 31373789,
+    "from_bytes": 89648755,
+    "metrics": {
+      "about": "lo decodificado contra el original, texel a texel en lo que cubre cada carta (o en el rectángulo de cada lote sin el EXR del bake), con la mediana de la luminancia de cada clase en el gris de 18 %: `ev`, |log2| del cociente de las luminancias en EV en los texels que muestra el AgX del motor (log2 entre −10 y +6,5 con el gris en 0,18), sin cortar en el blanco, y `over_<t>` la parte a más de t EV; |ΔL*| y ΔE76 con cada canal hasta 1 (el blanco: no ve el error de las luces altas); `blocks_over_0.5`, la parte de los bloques de 4 × 4 con algún texel a más de 0,5 EV. La nave es `interior`.",
+      "interior": {
+        "texels": 40828222,
+        "dL": 0.011,
+        "absdL": 0.069,
+        "absdL_p99": 1.25,
+        "absdL_p999": 5.35,
+        "absdL_max": 54.073,
+        "dE": 0.247,
+        "ev": {
+          "texels": 17623816,
+          "mean": 0.035,
+          "p99": 0.45,
+          "p999": 1.14,
+          "max": 6.777,
+          "over_0.1": 0.09707,
+          "over_0.25": 0.03003,
+          "over_0.5": 0.00769,
+          "over_1": 0.0014
+        },
+        "blocks": 1374373,
+        "blocks_over_0.5": 0.04589
+      },
+      "exterior": {
+        "texels": 153173,
+        "dL": 0.003,
+        "absdL": 0.102,
+        "absdL_p99": 1.6,
+        "absdL_p999": 6.35,
+        "absdL_max": 22.673,
+        "dE": 0.336,
+        "ev": {
+          "texels": 95726,
+          "mean": 0.024,
+          "p99": 0.43,
+          "p999": 1.17,
+          "max": 2.564,
+          "over_0.1": 0.04946,
+          "over_0.25": 0.01992,
+          "over_0.5": 0.00761,
+          "over_1": 0.00162
+        },
+        "blocks": 17946,
+        "blocks_over_0.5": 0.02051
+      },
+      "all": {
+        "texels": 40981395,
+        "dL": 0.011,
+        "absdL": 0.069,
+        "absdL_p99": 1.25,
+        "absdL_p999": 5.35,
+        "absdL_max": 54.073,
+        "dE": 0.247,
+        "ev": {
+          "texels": 17719542,
+          "mean": 0.035,
+          "p99": 0.45,
+          "p999": 1.14,
+          "max": 6.777,
+          "over_0.1": 0.09681,
+          "over_0.25": 0.02997,
+          "over_0.5": 0.00769,
+          "over_1": 0.0014
+        },
+        "blocks": 1392319,
+        "blocks_over_0.5": 0.04556
+      },
+      "reference_luma": {
+        "interior": 0.03633337467908859,
+        "exterior": 1.9301296472549438
+      }
+    },
+    "generated_s": 28.9
+  }
+}

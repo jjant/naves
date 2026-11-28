@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#16324F"><meta name="robots" content="noindex"><title>Checklist de visita de las naves · Snowpark Barcelona</title>
+<link rel="icon" href="../brand/icon.png"><style>:root{--night:#16324F;--pink:#DF0763;--yellow:#FFE53D;--paper:#f5f4ee;--ink:#152535;--muted:#536171;--line:#d4d5cf;--red:#c0262d;--green:#12604a}
+*{box-sizing:border-box} html{-webkit-text-size-adjust:100%} body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--night);color:#fff;padding:14px max(14px,4vw) 16px} header a{color:var(--yellow)}
+.brand{display:flex;align-items:center;gap:8px;font-weight:800;letter-spacing:-.02em;font-size:13px} .brand img{width:26px;height:26px}
+h1{font-size:clamp(24px,5vw,38px);line-height:1.05;letter-spacing:-.03em;margin:10px 0 4px} header p{margin:2px 0;color:#cdd8e2;font-size:14px}
+.tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px} .tools a,.tools button{font:inherit;font-size:13px;color:var(--ink);background:var(--yellow);border:0;border-radius:999px;padding:6px 12px;text-decoration:none;cursor:pointer;font-weight:650}
+.tools a.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+main{max-width:980px;margin:auto;padding:12px max(12px,3vw) 50px} section{margin:22px 0}
+h2{font-size:19px;letter-spacing:-.02em;margin:0 0 8px;color:var(--night)} h2 small{font-weight:500;color:var(--muted);font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0} .chip{font-size:12px;border-radius:999px;padding:2px 9px;background:#ecebe4;color:var(--ink)}
+.chip.falla{background:#fbd9da;color:#8d1015} .chip.abierta{background:#fff1bf;color:#6b4f00} .chip.margen{background:#d7f0e3;color:var(--green)}
+.plan{background:#fff;border:1px solid var(--line);border-radius:10px;padding:4px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.plan svg{display:block;min-width:560px} .layers{display:flex;flex-wrap:wrap;gap:10px;font-size:13px;margin:6px 0} .layers label{display:flex;gap:4px;align-items:center}
+.plan.no-go .go,.plan.no-obra .obra,.plan.no-medir .medir,.plan.no-circ .circ{display:none}
+.legend{font-size:12px;color:var(--muted);margin:4px 0 0}
+ol.items{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.item{background:#fffefa;border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;break-inside:avoid}
+.item.falla{border-left:5px solid var(--red)} .item.abierta{border-left:5px solid #e2b400} .item.margen{border-left:5px solid #2f9e6f}
+.item>:not(.num){grid-column:2;min-width:0} .num{grid-column:1;grid-row:1;align-self:start;font:700 14px/1 system-ui;color:#fff;background:var(--pink);border-radius:999px;min-width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:0;cursor:pointer;padding:0 6px}
+.go .num{background:var(--night);border-radius:7px} .circ .num{background:#6b7480;font-size:12px} .obra .num{background:#8a4b00;font-size:12px}
+.head{font-weight:650} .head .chip{white-space:nowrap} .head input[type=checkbox]{width:18px;height:18px;vertical-align:-3px;margin:0 6px 0 0}
+.meta{font-size:13px;color:var(--muted)} .more{font-size:13px;color:#3d4a57;margin:2px 0 0} .more p{margin:3px 0}
+.field{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted);flex-wrap:wrap} .field input,.field textarea{flex:1 1 160px;min-width:0;font:inherit;font-size:15px;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:#fff} .field textarea{flex-basis:100%;min-height:64px}
+.decide{font-size:14px} .decide b{color:var(--night)} .why{font-size:12px;color:var(--muted)}
+.changed{font-size:12px;color:#8d1015;background:#fbd9da;border-radius:6px;padding:3px 8px}
+details{font-size:13px;color:#3d4a57} details summary{cursor:pointer;color:var(--night);font-weight:600}
+ul.list{margin:4px 0;padding-left:18px;font-size:13px} ul.photos{list-style:none;padding:0;margin:0;display:grid;gap:6px} ul.photos li{background:#fffefa;border:1px solid var(--line);border-radius:8px;padding:8px 10px;display:flex;gap:8px;align-items:flex-start;break-inside:avoid}
+ul.photos input{width:18px;height:18px;flex:none;margin-top:2px}
+.lphotos{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin-top:8px} .lphotos figure{margin:0} .lphotos img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:6px;display:block;background:#dfe5ea} .lphotos figcaption{font-size:11px;color:var(--muted)}
+textarea{width:100%;min-height:110px;font:inherit;padding:8px;border:1px solid var(--line);border-radius:8px;background:#fff}
+table.rank{width:100%;border-collapse:collapse;background:#fffefa;border:1px solid var(--line);font-size:14px} table.rank th,table.rank td{padding:8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top} table.rank th{background:#ecebe4;font-size:12px}
+table.rank a{color:var(--night);font-weight:700} .pos{font-weight:800;font-size:18px;color:var(--night)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:10px 14px 30px}
+@media (max-width:640px){table.rank thead{display:none} table.rank tr{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;border-bottom:1px solid var(--line);padding:8px} table.rank td{border:0;padding:0} table.rank td.pos{grid-row:span 3} table.rank td.wide{grid-column:2}}
+@media print{body{background:#fff;font-size:11pt} header{background:none;color:#000;padding:0 0 6px;border-bottom:2px solid #000} header p{color:#000} header a{color:#000} .brand img{display:none}
+ .tools,.layers,.noprint{display:none!important} main{max-width:none;padding:0} section{margin:12px 0} .plan{border:0;padding:0;overflow:visible} .plan svg{min-width:0}
+ .item{border:1px solid #999;padding:6px 8px} .num{-webkit-print-color-adjust:exact;print-color-adjust:exact} .chip,.mk circle{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .field input{border:0;border-bottom:1px solid #000;border-radius:0} textarea{min-height:60mm;border:1px solid #999} .field textarea{min-height:16mm}
+ details{font-size:9pt} details summary{font-weight:600}
+ details::details-content{content-visibility:visible;display:block}
+ h2{break-after:avoid} #plano{break-after:page} a[href]{text-decoration:none}}</style></head>
+<body>
+<header><div class="brand"><img src="../brand/icon.png" alt="">SNOWPARK BARCELONA</div><h1>Checklist de visita de las naves</h1><p>Ordenadas por lo que la visita tiene que decidir: primero las que tienen menos condiciones go/no-go que ya no entran con lo estimado (rojo), después las que tienen menos abiertas (amarillo), después menos cosas que medir y, a igualdad, el ranking de siempre. Cada nave tiene su lista para imprimir o llevar en el móvil.</p>
+<div class="tools"><a href="../">‹ Las naves</a></div></header>
+<main><table class="rank"><thead><tr><th>#</th><th>Nave</th><th>Go/no-go abiertas</th><th>En la visita</th></tr></thead><tbody><tr><td class="pos">1</td><td><a href="lesfranqueses-corro.html">Corró d’Avall · planta de 537 m²</a><div class="meta">Les Franqueses del Vallès · ranking 9</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">B. Largo libre para la pista</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Que sea la nave del anuncio</span></div></td>
+<td class="wide meta">6 que medir · 0 de circulación · <a href="../sim.html?id=lesfranqueses-corro">3D</a></td></tr>
+<tr><td class="pos">2</td><td><a href="granland-895.html">Granland · nave 15</a><div class="meta">Badalona · ranking 17</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">B. Largo libre para la pista</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Estructura, cubierta e instalaciones</span></div></td>
+<td class="wide meta">3 de obra · 11 que medir · 1 de circulación · <a href="../sim.html?id=granland-895">3D</a></td></tr>
+<tr><td class="pos">3</td><td><a href="abrera-franklin.html">Abrera · Franklin 3351</a><div class="meta">Abrera · ranking 2</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">A. Altura libre sobre la plataforma</span><span class="chip abierta">D. Escaleras: peldaños, ancho y tramos</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Estructura, cubierta e instalaciones</span></div></td>
+<td class="wide meta">12 que medir · 0 de circulación · <a href="../sim.html?id=abrera-franklin">3D</a></td></tr>
+<tr><td class="pos">4</td><td><a href="comelles-881.html">Can Comelles · Premsa 22</a><div class="meta">Esparreguera · ranking 5</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">A. Altura libre sobre la plataforma</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">D. Escaleras: peldaños, ancho y tramos</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Estructura, cubierta e instalaciones</span></div></td>
+<td class="wide meta">2 de obra · 5 que medir · 0 de circulación · <a href="../sim.html?id=comelles-881">3D</a></td></tr>
+<tr><td class="pos">5</td><td><a href="montcada-molibisbe782.html">Molí d’en Bisbe · planta de 782 m²</a><div class="meta">Montcada i Reixac · ranking 6</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">A. Altura libre sobre la plataforma</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">D. Escaleras: peldaños, ancho y tramos</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Estructura, cubierta e instalaciones</span></div></td>
+<td class="wide meta">2 de obra · 5 que medir · 2 de circulación · <a href="../sim.html?id=montcada-molibisbe782">3D</a></td></tr>
+<tr><td class="pos">6</td><td><a href="sabadell-canfeu.html">Can Feu · Masachs</a><div class="meta">Sabadell · ranking 15</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">B. Largo libre para la pista</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">D. Escaleras: peldaños, ancho y tramos</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Ancho interior</span></div></td>
+<td class="wide meta">3 de obra · 5 que medir · 1 de circulación · <a href="../sim.html?id=sabadell-canfeu">3D</a></td></tr>
+<tr><td class="pos">7</td><td><a href="sabadell-hermetica.html">Zona Hermética (nave tipo B)</a><div class="meta">Sabadell · ranking 10</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">D. Escaleras: peldaños, ancho y tramos</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Ancho interior</span><span class="chip abierta">G. Estructura, cubierta e instalaciones</span></div></td>
+<td class="wide meta">3 de obra · 6 que medir · 1 de circulación · <a href="../sim.html?id=sabadell-hermetica">3D</a></td></tr>
+<tr><td class="pos">8</td><td><a href="terrassa-canpalet.html">Can Palet · Masachs</a><div class="meta">Terrassa · ranking 8</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">A. Altura libre sobre la plataforma</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">D. Escaleras: peldaños, ancho y tramos</span><span class="chip abierta">F. Ancho interior</span><span class="chip abierta">G. Estructura, cubierta e instalaciones</span></div></td>
+<td class="wide meta">2 de obra · 7 que medir · 0 de circulación · <a href="../sim.html?id=terrassa-canpalet">3D</a></td></tr>
+<tr><td class="pos">9</td><td><a href="despi.html">Sant Joan Despí · INVERTICA</a><div class="meta">Sant Joan Despí · ranking 13</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">A. Altura libre sobre la plataforma</span><span class="chip abierta">B. Largo libre para la pista</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">D. Escaleras: peldaños, ancho y tramos</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span></div></td>
+<td class="wide meta">3 de obra · 8 que medir · 0 de circulación · <a href="../sim.html?id=despi">3D</a></td></tr>
+<tr><td class="pos">10</td><td><a href="ripollet-canmasachs.html">Can Masachs</a><div class="meta">Ripollet · ranking 3</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">B. Largo libre para la pista</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">D. Escaleras: peldaños, ancho y tramos</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Ancho interior</span></div></td>
+<td class="wide meta">2 de obra · 9 que medir · 1 de circulación · <a href="../sim.html?id=ripollet-canmasachs">3D</a></td></tr>
+<tr><td class="pos">11</td><td><a href="rubi-schumann.html">Compositor Schumann 10</a><div class="meta">Rubí · ranking 14</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">A. Altura libre sobre la plataforma</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">D. Escaleras: peldaños, ancho y tramos</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Estructura, cubierta e instalaciones</span></div></td>
+<td class="wide meta">2 de obra · 10 que medir · 1 de circulación · <a href="../sim.html?id=rubi-schumann">3D</a></td></tr>
+<tr><td class="pos">12</td><td><a href="barbera-santamaria.html">Polígono Santa Maria</a><div class="meta">Barberà del Vallès · ranking 16</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">A. Altura libre sobre la plataforma</span><span class="chip abierta">B. Largo libre para la pista</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Ancho interior</span><span class="chip abierta">G. Estructura, cubierta e instalaciones</span></div></td>
+<td class="wide meta">1 de obra · 3 que medir · 1 de circulación · <a href="../sim.html?id=barbera-santamaria">3D</a></td></tr>
+<tr><td class="pos">13</td><td><a href="vilassar-serrapons.html">Serra d’en Pons</a><div class="meta">Vilassar de Dalt · ranking 7</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">A. Altura libre sobre la plataforma</span><span class="chip abierta">B. Largo libre para la pista</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Que sea la nave del anuncio</span><span class="chip abierta">G. Ancho interior</span></div></td>
+<td class="wide meta">1 de obra · 6 que medir · 2 de circulación · <a href="../sim.html?id=vilassar-serrapons">3D</a></td></tr>
+<tr><td class="pos">14</td><td><a href="perpetua.html">Santa Perpètua</a><div class="meta">Santa Perpètua de Mogoda · ranking 4</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">A. Altura libre sobre la plataforma</span><span class="chip abierta">B. Largo libre para la pista</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Que sea la nave del anuncio</span><span class="chip abierta">G. Ancho interior</span></div></td>
+<td class="wide meta">2 de obra · 7 que medir · 0 de circulación · <a href="../sim.html?id=perpetua">3D</a></td></tr>
+<tr><td class="pos">15</td><td><a href="montcada-molibisbe663.html">Molí d’en Bisbe · planta de 663 m²</a><div class="meta">Montcada i Reixac · ranking 11</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">B. Largo libre para la pista</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">D. Escaleras: peldaños, ancho y tramos</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Ancho interior</span><span class="chip abierta">G. Estructura, cubierta e instalaciones</span></div></td>
+<td class="wide meta">2 de obra · 11 que medir · 0 de circulación · <a href="../sim.html?id=montcada-molibisbe663">3D</a></td></tr>
+<tr><td class="pos">16</td><td><a href="barbera-marconi.html">Marconi 23</a><div class="meta">Barberà del Vallès · ranking 12</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">A. Altura libre sobre la plataforma</span><span class="chip abierta">B. Largo libre para la pista</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">D. Escaleras: peldaños, ancho y tramos</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Que sea la nave del anuncio</span></div></td>
+<td class="wide meta">1 de obra · 11 que medir · 0 de circulación · <a href="../sim.html?id=barbera-marconi">3D</a></td></tr>
+<tr><td class="pos">17</td><td><a href="montigala.html">Montigalà</a><div class="meta">Badalona · ranking 1</div></td>
+<td class="wide"><div class="chips"><span class="chip abierta">B. Largo libre para la pista</span><span class="chip abierta">C. Salidas y evacuación</span><span class="chip abierta">D. Escaleras: peldaños, ancho y tramos</span><span class="chip abierta">E. Pilares en la pista, su franja o el retorno</span><span class="chip abierta">F. Que sea la nave del anuncio</span><span class="chip abierta">G. Estructura, cubierta e instalaciones</span></div></td>
+<td class="wide meta">3 de obra · 12 que medir · 0 de circulación · <a href="../sim.html?id=montigala">3D</a></td></tr></tbody></table></main>
+<footer>Sale de las notas del layout (cada «medir en la visita» y los riesgos), de su geometría, de lo que la propuesta abre o cambia en la nave (lo «proposed» y cada «obra necesaria») y del chequeo de circulación del núcleo (reglas del CTE de PROGRAMA §5). Las cotas x/z son las del plano, en metros, desde la esquina marcada con los ejes.</footer>
+
+</body></html>

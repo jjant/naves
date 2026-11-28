@@ -1,0 +1,147 @@
+/* Editor de naves (editor.html): lo comparten el dibujo (js/editor/draw*.js) y el panel del park (js/editor/park*.js). */
+:root {
+  --night: #16324f; --pink: #df0763; --yellow: #ffe53d; --paper: #f5f4ee; --ink: #152535; --muted: #5d6b79;
+  --line: #d9d6cc; --panel: #fbfaf6; --err: #c0262d; --warn: #9a6a00; --ok: #227a43; --sel: #df0763;
+  --park-w: 380px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--paper); color: var(--ink);
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+button, input, select { font: inherit; color: inherit; }
+button { background: #fff; border: 1px solid var(--line); border-radius: 7px; padding: 5px 10px; cursor: pointer; white-space: nowrap; }
+button:hover { border-color: var(--night); }
+button.on, button.primary { background: var(--night); border-color: var(--night); color: #fff; }
+button:disabled { opacity: .45; cursor: default; }
+input, select { border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px; background: #fff; min-width: 0; }
+input:focus, select:focus { outline: 2px solid #9fc1e3; outline-offset: -1px; }
+.muted { color: var(--muted); }
+
+.top { height: 46px; display: flex; align-items: center; gap: 6px; padding: 0 10px; background: var(--night); color: #fff; }
+.top button { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.22); color: #fff; }
+.top button:hover { border-color: #fff; }
+.top .brand { display: flex; align-items: center; gap: 8px; color: #fff; text-decoration: none; font-weight: 650; margin-right: 6px; }
+.top .brand img { width: 26px; height: 26px; }
+.top .name { width: 260px; background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.22); color: #fff; font-weight: 600; }
+.top .gap { flex: 1; }
+.top .saved { color: #b9c7d6; font-size: 12px; min-width: 150px; text-align: right; }
+.menu { position: relative; }
+.pop { position: absolute; top: 34px; left: 0; z-index: 30; background: #fff; color: var(--ink); border: 1px solid var(--line);
+  border-radius: 9px; box-shadow: 0 12px 30px rgba(0,0,0,.22); padding: 6px; width: 340px; max-height: 70vh; overflow: auto; }
+.pop button { display: block; width: 100%; text-align: left; border: 0; background: none; color: var(--ink); padding: 6px 8px; }
+.pop button:hover { background: #eef2f6; }
+.pop .sep { margin: 6px 8px 2px; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.pop button small { color: var(--muted); margin-left: 6px; }
+
+.main { position: absolute; inset: 46px 0 0 0; display: grid; grid-template-columns: 52px 300px 1fr var(--park-w); }
+#tools { display: flex; flex-direction: column; gap: 4px; padding: 8px 6px; background: #eceae2; border-right: 1px solid var(--line); }
+#tools button { width: 40px; height: 40px; padding: 0; font-size: 17px; line-height: 1; position: relative; }
+#tools button small { position: absolute; right: 3px; bottom: 2px; font-size: 9px; color: var(--muted); }
+#tools button.on small { color: #cfd9e4; }
+#tools .gap { flex: 1; }
+.panel { background: var(--panel); border-right: 1px solid var(--line); overflow: auto; min-width: 0; }
+#parkPanel { border-right: 0; border-left: 1px solid var(--line); }
+
+#inspector { padding: 10px 12px 30px; }
+#inspector h3 { margin: 14px 0 6px; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--night); }
+#inspector h3:first-child { margin-top: 2px; }
+#inspector .row { display: grid; grid-template-columns: 112px minmax(0, 1fr); align-items: center; gap: 6px; margin: 4px 0; }
+#inspector .row > span:first-child { color: var(--muted); }
+#inspector .row input, #inspector .row select { width: 100%; }
+/* dos campos lado a lado (x · z, ancho · fondo): la etiqueta arriba, así cada campo tiene la mitad del panel */
+#inspector .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 8px; }
+#inspector .pair .row { grid-template-columns: minmax(0, 1fr); gap: 1px; margin: 3px 0; }
+#inspector .pair .row > span:first-child { font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#inspector .unit { position: relative; }
+#inspector .unit input { padding-right: 22px; }
+#inspector .unit::after { content: attr(data-unit); position: absolute; right: 7px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 11px; pointer-events: none; }
+#inspector .buttons { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+#inspector .note { color: var(--muted); font-size: 12px; margin: 4px 0; }
+#inspector .bad { border-color: var(--err); background: #fff4f4; }
+#inspector .issue { font-size: 12px; margin: 3px 0; padding: 4px 7px; border-radius: 6px; cursor: pointer; }
+#inspector .issue.error { background: #fde9ea; color: #8a1419; }
+#inspector .issue.warning { background: #fff3c4; color: #6b4a00; }
+#inspector .issue.info { background: #e8f1f8; color: #24496b; }
+#inspector .issue b { font-weight: 650; }
+#inspector .stat { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; }
+#inspector .kind { display: flex; flex-wrap: wrap; gap: 4px; }
+#inspector .kind button { padding: 3px 8px; font-size: 12px; }
+#inspector .danger { color: var(--err); }
+#inspector details { margin: 6px 0; }
+#inspector summary { cursor: pointer; color: var(--night); font-weight: 600; }
+
+#canvas { position: relative; overflow: hidden; background: #f1efe7; }
+#plan { position: absolute; inset: 0; width: 100%; height: 100%; display: block; outline: none; touch-action: none; user-select: none; -webkit-user-select: none; }
+#plan.pan { cursor: grab; } #plan.panning { cursor: grabbing; }
+#plan.crosshair { cursor: crosshair; }
+#plan.move { cursor: move; }
+#plan text { font-family: system-ui, -apple-system, sans-serif; }
+#hud { position: absolute; left: 10px; bottom: 8px; display: flex; gap: 14px; font: 12px/1.3 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--muted); pointer-events: none; }
+#snapBar { position: absolute; left: 10px; top: 8px; display: flex; gap: 10px; align-items: center; background: rgba(251,250,246,.92); border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px; font-size: 12px; }
+#snapBar label { display: flex; gap: 4px; align-items: center; }
+#snapBar [hidden] { display: none; }
+#snapBar select { padding: 1px 4px; }
+#hint { position: absolute; left: 10px; top: 46px; max-width: calc(100% - 20px); background: var(--night); color: #fff; padding: 5px 11px; border-radius: 8px; font-size: 12.5px; box-shadow: 0 4px 12px rgba(0,0,0,.16); pointer-events: none; }
+#hint:empty { display: none; }
+#typeBox { position: absolute; z-index: 5; background: var(--night); color: #fff; padding: 3px 8px; border-radius: 6px; font: 600 13px/1.3 ui-monospace, Menlo, monospace; pointer-events: none; }
+#toast { position: absolute; pointer-events: none; left: 50%; bottom: 18px; transform: translateX(-50%); background: var(--night); color: #fff; padding: 7px 14px; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+
+dialog { border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; box-shadow: 0 20px 50px rgba(0,0,0,.3); color: var(--ink); }
+dialog h3 { margin: 0 0 10px; }
+dialog label { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
+dialog label input:not([type=checkbox]) { width: 90px; }
+dialog menu { display: flex; justify-content: flex-end; gap: 8px; margin: 14px 0 0; padding: 0; }
+dialog table { border-collapse: collapse; font-size: 13px; }
+dialog td { padding: 4px 10px 4px 0; vertical-align: top; border-bottom: 1px solid #eee; }
+dialog td:first-child { white-space: nowrap; font-weight: 600; }
+
+/* el plano (js/editor/draw.js): en #world los trazos no se escalan con el zoom; #uiLayer va en píxeles */
+#gridLayer .gminor { stroke: #e4e1d6; stroke-width: 1px; fill: none; }
+#gridLayer .gmajor { stroke: #cdc8b8; stroke-width: 1px; fill: none; }
+#gridLayer .gscale { font-size: 11px; fill: #8a8f96; text-anchor: end; }
+#floorLayer .floor { fill: rgba(255,255,255,.72); }
+/* con el plano de fondo a la vista (js/editor/draw.js): el suelo no lo lava y el park se aclara encima, más con una
+   herramienta de dibujo puesta (P, D, C, M, E, B), para calcar huecos, pilares, altillos y escaleras */
+#plan.bg-on #floorLayer .floor { fill: none; }
+#plan.bg-on #parkLayer { opacity: .55; }
+#plan.bg-on.drawing #parkLayer { opacity: .28; }
+#snapBar kbd { font: 10px/1 ui-monospace, Menlo, monospace; color: var(--muted); border: 1px solid var(--line); border-radius: 3px; padding: 1px 3px; }
+#shellLayer * { vector-effect: non-scaling-stroke; }
+#shellLayer .walls { fill: none; stroke: #1d2a36; stroke-width: 3.5px; stroke-linejoin: miter; }
+#shellLayer .street { stroke: var(--pink); stroke-width: 2px; stroke-dasharray: 8 5; }
+#shellLayer .gap { stroke: #f1efe7; stroke-width: 6px; }
+#shellLayer .op { stroke-width: 4px; }
+#shellLayer .leaf { fill: none; stroke-width: 1.4px; }
+#shellLayer .sect { fill: rgba(199,106,0,.12); stroke-width: 1.2px; stroke-dasharray: 4 3; }
+#shellLayer .roll { fill: rgba(168,80,26,.12); stroke-width: 1.2px; stroke-dasharray: 2 2; }
+#shellLayer .win { stroke-width: 1.5px; }
+#shellLayer .col { fill: #39434e; stroke: none; }
+#shellLayer .mcol { fill: #6b7480; }
+#shellLayer .mezz { fill: url(#hatchMezz); stroke: #2f3b47; stroke-width: 2px; stroke-dasharray: 7 4; }
+#shellLayer .stairs { fill: rgba(255,255,255,.85); stroke: #2f3b47; stroke-width: 1.6px; }
+#shellLayer .tread { stroke: #8792a0; stroke-width: 1px; fill: none; }
+#shellLayer .arrow { stroke: #1d2a36; stroke-width: 1.6px; fill: none; }
+#shellLayer .block { fill: #e1e6ea; stroke: #8792a0; stroke-width: 1.2px; }
+#shellLayer .ro { fill: none; stroke-width: 1px; stroke-dasharray: 3 3; }
+#shellLayer .plat { stroke: #3b6fb6; }
+#shellLayer .crane { stroke: #d39b00; }
+#shellLayer .ghost { opacity: .5; }
+#uiLayer text { text-anchor: middle; dominant-baseline: middle; }
+#uiLayer .elen { font-size: 11px; fill: #1d2a36; }
+#uiLayer .eidx { font-size: 10px; fill: #8a93a0; }
+#uiLayer .vh { fill: #fff; stroke: #1d2a36; stroke-width: 1.5px; }
+#uiLayer .vh.on { fill: var(--sel); stroke: var(--sel); }
+#uiLayer .rh { fill: #fff; stroke: var(--sel); stroke-width: 1.5px; }
+#uiLayer .selline { stroke: var(--sel); stroke-width: 5px; stroke-linecap: round; opacity: .6; }
+#uiLayer .selrect { fill: none; stroke: var(--sel); stroke-width: 2px; }
+#uiLayer .ghostline { stroke: var(--night); stroke-width: 5px; opacity: .3; stroke-linecap: round; }
+#uiLayer .dim { font-size: 11px; fill: #55606c; paint-order: stroke; stroke: #f5f4ee; stroke-width: 3px; }
+#uiLayer .dim.strong { fill: var(--night); font-weight: 650; }
+#uiLayer .tag { font-size: 11px; fill: #34404c; paint-order: stroke; stroke: rgba(255,255,255,.85); stroke-width: 3px; }
+#uiLayer .guide { stroke: var(--sel); stroke-width: 1px; stroke-dasharray: 4 4; opacity: .6; }
+#uiLayer .draft { fill: none; stroke: var(--sel); stroke-width: 2px; }
+#uiLayer .dpt { fill: #fff; stroke: var(--sel); stroke-width: 1.5px; }
+#uiLayer .dfirst { fill: var(--sel); stroke: #fff; stroke-width: 1.5px; }
+#uiLayer .draftrect { fill: rgba(223,7,99,.08); stroke: var(--sel); stroke-width: 1.5px; stroke-dasharray: 5 4; }
+#uiLayer .cursor { fill: var(--sel); }
+#uiLayer .calib { stroke: #139fb5; stroke-width: 2px; stroke-dasharray: 6 3; }
+#uiLayer .calibpt { fill: #139fb5; stroke: #fff; stroke-width: 1.5px; }

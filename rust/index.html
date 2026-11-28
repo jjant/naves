@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Simulador 3D · Snowpark Barcelona</title>
+<meta name="robots" content="noindex">
+<script>
+  // rust/?nave=<id>&view=<vista>&people=0 → sim.html?id=<id>&view=<vista>&people=0
+  const q = new URLSearchParams(location.search), to = new URLSearchParams();
+  const id = q.get('nave') || q.get('id') || '';
+  if (/^[a-z0-9-]+$/.test(id)) to.set('id', id);
+  for (const k of ['view', 'people', 'fps']) if (q.get(k)) to.set(k, q.get(k));
+  location.replace('../sim.html' + (String(to) ? '?' + to : ''));
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=../sim.html"></noscript>
+</head><body><p><a href="../sim.html">Ir al simulador 3D</a></p></body></html>

@@ -1,0 +1,125 @@
+/* El panel del park de editor.html (js/editor/park*.js) y lo que dibuja en el plano (#parkLayer): aparte de editor.css
+   (el dibujo) para que los dos lados no se pisen. Usa sus variables (--night, --pink, --line, --err, --warn…). */
+.park-panel { padding: 10px 12px 40px; display: flex; flex-direction: column; gap: 8px; }
+/* el panel se desplaza entero: sin esto, con muchos avisos el plano del panel se encoge hasta desaparecer */
+.park-panel > * { flex-shrink: 0; }
+.park-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.park-head h2 { margin: 0; font-size: 15px; letter-spacing: -.01em; color: var(--night); }
+.park-status { font-size: 12px; color: var(--muted); text-align: right; }
+.park-status[data-kind="busy"]::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 6px; border-radius: 50%;
+  background: var(--pink); animation: park-pulse 1s ease-in-out infinite alternate; }
+.park-status[data-kind="error"] { color: var(--err); }
+@keyframes park-pulse { from { opacity: .25; } to { opacity: 1; } }
+.park-options { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; background: #f1efe7; border: 1px solid var(--line); border-radius: 8px; padding: 8px; }
+.park-options label { display: flex; flex-direction: column; gap: 2px; font-size: 12px; color: var(--muted); }
+.park-options label.park-check { flex-direction: row; align-items: center; gap: 6px; color: var(--ink); }
+.park-options input[type="number"] { width: 6em; }
+.park-summary { margin: 0; font-size: 12px; color: var(--ink); }
+.park-summary[data-kind="error"] { color: var(--err); background: #fde9ea; padding: 6px 8px; border-radius: 6px; }
+.park-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.park-actions button:first-child { background: var(--pink); border-color: var(--pink); color: #fff; font-weight: 600; }
+.park-actions button:first-child:disabled { background: #fff; color: inherit; border-color: var(--line); }
+.park-plan { width: 100%; height: 300px; background: #fff; border: 1px solid var(--line); border-radius: 8px; }
+.park-h3 { margin: 6px 0 0; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--night); }
+.park-h3 small { text-transform: none; letter-spacing: 0; color: var(--muted); font-weight: 400; }
+.park-issues { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.park-issues li { display: grid; grid-template-columns: 16px 1fr auto; gap: 6px; align-items: start; font-size: 12px; padding: 5px 7px; border-radius: 6px; }
+.park-issues li[data-row] { cursor: pointer; }
+.park-issues .park-error { background: #fde9ea; color: #8a1419; }
+.park-issues .park-warning { background: #fff3c4; color: #5e4100; }
+.park-issues .park-ok { background: #e3f3e8; color: var(--ok); display: block; }
+.park-issues .park-tag { font-size: 10px; text-transform: uppercase; letter-spacing: .04em; opacity: .75; }
+.park-go { padding: 1px 7px; font-size: 11px; }
+.park-muted { color: var(--muted); font-size: 12px; }
+
+/* lo que el panel dibuja en los planos (metros de la nave: el texto en metros, los trazos en píxeles) */
+.park-overlay text, .park-ghost text { text-anchor: middle; dominant-baseline: middle; fill: #1d2a36; pointer-events: none; }
+.park-overlay text.w { fill: #fff; font-weight: 600; }
+/* los bordes, en píxeles (vector-effect: el ancho del atributo, en metros, no vale): se ven igual con cualquier zoom */
+.park-overlay .park-zone rect, .park-overlay .park-edge, .park-mark circle, .park-mark rect, .park-ghost polygon, .park-ghost rect { vector-effect: non-scaling-stroke; }
+.park-overlay .park-zone rect { stroke-width: 1px; }
+.park-overlay .park-edge { stroke-width: 1.5px; }
+.park-overlay .park-hit { pointer-events: none; }
+#parkLayer .park-overlay { opacity: .86; }
+#parkLayer { pointer-events: none; }
+.park-mark circle:first-of-type { stroke-width: 3px; animation: park-ping 1.1s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+.park-mark rect { stroke-width: 2.5px; }
+@keyframes park-ping { from { transform: scale(.4); opacity: 1; } to { transform: scale(1.6); opacity: 0; } }
+.park-ghost polygon, .park-ghost rect { stroke-width: 2px; }
+.park-ghost line { vector-effect: none; }
+.park-mark circle:last-of-type { stroke: none; }
+/* los huecos que agregó el generador (no son de la nave dibujada): rayados en el muro, con su nombre hacia adentro */
+.park-overlay .park-proposed-label { font-weight: 700; }
+
+/* «Cómo decide» */
+.park-plan[hidden] { display: none; }
+/* en el plano: las huellas de todas las candidatas, con el borde del color de su puntaje (rojo → verde), la que ganó
+   con un borde grueso y la que se mira con su escalera, su retorno y la flecha; el park, más tenue debajo */
+#parkLayer.park-explaining .park-overlay { opacity: .45; }
+.park-cands-plan rect { vector-effect: non-scaling-stroke; stroke-width: 1.5px; stroke-opacity: .75; }
+.park-cands-plan rect.park-cand-win { stroke: #13a34b; stroke-width: 4px; stroke-opacity: 1; }
+.park-stepper { position: sticky; top: -10px; z-index: 1; display: flex; gap: 6px; align-items: center; margin: -8px 0 4px;
+  padding: 8px 0 6px; background: var(--panel); border-bottom: 1px solid var(--line); }
+.park-stepper span { flex: 1; font-weight: 600; color: var(--night); }
+.park-stepper button { padding: 2px 9px; }
+.park-cand .park-terms-table { width: 100%; }
+.park-cand tr.park-up td:nth-child(2) { color: var(--ok); }
+.park-cand tr.park-down td:nth-child(2) { color: var(--err); }
+.park-explain tr.park-sub td { white-space: normal; text-align: left; color: var(--muted); font-size: 10.5px; padding-top: 0; }
+.park-explain tr.park-sub td:first-child { border-bottom: 1px solid #e6e3da; }
+.park-explain .park-packs tr:not(.park-sub) td { border-bottom: 0; }
+/* los nombres de los términos («la plataforma en el testero lejos de la entrada») son largos: en dos líneas si hace falta */
+.park-explain .park-terms-table td:first-child { white-space: normal; }
+.park-explain { border-top: 1px solid var(--line); padding-top: 8px; font-size: 12px; }
+.park-explain h3 { margin: 4px 0; font-size: 12px; color: var(--night); }
+.park-explain ol.park-steps { margin: 4px 0 8px; padding-left: 18px; }
+.park-explain ol.park-steps li { margin: 3px 0; }
+.park-explain table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.park-explain th, .park-explain td { text-align: right; padding: 3px 4px; border-bottom: 1px solid #e6e3da; white-space: nowrap; }
+.park-explain th:first-child, .park-explain td:first-child { text-align: left; }
+.park-explain tr[data-cand] { cursor: pointer; }
+.park-explain tr[data-cand]:hover { background: #eef2f6; }
+.park-explain tr.park-win { background: #e3f3e8; font-weight: 600; }
+.park-explain tr.park-dead { color: var(--muted); }
+.park-explain tr.park-shown { outline: 2px solid var(--pink); outline-offset: -2px; }
+.park-explain .park-terms { font-size: 11px; color: var(--muted); }
+.park-explain .park-bar { display: inline-block; height: 6px; border-radius: 3px; background: var(--pink); vertical-align: middle; }
+.park-explain .park-bar.neg { background: var(--err); }
+
+/* «Ver en 3D» */
+/* no modal (dialog.show()): abajo a la derecha del plano, al lado del panel del park, sin tapar el dibujo entero; se
+   agranda con el borde de abajo a la derecha (resize) o con «Agrandar» (todo el plano, sin el inspector ni el panel) */
+dialog.park-3d { position: fixed; inset: auto calc(var(--park-w) + 12px) 12px auto; margin: 0; z-index: 30;
+  width: min(720px, calc(100vw - var(--park-w) - 380px)); height: min(460px, 58vh); min-width: 320px; min-height: 220px;
+  resize: both; padding: 0; border: 1px solid #0c141c; border-radius: 12px; overflow: hidden; background: #1a222b; color: #fff;
+  box-shadow: 0 12px 40px rgba(10,16,22,.35); }
+dialog.park-3d.park-3d-big { inset: 58px calc(var(--park-w) + 12px) 12px 364px; width: auto; height: auto; resize: none; }
+dialog.park-3d:not([open]) { display: none; }
+.park-3d-bar { position: absolute; left: 0; right: 0; top: 0; z-index: 2; display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; padding: 8px 12px; background: rgba(16,28,42,.78); }
+.park-3d-bar span { min-width: 8em; }
+.park-3d-bar span { flex: 1; color: #c9d4de; font-size: 12px; }
+.park-3d-bar button { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.25); color: #fff; }
+.park-3d-bar label { display: flex; gap: 4px; align-items: center; font-size: 12px; }
+.park-3d-views { position: absolute; left: 12px; right: 12px; top: 48px; z-index: 2; display: flex; flex-wrap: wrap; gap: 6px; }
+.park-3d-views[hidden] { display: none; }
+.park-3d-views button { background: rgba(16,28,42,.78); border-color: rgba(255,255,255,.25); color: #fff; font-size: 12px; }
+.park-3d-stage { position: absolute; inset: 0; }
+.park-3d-stage canvas { width: 100%; height: 100%; display: block; }
+
+/* el park del cuadro (park-panel.js): uno de un plano anterior, mientras llega el de ahora, se ve más tenue. En un
+   arrastre, «siguiendo»: el park más nuevo que terminó de una posición del gesto, un poco más tenue que el de ahora y
+   menos que el de un plano anterior (un solo aspecto en todo el gesto: no titila), hasta que, suelto, llega el de la
+   posición final. Si ese es su P (del worker que sigue el dibujo o de la página), «sin confirmar» hasta que llega su
+   exacto: casi como el de ahora, porque a veces el exacto es otro park (con el mismo, solo cambia esta clase) */
+#parkLayer.park-stale .park-overlay { opacity: .38; }
+#parkLayer.park-following .park-overlay { opacity: .62; }
+#parkLayer.park-unconfirmed .park-overlay { opacity: .74; }
+.park-panel[data-walk="pending"] .park-h3 small { color: var(--warn, #8a6100); }
+/* la lista y el resumen son de un park anterior (en medio de un arrastre, hasta que la página se queda quieta) */
+.park-panel[data-stale="1"] .park-issues, .park-panel[data-stale="1"] .park-summary { opacity: .55; }
+
+/* editor.html?perf=1 (park-perf.js): lo que tarda cada cambio en verse, abajo a la izquierda del plano */
+.park-perf { position: absolute; left: 10px; bottom: 30px; margin: 0; padding: 6px 9px; max-width: calc(100% - 20px);
+  font: 11px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; color: #fff; background: rgba(22, 50, 79, .86);
+  border-radius: 6px; white-space: pre-wrap; pointer-events: none; z-index: 3; }
+.park-perf:empty { display: none; }

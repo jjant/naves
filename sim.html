@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#16324F">
+<title>Simulador 3D · Snowpark Barcelona</title>
+<link rel="icon" href="brand/icon.png">
+<!-- park3d (dist/ del paquete, solo los módulos que se alcanzan desde js/app.js): lo copia scripts/build.mjs, que agrega
+     acá lo que haga falta de three mientras la entrada `/plan` (la ficha) lo importe. El motor es el Rust de rust/pkg. -->
+<script type="importmap">{"imports":{"@snowpark-bcn/park3d":"./park3d/index.js","@snowpark-bcn/park3d/plan":"./park3d/plan.js"}}</script>
+<link rel="modulepreload" href="js/app.js">
+<link rel="modulepreload" href="js/fps-report.js">
+<link rel="modulepreload" href="js/fps.js">
+<link rel="modulepreload" href="js/layout-link.js">
+<link rel="modulepreload" href="js/pano.js">
+<link rel="modulepreload" href="js/sheet.js">
+<link rel="modulepreload" href="park3d/assets-pin.js">
+<link rel="modulepreload" href="park3d/autolayout.js">
+<link rel="modulepreload" href="park3d/cinema-overlay.js">
+<link rel="modulepreload" href="park3d/core.js">
+<link rel="modulepreload" href="park3d/index.js">
+<link rel="modulepreload" href="park3d/park-rust.js">
+<link rel="modulepreload" href="park3d/park.js">
+<link rel="modulepreload" href="park3d/program.js">
+<link rel="modulepreload" href="park3d/validate.js">
+<link rel="modulepreload" href="pkg/park3d_core.js">
+<link rel="preload" href="pkg/park3d_core_bg.wasm" as="fetch" type="application/wasm" crossorigin>
+<link rel="modulepreload" href="rust/pkg/park3d_web.js?park3d=1">
+<link rel="preload" href="rust/pkg/park3d_web_bg.wasm" as="fetch" type="application/wasm" crossorigin data-wasm-bytes="24189663">
+<link rel="preload" href="rust/assets/manifest.json" as="fetch" crossorigin>
+<link rel="preload" href="rust/assets/textures/manifest.json" as="fetch" crossorigin>
+<style>
+  :root { --night:#16324F; --pink:#DF0763; --yellow:#FFE53D; --paper:#f5f4ee; --ink:#152535; --glass:rgba(16,28,42,.72); }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; overflow:hidden; background:#1a222b; color:#fff; font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; -webkit-tap-highlight-color:transparent; }
+  #stage { position:fixed; inset:0; touch-action:none; }
+  #stage canvas { display:block; width:100%; height:100%; outline:none; }
+  .bar { position:fixed; left:0; right:0; display:flex; gap:8px; align-items:center; padding:10px max(12px, env(safe-area-inset-left)); pointer-events:none; z-index:5; }
+  .bar > * { pointer-events:auto; }
+  .top { top:0; padding-top:max(10px, env(safe-area-inset-top)); justify-content:space-between; }
+  .title { background:var(--glass); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); padding:8px 12px; border-radius:10px; display:flex; align-items:center; gap:10px; min-width:0; }
+  .title a { color:#fff; text-decoration:none; font-size:20px; line-height:1; opacity:.85; }
+  .title img { width:30px; height:30px; }
+  .title b { display:block; font-size:16px; letter-spacing:-.01em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .title small { display:block; color:#c9d4de; font-size:12px; }
+  .tools { display:flex; gap:6px; }
+  button { font:inherit; color:#fff; background:var(--glass); border:1px solid rgba(255,255,255,.18); border-radius:999px; padding:8px 13px; cursor:pointer; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); white-space:nowrap; }
+  button:hover { border-color:#fff; }
+  button.on { background:var(--pink); border-color:var(--pink); }
+  #mode { background:var(--yellow); color:var(--ink); border-color:var(--yellow); font-weight:650; }
+  .bottom { bottom:0; padding-bottom:max(12px, env(safe-area-inset-bottom)); }
+  #views { display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; padding:2px; max-width:100%; -webkit-overflow-scrolling:touch; }
+  #views::-webkit-scrollbar { display:none; }
+  #labels { position:fixed; inset:0; pointer-events:none; z-index:2; overflow:hidden; }
+  .tag { position:absolute; left:0; top:0; background:rgba(255,255,255,.92); color:var(--ink); padding:3px 8px; border-radius:6px; font-size:12px; white-space:nowrap; box-shadow:0 2px 8px rgba(0,0,0,.25); }
+  .tag::after { content:""; position:absolute; left:50%; bottom:-5px; width:8px; height:8px; background:inherit; transform:translateX(-50%) rotate(45deg); }
+  .tag small { display:block; color:#5a6775; font-size:10px; }
+  .tag.slope { background:var(--pink); color:#fff; } .tag.slope small { color:#ffd6e6; }
+  .tag.module { background:var(--yellow); }
+  .tag.existing { background:#dfe6ec; }
+  .tag.safety { background:#c0262d; color:#fff; font-size:10px; padding:2px 5px; }
+  #status { position:fixed; left:50%; top:50%; transform:translate(-50%,-50%); background:var(--glass); padding:14px 20px; border-radius:12px; z-index:10; min-width:min(320px, 80vw); text-align:center; }
+  #statusBar { height:4px; margin-top:10px; border-radius:2px; background:rgba(255,255,255,.18); overflow:hidden; }
+  #statusBar::after { content:""; display:block; height:100%; width:calc(var(--done, 0) * 100%); background:var(--yellow); transition:width .2s; }
+  #stream { position:fixed; right:max(12px, env(safe-area-inset-right)); top:calc(66px + env(safe-area-inset-top)); z-index:4; background:var(--glass); padding:5px 10px; border-radius:8px; font-size:12px; color:#dbe3ea; pointer-events:none; }
+  #viewPhoto { position:fixed; right:max(12px, env(safe-area-inset-right)); bottom:calc(62px + env(safe-area-inset-bottom)); z-index:6; background:var(--pink); border-color:var(--pink); font-weight:650; box-shadow:0 6px 18px rgba(223,7,99,.35); }
+  body.walking #hint { bottom:calc(110px + env(safe-area-inset-bottom)); }
+  #joy { position:fixed; left:max(22px, env(safe-area-inset-left)); bottom:calc(70px + env(safe-area-inset-bottom)); width:120px; height:120px; border-radius:50%; background:rgba(255,255,255,.14); border:2px solid rgba(255,255,255,.35); display:none; z-index:6; touch-action:none; }
+  #knob { position:absolute; left:35px; top:35px; width:50px; height:50px; border-radius:50%; background:rgba(255,255,255,.75); }
+  body.walking.touch #joy { display:block; }
+  #hint { position:fixed; right:14px; bottom:calc(64px + env(safe-area-inset-bottom)); background:var(--glass); padding:6px 10px; border-radius:8px; font-size:12px; color:#dbe3ea; display:none; z-index:4; }
+  body.walking #hint { display:block; }
+  #sheet { position:fixed; top:0; right:0; bottom:0; width:min(440px, 100%); background:var(--paper); color:var(--ink); z-index:20; transform:translateX(100%); transition:transform .25s; overflow:auto; padding:18px 20px 40px; box-shadow:-10px 0 30px rgba(0,0,0,.3); }
+  body.sheet-open #sheet { transform:none; }
+  #sheet h2 { margin:0 0 4px; font-size:22px; letter-spacing:-.02em; }
+  #sheet h3 { margin:18px 0 6px; font-size:14px; text-transform:uppercase; letter-spacing:.06em; color:var(--night); }
+  #sheet table { width:100%; border-collapse:collapse; font-size:13px; }
+  #sheet th, #sheet td { text-align:left; padding:5px 4px; border-bottom:1px solid #dcdad2; vertical-align:top; }
+  #sheet .kv th { width:38%; color:#536171; font-weight:600; }
+  #sheet td small { display:block; color:#7a8593; font-size:11px; }
+  #sheet ul { padding-left:18px; margin:4px 0; font-size:13px; }
+  #sheet li { margin:3px 0; }
+  #sheet .warn { background:#fff3c4; padding:8px 10px; border-radius:6px; font-size:13px; }
+  #sheet .small { color:#536171; font-size:12px; }
+  #sheet a { color:var(--night); }
+  #sheet .plan { background:#fff; border:1px solid #dcdad2; border-radius:8px; padding:4px; }
+  #sheet .visit { margin:2px 0 10px; } #sheet .visit a { display:inline-block; background:var(--yellow); color:var(--ink); font-weight:650; text-decoration:none; border-radius:999px; padding:5px 12px; margin-right:6px; }
+  #sheet .legend i { display:inline-block; width:10px; height:10px; margin:0 3px 0 8px; vertical-align:-1px; }
+  body.sheet-open #sheet { width:min(620px, 100%); }
+  #sheet .lphotos { display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:8px; }
+  #sheet .lphotos img { width:100%; aspect-ratio:3/2; object-fit:cover; border-radius:6px; display:block; }
+  #sheet .lphotos span { font-size:11px; color:#536171; display:block; padding-top:2px; }
+  #closeSheet { position:sticky; top:0; float:right; background:var(--night); }
+  #photos { position:fixed; inset:0; background:rgba(10,16,22,.94); z-index:30; overflow:auto; padding:60px 16px 30px; display:none; }
+  body.photos-open #photos { display:block; }
+  #photos .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:12px; max-width:1400px; margin:auto; }
+  #photos a { color:#fff; text-decoration:none; }
+  #photos img { width:100%; border-radius:8px; display:block; }
+  #photos span { display:block; padding:6px 2px; font-size:13px; color:#cbd5de; }
+  #photos .close { position:fixed; top:14px; right:14px; }
+  #pano { position:fixed; inset:0; z-index:40; background:#000; }
+  #pano .view, #pano canvas { position:absolute; inset:0; width:100%; height:100%; }
+  .panobar { position:absolute; left:12px; right:12px; top:max(12px, env(safe-area-inset-top)); display:flex; gap:10px; align-items:center; background:var(--glass); padding:8px 12px; border-radius:10px; }
+  .panobar span { color:#c9d4de; font-size:12px; flex:1; }
+  @media (max-width: 640px) {
+    .panobar { flex-wrap:wrap; }
+    .panobar span { order:3; flex-basis:100%; font-size:11px; }
+    .top { align-items:flex-start; }
+    .title { padding:6px 9px; gap:7px; flex:1 1 auto; max-width:calc(100% - 150px); }
+    .title img { width:24px; height:24px; }
+    .title b { font-size:14px; }
+    .title small { font-size:11px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .tools { flex-direction:column; align-items:flex-end; }
+    .tools button { padding:6px 10px; font-size:12px; }
+    button { padding:7px 11px; font-size:13px; }
+    #hint { left:150px; right:10px; bottom:calc(66px + env(safe-area-inset-bottom)); font-size:11px; }
+  }
+  /* «Cine»: la realización ocupa la pantalla (las bandas y los rótulos los dibuja park3d dentro de #stage) */
+  body.cine .bar, body.cine #viewPhoto, body.cine #hint, body.cine #labels, body.cine #joy { display:none !important; }
+  /* la nave como está hoy: sin park no hay riders para el cine ni plataforma para el recorrido */
+  body.today #tourBtn, body.today #cineBtn { display:none; }
+  /* ?fps=1 (js/fps.js): cuadros por segundo y ms por cuadro; rojo por debajo de 50 */
+  #fps { position:fixed; left:max(12px, env(safe-area-inset-left)); top:calc(66px + env(safe-area-inset-top)); z-index:7; background:rgba(0,0,0,.62); color:#9ef0a8; font:12px/1.35 ui-monospace,SFMono-Regular,Menlo,monospace; padding:6px 9px; border-radius:7px; white-space:pre; pointer-events:none; }
+  #fps.slow { color:#ff9a9a; }
+  #fps { max-width:calc(100vw - 24px - env(safe-area-inset-left) - env(safe-area-inset-right)); box-sizing:border-box; }
+  #fps pre { margin:0; font:inherit; white-space:pre-wrap; }
+  /* «Grabar 30 s» y el informe (copiar, descargar): lo único del medidor que toma clics */
+  #fps .fps-bar { margin-top:5px; display:flex; gap:6px; align-items:center; white-space:nowrap; }
+  #fps button, #fps a { pointer-events:auto; font:inherit; color:#0b1a10; background:#9ef0a8; border:0; border-radius:4px; padding:2px 8px; cursor:pointer; text-decoration:none; }
+  #fps.slow button, #fps.slow a { background:#ff9a9a; }
+  #fps button:disabled { opacity:.55; cursor:default; }
+  #fps [hidden] { display:none; }
+  /* en el cine, abajo (sobre la banda negra), para no tapar la mosca «En directo» */
+  body.cine #fps { top:auto; bottom:max(10px, env(safe-area-inset-bottom)); }
+  body.touch #hint { animation: fade 1s 6s forwards; }
+  @keyframes fade { to { opacity:0; visibility:hidden; } }
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="park"></canvas></div>
+<div id="labels"></div>
+<div class="bar top">
+  <div class="title"><a href="./" aria-label="Volver a las naves">‹</a><img src="brand/icon.png" alt=""><div><b id="name">Nave</b><small id="city"></small></div></div>
+  <div class="tools">
+    <button id="photosBtn" hidden>Fotos</button>
+    <button id="todayBtn" title="La nave como está hoy: sin el park ni las instalaciones de la propuesta, con sus luminarias">La nave como está hoy</button>
+    <button id="labelsBtn" title="Etiquetas">Etiquetas</button>
+    <button id="sheetBtn">Ficha</button>
+  </div>
+</div>
+<div class="bar bottom"><button id="mode">A pie</button><button id="tourBtn" title="Recorrido guiado desde la calle hasta la plataforma">▶ Recorrido</button><button id="cineBtn" title="Cine: realización automática, como una retransmisión en directo (tecla C; Esc sale)">🎬 Cine</button><div id="views"></div></div>
+<button id="viewPhoto" hidden>Foto realista</button>
+<div id="joy"><div id="knob"></div></div>
+<div id="hint"><span class="k">Arrastra para mirar · WASD o flechas para caminar · Shift corre</span></div>
+<div id="status"><span id="statusText">Cargando…</span><div id="statusBar" hidden></div></div>
+<div id="stream" hidden></div>
+<aside id="sheet"><button id="closeSheet">Cerrar</button><h2 id="sheetTitle">Ficha</h2><div id="sheetBody"></div></aside>
+<div id="pano" hidden><div class="view"></div><div class="panobar"><b id="panoTitle"></b><span>Render fotorrealista (Blender Cycles) · arrastra para mirar</span><button id="panoClose">Cerrar</button></div></div>
+<div id="photos" hidden><button class="close" onclick="document.body.classList.remove('photos-open')">Cerrar</button><div class="grid"></div></div>
+<script>
+  if (matchMedia('(pointer: coarse)').matches) {
+    document.body.classList.add('touch');
+    document.querySelector('#hint .k').textContent = 'Joystick para caminar · arrastra para mirar';
+  }
+  document.getElementById('sheetTitle').textContent = 'Ficha técnica';
+</script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

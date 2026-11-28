@@ -1,0 +1,2643 @@
+{
+ "schema": 1,
+ "generatedBy": "scripts/assets-bevy.mjs",
+ "from": {
+  "manifest": "assets/manifest.json",
+  "sha256": "0376bdbbf8167649006323b01dee3822211238d7ce1f7de87451130ecd797eb9"
+ },
+ "families": [
+  "astc",
+  "bc7"
+ ],
+ "totals": {
+  "files": 219,
+  "bytes": 155512606
+ },
+ "variants": {
+  "people/kid-k1.glb": {
+   "astc": "people/kid-k1.astc.glb",
+   "bc7": "people/kid-k1.bc7.glb"
+  },
+  "people/kid-k1.lod1.glb": {
+   "astc": "people/kid-k1.lod1.astc.glb",
+   "bc7": "people/kid-k1.lod1.bc7.glb"
+  },
+  "people/kid-k2.glb": {
+   "astc": "people/kid-k2.astc.glb",
+   "bc7": "people/kid-k2.bc7.glb"
+  },
+  "people/kid-k2.lod1.glb": {
+   "astc": "people/kid-k2.lod1.astc.glb",
+   "bc7": "people/kid-k2.lod1.bc7.glb"
+  },
+  "people/kid-k3.glb": {
+   "astc": "people/kid-k3.astc.glb",
+   "bc7": "people/kid-k3.bc7.glb"
+  },
+  "people/kid-k3.lod1.glb": {
+   "astc": "people/kid-k3.lod1.astc.glb",
+   "bc7": "people/kid-k3.lod1.bc7.glb"
+  },
+  "people/rider-f1.glb": {
+   "astc": "people/rider-f1.astc.glb",
+   "bc7": "people/rider-f1.bc7.glb"
+  },
+  "people/rider-f1.lod1.glb": {
+   "astc": "people/rider-f1.lod1.astc.glb",
+   "bc7": "people/rider-f1.lod1.bc7.glb"
+  },
+  "people/rider-f2.glb": {
+   "astc": "people/rider-f2.astc.glb",
+   "bc7": "people/rider-f2.bc7.glb"
+  },
+  "people/rider-f2.lod1.glb": {
+   "astc": "people/rider-f2.lod1.astc.glb",
+   "bc7": "people/rider-f2.lod1.bc7.glb"
+  },
+  "people/rider-m1.glb": {
+   "astc": "people/rider-m1.astc.glb",
+   "bc7": "people/rider-m1.bc7.glb"
+  },
+  "people/rider-m1.lod1.glb": {
+   "astc": "people/rider-m1.lod1.astc.glb",
+   "bc7": "people/rider-m1.lod1.bc7.glb"
+  },
+  "people/rider-m2.glb": {
+   "astc": "people/rider-m2.astc.glb",
+   "bc7": "people/rider-m2.bc7.glb"
+  },
+  "people/rider-m2.lod1.glb": {
+   "astc": "people/rider-m2.lod1.astc.glb",
+   "bc7": "people/rider-m2.lod1.bc7.glb"
+  },
+  "people/rider-m3.glb": {
+   "astc": "people/rider-m3.astc.glb",
+   "bc7": "people/rider-m3.bc7.glb"
+  },
+  "people/rider-m3.lod1.glb": {
+   "astc": "people/rider-m3.lod1.astc.glb",
+   "bc7": "people/rider-m3.lod1.bc7.glb"
+  },
+  "people/rider-m4.glb": {
+   "astc": "people/rider-m4.astc.glb",
+   "bc7": "people/rider-m4.bc7.glb"
+  },
+  "people/rider-m4.lod1.glb": {
+   "astc": "people/rider-m4.lod1.astc.glb",
+   "bc7": "people/rider-m4.lod1.bc7.glb"
+  },
+  "people/staff-f1.glb": {
+   "astc": "people/staff-f1.astc.glb",
+   "bc7": "people/staff-f1.bc7.glb"
+  },
+  "people/staff-f1.lod1.glb": {
+   "astc": "people/staff-f1.lod1.astc.glb",
+   "bc7": "people/staff-f1.lod1.bc7.glb"
+  },
+  "people/staff-m2.glb": {
+   "astc": "people/staff-m2.astc.glb",
+   "bc7": "people/staff-m2.bc7.glb"
+  },
+  "people/staff-m2.lod1.glb": {
+   "astc": "people/staff-m2.lod1.astc.glb",
+   "bc7": "people/staff-m2.lod1.bc7.glb"
+  },
+  "people/visitor-f3.glb": {
+   "astc": "people/visitor-f3.astc.glb",
+   "bc7": "people/visitor-f3.bc7.glb"
+  },
+  "people/visitor-f3.lod1.glb": {
+   "astc": "people/visitor-f3.lod1.astc.glb",
+   "bc7": "people/visitor-f3.lod1.bc7.glb"
+  },
+  "people/visitor-m3.glb": {
+   "astc": "people/visitor-m3.astc.glb",
+   "bc7": "people/visitor-m3.bc7.glb"
+  },
+  "people/visitor-m3.lod1.glb": {
+   "astc": "people/visitor-m3.lod1.astc.glb",
+   "bc7": "people/visitor-m3.lod1.bc7.glb"
+  },
+  "people/visitor-m4.glb": {
+   "astc": "people/visitor-m4.astc.glb",
+   "bc7": "people/visitor-m4.bc7.glb"
+  },
+  "people/visitor-m4.lod1.glb": {
+   "astc": "people/visitor-m4.lod1.astc.glb",
+   "bc7": "people/visitor-m4.lod1.bc7.glb"
+  },
+  "textures/asphalt/albedo.ktx2": {
+   "astc": "textures/asphalt/albedo.astc.ktx2",
+   "bc7": "textures/asphalt/albedo.bc7.ktx2"
+  },
+  "textures/asphalt/arm.ktx2": {
+   "astc": "textures/asphalt/arm.astc.ktx2",
+   "bc7": "textures/asphalt/arm.bc7.ktx2"
+  },
+  "textures/asphalt/normal.ktx2": {
+   "astc": "textures/asphalt/normal.astc.ktx2",
+   "bc7": "textures/asphalt/normal.bc7.ktx2"
+  },
+  "textures/brush/albedo.ktx2": {
+   "astc": "textures/brush/albedo.astc.ktx2",
+   "bc7": "textures/brush/albedo.bc7.ktx2"
+  },
+  "textures/brush/arm.ktx2": {
+   "astc": "textures/brush/arm.astc.ktx2",
+   "bc7": "textures/brush/arm.bc7.ktx2"
+  },
+  "textures/brush/normal.ktx2": {
+   "astc": "textures/brush/normal.astc.ktx2",
+   "bc7": "textures/brush/normal.bc7.ktx2"
+  },
+  "textures/exterior/bark_platanus/albedo.ktx2": {
+   "astc": "textures/exterior/bark_platanus/albedo.astc.ktx2",
+   "bc7": "textures/exterior/bark_platanus/albedo.bc7.ktx2"
+  },
+  "textures/exterior/bark_platanus/arm.ktx2": {
+   "astc": "textures/exterior/bark_platanus/arm.astc.ktx2",
+   "bc7": "textures/exterior/bark_platanus/arm.bc7.ktx2"
+  },
+  "textures/exterior/bark_platanus/normal.ktx2": {
+   "astc": "textures/exterior/bark_platanus/normal.astc.ktx2",
+   "bc7": "textures/exterior/bark_platanus/normal.bc7.ktx2"
+  },
+  "textures/exterior/concrete_floor_02/albedo.ktx2": {
+   "astc": "textures/exterior/concrete_floor_02/albedo.astc.ktx2",
+   "bc7": "textures/exterior/concrete_floor_02/albedo.bc7.ktx2"
+  },
+  "textures/exterior/concrete_floor_02/arm.ktx2": {
+   "astc": "textures/exterior/concrete_floor_02/arm.astc.ktx2",
+   "bc7": "textures/exterior/concrete_floor_02/arm.bc7.ktx2"
+  },
+  "textures/exterior/concrete_floor_02/normal.ktx2": {
+   "astc": "textures/exterior/concrete_floor_02/normal.astc.ktx2",
+   "bc7": "textures/exterior/concrete_floor_02/normal.bc7.ktx2"
+  },
+  "textures/exterior/foliage/normal.ktx2": {
+   "astc": "textures/exterior/foliage/normal.astc.ktx2",
+   "bc7": "textures/exterior/foliage/normal.bc7.ktx2"
+  },
+  "textures/exterior/gravel_concrete_04/albedo.ktx2": {
+   "astc": "textures/exterior/gravel_concrete_04/albedo.astc.ktx2",
+   "bc7": "textures/exterior/gravel_concrete_04/albedo.bc7.ktx2"
+  },
+  "textures/exterior/gravel_concrete_04/arm.ktx2": {
+   "astc": "textures/exterior/gravel_concrete_04/arm.astc.ktx2",
+   "bc7": "textures/exterior/gravel_concrete_04/arm.bc7.ktx2"
+  },
+  "textures/exterior/gravel_concrete_04/normal.ktx2": {
+   "astc": "textures/exterior/gravel_concrete_04/normal.astc.ktx2",
+   "bc7": "textures/exterior/gravel_concrete_04/normal.bc7.ktx2"
+  },
+  "textures/exterior/red_brick_03/albedo.ktx2": {
+   "astc": "textures/exterior/red_brick_03/albedo.astc.ktx2",
+   "bc7": "textures/exterior/red_brick_03/albedo.bc7.ktx2"
+  },
+  "textures/exterior/red_brick_03/arm.ktx2": {
+   "astc": "textures/exterior/red_brick_03/arm.astc.ktx2",
+   "bc7": "textures/exterior/red_brick_03/arm.bc7.ktx2"
+  },
+  "textures/exterior/red_brick_03/normal.ktx2": {
+   "astc": "textures/exterior/red_brick_03/normal.astc.ktx2",
+   "bc7": "textures/exterior/red_brick_03/normal.bc7.ktx2"
+  },
+  "textures/fabric/albedo.ktx2": {
+   "astc": "textures/fabric/albedo.astc.ktx2",
+   "bc7": "textures/fabric/albedo.bc7.ktx2"
+  },
+  "textures/fabric/arm.ktx2": {
+   "astc": "textures/fabric/arm.astc.ktx2",
+   "bc7": "textures/fabric/arm.bc7.ktx2"
+  },
+  "textures/fabric/normal.ktx2": {
+   "astc": "textures/fabric/normal.astc.ktx2",
+   "bc7": "textures/fabric/normal.bc7.ktx2"
+  },
+  "textures/floor_concrete/albedo.ktx2": {
+   "astc": "textures/floor_concrete/albedo.astc.ktx2",
+   "bc7": "textures/floor_concrete/albedo.bc7.ktx2"
+  },
+  "textures/floor_concrete/arm.ktx2": {
+   "astc": "textures/floor_concrete/arm.astc.ktx2",
+   "bc7": "textures/floor_concrete/arm.bc7.ktx2"
+  },
+  "textures/floor_concrete/normal.ktx2": {
+   "astc": "textures/floor_concrete/normal.astc.ktx2",
+   "bc7": "textures/floor_concrete/normal.bc7.ktx2"
+  },
+  "textures/hdpe/albedo.ktx2": {
+   "astc": "textures/hdpe/albedo.astc.ktx2",
+   "bc7": "textures/hdpe/albedo.bc7.ktx2"
+  },
+  "textures/hdpe/arm.ktx2": {
+   "astc": "textures/hdpe/arm.astc.ktx2",
+   "bc7": "textures/hdpe/arm.bc7.ktx2"
+  },
+  "textures/hdpe/normal.ktx2": {
+   "astc": "textures/hdpe/normal.astc.ktx2",
+   "bc7": "textures/hdpe/normal.bc7.ktx2"
+  },
+  "textures/net/normal.ktx2": {
+   "astc": "textures/net/normal.astc.ktx2",
+   "bc7": "textures/net/normal.bc7.ktx2"
+  },
+  "textures/neveplast/fringe_alpha.ktx2": {
+   "astc": "textures/neveplast/fringe_alpha.astc.ktx2",
+   "bc7": "textures/neveplast/fringe_alpha.bc7.ktx2",
+   "rgba8": "textures/neveplast/fringe_alpha.rgba8.ktx2"
+  },
+  "textures/neveplast/fringe_green.ktx2": {
+   "astc": "textures/neveplast/fringe_green.astc.ktx2",
+   "bc7": "textures/neveplast/fringe_green.bc7.ktx2",
+   "rgba8": "textures/neveplast/fringe_green.rgba8.ktx2"
+  },
+  "textures/neveplast/fringe.ktx2": {
+   "astc": "textures/neveplast/fringe.astc.ktx2",
+   "bc7": "textures/neveplast/fringe.bc7.ktx2",
+   "rgba8": "textures/neveplast/fringe.rgba8.ktx2"
+  },
+  "textures/neveplast/normal.ktx2": {
+   "astc": "textures/neveplast/normal.astc.ktx2",
+   "bc7": "textures/neveplast/normal.bc7.ktx2"
+  },
+  "textures/neveplast/sheen.ktx2": {
+   "astc": "textures/neveplast/sheen.astc.ktx2",
+   "bc7": "textures/neveplast/sheen.bc7.ktx2"
+  },
+  "textures/painted_metal/albedo.ktx2": {
+   "astc": "textures/painted_metal/albedo.astc.ktx2",
+   "bc7": "textures/painted_metal/albedo.bc7.ktx2"
+  },
+  "textures/painted_metal/arm.ktx2": {
+   "astc": "textures/painted_metal/arm.astc.ktx2",
+   "bc7": "textures/painted_metal/arm.bc7.ktx2"
+  },
+  "textures/painted_metal/normal.ktx2": {
+   "astc": "textures/painted_metal/normal.astc.ktx2",
+   "bc7": "textures/painted_metal/normal.bc7.ktx2"
+  },
+  "textures/painted_ply/albedo.ktx2": {
+   "astc": "textures/painted_ply/albedo.astc.ktx2",
+   "bc7": "textures/painted_ply/albedo.bc7.ktx2"
+  },
+  "textures/painted_ply/arm.ktx2": {
+   "astc": "textures/painted_ply/arm.astc.ktx2",
+   "bc7": "textures/painted_ply/arm.bc7.ktx2"
+  },
+  "textures/painted_ply/normal.ktx2": {
+   "astc": "textures/painted_ply/normal.astc.ktx2",
+   "bc7": "textures/painted_ply/normal.bc7.ktx2"
+  },
+  "textures/plywood/albedo.ktx2": {
+   "astc": "textures/plywood/albedo.astc.ktx2",
+   "bc7": "textures/plywood/albedo.bc7.ktx2"
+  },
+  "textures/plywood/arm.ktx2": {
+   "astc": "textures/plywood/arm.astc.ktx2",
+   "bc7": "textures/plywood/arm.bc7.ktx2"
+  },
+  "textures/plywood/normal.ktx2": {
+   "astc": "textures/plywood/normal.astc.ktx2",
+   "bc7": "textures/plywood/normal.bc7.ktx2"
+  },
+  "textures/rail/albedo.ktx2": {
+   "astc": "textures/rail/albedo.astc.ktx2",
+   "bc7": "textures/rail/albedo.bc7.ktx2"
+  },
+  "textures/rail/arm.ktx2": {
+   "astc": "textures/rail/arm.astc.ktx2",
+   "bc7": "textures/rail/arm.bc7.ktx2"
+  },
+  "textures/rail/normal.ktx2": {
+   "astc": "textures/rail/normal.astc.ktx2",
+   "bc7": "textures/rail/normal.bc7.ktx2"
+  },
+  "textures/roof_metal/albedo.ktx2": {
+   "astc": "textures/roof_metal/albedo.astc.ktx2",
+   "bc7": "textures/roof_metal/albedo.bc7.ktx2"
+  },
+  "textures/roof_metal/arm.ktx2": {
+   "astc": "textures/roof_metal/arm.astc.ktx2",
+   "bc7": "textures/roof_metal/arm.bc7.ktx2"
+  },
+  "textures/roof_metal/normal.ktx2": {
+   "astc": "textures/roof_metal/normal.astc.ktx2",
+   "bc7": "textures/roof_metal/normal.bc7.ktx2"
+  },
+  "textures/rubber_floor/albedo.ktx2": {
+   "astc": "textures/rubber_floor/albedo.astc.ktx2",
+   "bc7": "textures/rubber_floor/albedo.bc7.ktx2"
+  },
+  "textures/rubber_floor/arm.ktx2": {
+   "astc": "textures/rubber_floor/arm.astc.ktx2",
+   "bc7": "textures/rubber_floor/arm.bc7.ktx2"
+  },
+  "textures/rubber_floor/normal.ktx2": {
+   "astc": "textures/rubber_floor/normal.astc.ktx2",
+   "bc7": "textures/rubber_floor/normal.bc7.ktx2"
+  },
+  "textures/sidewalk/albedo.ktx2": {
+   "astc": "textures/sidewalk/albedo.astc.ktx2",
+   "bc7": "textures/sidewalk/albedo.bc7.ktx2"
+  },
+  "textures/sidewalk/arm.ktx2": {
+   "astc": "textures/sidewalk/arm.astc.ktx2",
+   "bc7": "textures/sidewalk/arm.bc7.ktx2"
+  },
+  "textures/sidewalk/normal.ktx2": {
+   "astc": "textures/sidewalk/normal.astc.ktx2",
+   "bc7": "textures/sidewalk/normal.bc7.ktx2"
+  },
+  "textures/tiles_wc/albedo.ktx2": {
+   "astc": "textures/tiles_wc/albedo.astc.ktx2",
+   "bc7": "textures/tiles_wc/albedo.bc7.ktx2"
+  },
+  "textures/tiles_wc/arm.ktx2": {
+   "astc": "textures/tiles_wc/arm.astc.ktx2",
+   "bc7": "textures/tiles_wc/arm.bc7.ktx2"
+  },
+  "textures/tiles_wc/normal.ktx2": {
+   "astc": "textures/tiles_wc/normal.astc.ktx2",
+   "bc7": "textures/tiles_wc/normal.bc7.ktx2"
+  },
+  "textures/turf/albedo.ktx2": {
+   "astc": "textures/turf/albedo.astc.ktx2",
+   "bc7": "textures/turf/albedo.bc7.ktx2"
+  },
+  "textures/turf/arm.ktx2": {
+   "astc": "textures/turf/arm.astc.ktx2",
+   "bc7": "textures/turf/arm.bc7.ktx2"
+  },
+  "textures/turf/normal.ktx2": {
+   "astc": "textures/turf/normal.astc.ktx2",
+   "bc7": "textures/turf/normal.bc7.ktx2"
+  },
+  "textures/wall_block/albedo.ktx2": {
+   "astc": "textures/wall_block/albedo.astc.ktx2",
+   "bc7": "textures/wall_block/albedo.bc7.ktx2"
+  },
+  "textures/wall_block/arm.ktx2": {
+   "astc": "textures/wall_block/arm.astc.ktx2",
+   "bc7": "textures/wall_block/arm.bc7.ktx2"
+  },
+  "textures/wall_block/normal.ktx2": {
+   "astc": "textures/wall_block/normal.astc.ktx2",
+   "bc7": "textures/wall_block/normal.bc7.ktx2"
+  },
+  "textures/wall_precast/albedo.ktx2": {
+   "astc": "textures/wall_precast/albedo.astc.ktx2",
+   "bc7": "textures/wall_precast/albedo.bc7.ktx2"
+  },
+  "textures/wall_precast/arm.ktx2": {
+   "astc": "textures/wall_precast/arm.astc.ktx2",
+   "bc7": "textures/wall_precast/arm.bc7.ktx2"
+  },
+  "textures/wall_precast/normal.ktx2": {
+   "astc": "textures/wall_precast/normal.astc.ktx2",
+   "bc7": "textures/wall_precast/normal.bc7.ktx2"
+  },
+  "textures/wood_veneer/albedo.ktx2": {
+   "astc": "textures/wood_veneer/albedo.astc.ktx2",
+   "bc7": "textures/wood_veneer/albedo.bc7.ktx2"
+  },
+  "textures/wood_veneer/arm.ktx2": {
+   "astc": "textures/wood_veneer/arm.astc.ktx2",
+   "bc7": "textures/wood_veneer/arm.bc7.ktx2"
+  },
+  "textures/wood_veneer/normal.ktx2": {
+   "astc": "textures/wood_veneer/normal.astc.ktx2",
+   "bc7": "textures/wood_veneer/normal.bc7.ktx2"
+  }
+ },
+ "files": {
+  "brand/icon.png": {
+   "bytes": 121900,
+   "sha256": "ed45c6f534099253686fb2ab96844eb98ee164090d8e8bc84fcb6bcb50efdf76",
+   "from": "brand/icon.png",
+   "source": "ed45c6f534099253686fb2ab96844eb98ee164090d8e8bc84fcb6bcb50efdf76"
+  },
+  "brand/logo.png": {
+   "bytes": 215736,
+   "sha256": "67eb72ac411efcbdec8f2a8f8cf88f6e252490601d0884d8a858e10e65317391",
+   "from": "brand/logo.png",
+   "source": "67eb72ac411efcbdec8f2a8f8cf88f6e252490601d0884d8a858e10e65317391"
+  },
+  "brand/sign.png": {
+   "bytes": 250599,
+   "sha256": "9dc6cc7c9bdcdf097296e13bd138902c0314600bd39a81541938d06dfc5025b4",
+   "from": "brand/sign.png",
+   "source": "9dc6cc7c9bdcdf097296e13bd138902c0314600bd39a81541938d06dfc5025b4"
+  },
+  "people/CREDITS.md": {
+   "bytes": 11314,
+   "sha256": "61c8dee88273c03798992d60a9b50ae0e1e7d5221fe917e3993502b564af37e4",
+   "from": "people/CREDITS.md",
+   "source": "61c8dee88273c03798992d60a9b50ae0e1e7d5221fe917e3993502b564af37e4"
+  },
+  "people/kid-k1.astc.glb": {
+   "bytes": 2139172,
+   "sha256": "69e6da9ba9f5dda7e88cb201e584f0c6df558d762d37aacdcc3c8e649e622bb8",
+   "from": "people/kid-k1.glb",
+   "source": "6179631170d923ac379c8a897f77969247c90c41f814b80ae1e0aead03735359",
+   "family": "astc"
+  },
+  "people/kid-k1.bc7.glb": {
+   "bytes": 2176260,
+   "sha256": "21509dc4bedc5d6cc334a45e826899fe178cff664f5359e9de17b4738bde38c7",
+   "from": "people/kid-k1.glb",
+   "source": "6179631170d923ac379c8a897f77969247c90c41f814b80ae1e0aead03735359",
+   "family": "bc7"
+  },
+  "people/kid-k1.lod1.astc.glb": {
+   "bytes": 817948,
+   "sha256": "e48a3abeb999984b864027a0546c3199b99becab0ee522245cb9951cbe6590d7",
+   "from": "people/kid-k1.lod1.glb",
+   "source": "1ffdde6d0c6e1c142e6f2af1639973dc37e2cfb9ef4436213ec6c1dabca25588",
+   "family": "astc"
+  },
+  "people/kid-k1.lod1.bc7.glb": {
+   "bytes": 830872,
+   "sha256": "6873f0c814a7db2454e94d8d727f428f3c81d301101598d2b0f6c87b06fb59ee",
+   "from": "people/kid-k1.lod1.glb",
+   "source": "1ffdde6d0c6e1c142e6f2af1639973dc37e2cfb9ef4436213ec6c1dabca25588",
+   "family": "bc7"
+  },
+  "people/kid-k2.astc.glb": {
+   "bytes": 2168528,
+   "sha256": "70f8bc4b2f3a4f2db65353db5421eed94225dd65b078959c1e916eb8cee1b72a",
+   "from": "people/kid-k2.glb",
+   "source": "338fd98ddb108fd34c4246136de22c40553c40e5bb87c1f318c84e7034a4c831",
+   "family": "astc"
+  },
+  "people/kid-k2.bc7.glb": {
+   "bytes": 2203424,
+   "sha256": "965d304e99112cb2a946506a691236b7b6f916e1fd38039dfa0324a8a331e574",
+   "from": "people/kid-k2.glb",
+   "source": "338fd98ddb108fd34c4246136de22c40553c40e5bb87c1f318c84e7034a4c831",
+   "family": "bc7"
+  },
+  "people/kid-k2.lod1.astc.glb": {
+   "bytes": 832656,
+   "sha256": "6f6d40c372dd516700308fc2b32e2fc974dff1be1c1144eb2abfed27600aca7a",
+   "from": "people/kid-k2.lod1.glb",
+   "source": "1a907ed944b8cf31c2e72b183e2f35107f3424516bcc5da3af9c4246da48179b",
+   "family": "astc"
+  },
+  "people/kid-k2.lod1.bc7.glb": {
+   "bytes": 846432,
+   "sha256": "2888ae2c76d335e375ccb5eb482c7e56f732e8d6e32119182931cec01745d2cb",
+   "from": "people/kid-k2.lod1.glb",
+   "source": "1a907ed944b8cf31c2e72b183e2f35107f3424516bcc5da3af9c4246da48179b",
+   "family": "bc7"
+  },
+  "people/kid-k3.astc.glb": {
+   "bytes": 2100672,
+   "sha256": "0d0513d232aba28d350f66450f468388cddaae3d758f18e2cd450bf3b46b31db",
+   "from": "people/kid-k3.glb",
+   "source": "172f0921df6edfabe4eb8fa59fc48b70edfb4ccacbda9fe7b49e6b9c77935ef9",
+   "family": "astc"
+  },
+  "people/kid-k3.bc7.glb": {
+   "bytes": 2148496,
+   "sha256": "314c3aa025a7b9fe42d6b4ab3c7b9c438df7478e6b41ee9fb13c4783cb155827",
+   "from": "people/kid-k3.glb",
+   "source": "172f0921df6edfabe4eb8fa59fc48b70edfb4ccacbda9fe7b49e6b9c77935ef9",
+   "family": "bc7"
+  },
+  "people/kid-k3.lod1.astc.glb": {
+   "bytes": 803684,
+   "sha256": "4440cae8ceaaaa249b0f7d411c29652b593e3977c9dac8e98968d6e40c3f21a6",
+   "from": "people/kid-k3.lod1.glb",
+   "source": "a702348577bd6135efcedf9d769b74d88e038816b525824f7a1aa8afb37521c1",
+   "family": "astc"
+  },
+  "people/kid-k3.lod1.bc7.glb": {
+   "bytes": 819108,
+   "sha256": "93caf8558c356771c6306d37196c33f72c04860ae06c17139ab51cdf7077b0cb",
+   "from": "people/kid-k3.lod1.glb",
+   "source": "a702348577bd6135efcedf9d769b74d88e038816b525824f7a1aa8afb37521c1",
+   "family": "bc7"
+  },
+  "people/people.json": {
+   "bytes": 22740,
+   "sha256": "ac41f89d511e10e858587b185b18e67a9192d291388712e00a02abc15bf6e286",
+   "from": "people/people.json",
+   "source": "ac41f89d511e10e858587b185b18e67a9192d291388712e00a02abc15bf6e286"
+  },
+  "people/rider-f1.astc.glb": {
+   "bytes": 2271268,
+   "sha256": "5aea5a75bf6fdebdbfc4e53557d3459c8477a2b34b2766f2d7621316620c9a40",
+   "from": "people/rider-f1.glb",
+   "source": "28e1ec3cfe24ac1e082f4b37bf38610e310fe1c09802f8c50cfb48274f2da645",
+   "family": "astc"
+  },
+  "people/rider-f1.bc7.glb": {
+   "bytes": 2313764,
+   "sha256": "53e765e195ae0ec08e9931971b418ffe2b4daba9c8ae09161cb62854927bba0b",
+   "from": "people/rider-f1.glb",
+   "source": "28e1ec3cfe24ac1e082f4b37bf38610e310fe1c09802f8c50cfb48274f2da645",
+   "family": "bc7"
+  },
+  "people/rider-f1.lod1.astc.glb": {
+   "bytes": 862792,
+   "sha256": "519d31b0b7e57a1328947e68e94537b364755371893759cb5d3ca37eb797ad6c",
+   "from": "people/rider-f1.lod1.glb",
+   "source": "9522511fb311e3460851d3b8970d4606ca9a019049b7d66a60f894157fd60e13",
+   "family": "astc"
+  },
+  "people/rider-f1.lod1.bc7.glb": {
+   "bytes": 880024,
+   "sha256": "fdbcd6688f79bb7d399c7f871cebcf535a67422e612dc05c47fbd76963f2bed0",
+   "from": "people/rider-f1.lod1.glb",
+   "source": "9522511fb311e3460851d3b8970d4606ca9a019049b7d66a60f894157fd60e13",
+   "family": "bc7"
+  },
+  "people/rider-f2.astc.glb": {
+   "bytes": 2133596,
+   "sha256": "b14d3dd91db4b850d17efb84fd707ebcc72cf97e07145cbf36f5770b4498f284",
+   "from": "people/rider-f2.glb",
+   "source": "93a18ea9944b06e225cf7e0c863ec0102ad3637338e08f4011e1dbf591602863",
+   "family": "astc"
+  },
+  "people/rider-f2.bc7.glb": {
+   "bytes": 2178488,
+   "sha256": "ac8b81fed3a22d272c84787628f21c99231bd4c3a0fdf7e834dd774ec651271b",
+   "from": "people/rider-f2.glb",
+   "source": "93a18ea9944b06e225cf7e0c863ec0102ad3637338e08f4011e1dbf591602863",
+   "family": "bc7"
+  },
+  "people/rider-f2.lod1.astc.glb": {
+   "bytes": 824048,
+   "sha256": "30f2bff7436c91ad1090171897adf45d5a62443e91cf4c9c47696be70c2b30dc",
+   "from": "people/rider-f2.lod1.glb",
+   "source": "d4fb34977aba4e7bee2e96f2215f46052b0fc16a95172a4b866ffdb76943e48b",
+   "family": "astc"
+  },
+  "people/rider-f2.lod1.bc7.glb": {
+   "bytes": 839184,
+   "sha256": "94d2b03b55923a608cfc03af96533cfb8cf33c3f0e2eafba1ad1107bf4e662c2",
+   "from": "people/rider-f2.lod1.glb",
+   "source": "d4fb34977aba4e7bee2e96f2215f46052b0fc16a95172a4b866ffdb76943e48b",
+   "family": "bc7"
+  },
+  "people/rider-m1.astc.glb": {
+   "bytes": 2748808,
+   "sha256": "3c722571f15bf32015be5c74485e3011bdb68b333590d9a9e79672937699f147",
+   "from": "people/rider-m1.glb",
+   "source": "06c40e7d7655eef9d472e196b7686cb0dbad028dbbf585498a76f37b42357ce9",
+   "family": "astc"
+  },
+  "people/rider-m1.bc7.glb": {
+   "bytes": 2788340,
+   "sha256": "a5bd23b156804b025a45274030cbcc9c87e6b584601ef7397a23f847924f89eb",
+   "from": "people/rider-m1.glb",
+   "source": "06c40e7d7655eef9d472e196b7686cb0dbad028dbbf585498a76f37b42357ce9",
+   "family": "bc7"
+  },
+  "people/rider-m1.lod1.astc.glb": {
+   "bytes": 972620,
+   "sha256": "42b67e9f1b1db64403879507767687c5dbd33b4fa834fdcf739b979d460e36da",
+   "from": "people/rider-m1.lod1.glb",
+   "source": "1e7cd31afac7670878f5fd0c21985f14bbd9fe4706b95fa01311110725949735",
+   "family": "astc"
+  },
+  "people/rider-m1.lod1.bc7.glb": {
+   "bytes": 986012,
+   "sha256": "ccee44fb24b6fe96fc6bd720afa65782bdeaf4dca4eeff71a1783f94b9b214e5",
+   "from": "people/rider-m1.lod1.glb",
+   "source": "1e7cd31afac7670878f5fd0c21985f14bbd9fe4706b95fa01311110725949735",
+   "family": "bc7"
+  },
+  "people/rider-m2.astc.glb": {
+   "bytes": 2084604,
+   "sha256": "0cb3e4e3e06b92908e5756107b492276c31ca1860eac34af2a9493b5a2f83997",
+   "from": "people/rider-m2.glb",
+   "source": "005255ab71c5b3d242e2f6e9bd3ca5a7d108e621073f556b1d8860ca06e1d71b",
+   "family": "astc"
+  },
+  "people/rider-m2.bc7.glb": {
+   "bytes": 2115724,
+   "sha256": "dc7be2f5ea53d779c31686ce98b1a57dcc77681c56cc72d6da67ca3b3707e624",
+   "from": "people/rider-m2.glb",
+   "source": "005255ab71c5b3d242e2f6e9bd3ca5a7d108e621073f556b1d8860ca06e1d71b",
+   "family": "bc7"
+  },
+  "people/rider-m2.lod1.astc.glb": {
+   "bytes": 805236,
+   "sha256": "220fd53a17e8a35c0616234d49955dfdbd88a33f05e41cea560c489d633d00f5",
+   "from": "people/rider-m2.lod1.glb",
+   "source": "d09d3c5bb2cf88ebd9af1c449ac0d4407cc1fde084e48a1ff946a5a5891b0902",
+   "family": "astc"
+  },
+  "people/rider-m2.lod1.bc7.glb": {
+   "bytes": 816484,
+   "sha256": "fbd5f5a19c6e02c06748fa85218b34b750f97f3cec17b398430936d0b4f032fc",
+   "from": "people/rider-m2.lod1.glb",
+   "source": "d09d3c5bb2cf88ebd9af1c449ac0d4407cc1fde084e48a1ff946a5a5891b0902",
+   "family": "bc7"
+  },
+  "people/rider-m3.astc.glb": {
+   "bytes": 2101500,
+   "sha256": "4957c43fdc75601327cffb3ae87be52cfdb4cd90720767b02f2588cdf1903179",
+   "from": "people/rider-m3.glb",
+   "source": "26798e22fb952c0d6b121f669ff1c3d521a06bb11264616278e8f014ecc6e54a",
+   "family": "astc"
+  },
+  "people/rider-m3.bc7.glb": {
+   "bytes": 2149324,
+   "sha256": "3229957a6c0df3a091dec9192eff98771df4899cc9a843e6c1146c8978a2b9a6",
+   "from": "people/rider-m3.glb",
+   "source": "26798e22fb952c0d6b121f669ff1c3d521a06bb11264616278e8f014ecc6e54a",
+   "family": "bc7"
+  },
+  "people/rider-m3.lod1.astc.glb": {
+   "bytes": 803828,
+   "sha256": "92e14abcccfd87f695ce35e1fb79029189434ea22310c5e6b1f03571c63e731e",
+   "from": "people/rider-m3.lod1.glb",
+   "source": "e9c6b78e673d219d0d394305a608887694127bc57a36329aec5724be84e1c263",
+   "family": "astc"
+  },
+  "people/rider-m3.lod1.bc7.glb": {
+   "bytes": 819248,
+   "sha256": "5b3016bf0a802521bbf7ce3ceb63355abf00e31f45b9ba145893beec6456a9f1",
+   "from": "people/rider-m3.lod1.glb",
+   "source": "e9c6b78e673d219d0d394305a608887694127bc57a36329aec5724be84e1c263",
+   "family": "bc7"
+  },
+  "people/rider-m4.astc.glb": {
+   "bytes": 2208744,
+   "sha256": "5226e14383fd98f05aca8c8dd86c13a87eaae56fc8e9e2141fc33f68e52133e5",
+   "from": "people/rider-m4.glb",
+   "source": "f37f82cfaffeda908037e5b40233ab478b4d69a4e444390c88f2a465a74f42ed",
+   "family": "astc"
+  },
+  "people/rider-m4.bc7.glb": {
+   "bytes": 2246728,
+   "sha256": "8a930d0989856d07a3426149b6b00df965de1140b9cb3d40c8f5e092924da1df",
+   "from": "people/rider-m4.glb",
+   "source": "f37f82cfaffeda908037e5b40233ab478b4d69a4e444390c88f2a465a74f42ed",
+   "family": "bc7"
+  },
+  "people/rider-m4.lod1.astc.glb": {
+   "bytes": 838096,
+   "sha256": "b3dbba2940e6fae1f81c530cbd233b33a025f1efb7f9c670a6404a0b337b3da4",
+   "from": "people/rider-m4.lod1.glb",
+   "source": "6dd2d8c7e35196ed63ce4eed8af31a758fac93de56c61249e73d2521f83dd0fb",
+   "family": "astc"
+  },
+  "people/rider-m4.lod1.bc7.glb": {
+   "bytes": 852348,
+   "sha256": "09a2bcb693f161318ceaec71efda938789e56da7164452d487fcf097592537f2",
+   "from": "people/rider-m4.lod1.glb",
+   "source": "6dd2d8c7e35196ed63ce4eed8af31a758fac93de56c61249e73d2521f83dd0fb",
+   "family": "bc7"
+  },
+  "people/staff-f1.astc.glb": {
+   "bytes": 2078404,
+   "sha256": "1f6f5341b5dd129e1344c327bbcc3ad2ff04936e27f0529f8d4e7c616c28de02",
+   "from": "people/staff-f1.glb",
+   "source": "5452d1ea5b452c210c11dd35b7a6f5d7a5a263e16b9fd3a9c832e19aacbd99ff",
+   "family": "astc"
+  },
+  "people/staff-f1.bc7.glb": {
+   "bytes": 2116708,
+   "sha256": "2ddbee721d1bc109f759438ee109fd98a3136b29f7ffcb81e4967f67c767493b",
+   "from": "people/staff-f1.glb",
+   "source": "5452d1ea5b452c210c11dd35b7a6f5d7a5a263e16b9fd3a9c832e19aacbd99ff",
+   "family": "bc7"
+  },
+  "people/staff-f1.lod1.astc.glb": {
+   "bytes": 708216,
+   "sha256": "8d51d5b41eaeb904c6fc1eb191b82704f0141c033d981ca73a3574da8b44fa31",
+   "from": "people/staff-f1.lod1.glb",
+   "source": "f3e023700e65527b89c698322a54b5e183de595694cb9f88b572e9be44bb34d0",
+   "family": "astc"
+  },
+  "people/staff-f1.lod1.bc7.glb": {
+   "bytes": 723096,
+   "sha256": "d957ecde96c911d8d8522f4b887005c5b7a37db7a412357d067f9857fe532f39",
+   "from": "people/staff-f1.lod1.glb",
+   "source": "f3e023700e65527b89c698322a54b5e183de595694cb9f88b572e9be44bb34d0",
+   "family": "bc7"
+  },
+  "people/staff-m2.astc.glb": {
+   "bytes": 1118120,
+   "sha256": "70077b102d55cb34753aab2247247c73a3e77414575bdc5d323d7ad9a13780cb",
+   "from": "people/staff-m2.glb",
+   "source": "a5774ce2243ce58151f90c5c207de4c5c870fd9286d74f442f1a74413c21a099",
+   "family": "astc"
+  },
+  "people/staff-m2.bc7.glb": {
+   "bytes": 1131896,
+   "sha256": "5c524d0eb73d6e71ec59ee9757e5d28c771a525728b01aec9c52938153442e17",
+   "from": "people/staff-m2.glb",
+   "source": "a5774ce2243ce58151f90c5c207de4c5c870fd9286d74f442f1a74413c21a099",
+   "family": "bc7"
+  },
+  "people/staff-m2.lod1.astc.glb": {
+   "bytes": 466164,
+   "sha256": "0dda6ee761dd14f5c6bbfa38871b0b2b00a8f814c598ae906f6801ac67901937",
+   "from": "people/staff-m2.lod1.glb",
+   "source": "368a24937acc2d0118ac2e17fd51ecd0be2528aee3a7ddd5a045d00809b715a6",
+   "family": "astc"
+  },
+  "people/staff-m2.lod1.bc7.glb": {
+   "bytes": 471732,
+   "sha256": "cdd8705cd20998b9ae4638ef152738e4a52f2e8b92db078cc5e8c918f95c8de3",
+   "from": "people/staff-m2.lod1.glb",
+   "source": "368a24937acc2d0118ac2e17fd51ecd0be2528aee3a7ddd5a045d00809b715a6",
+   "family": "bc7"
+  },
+  "people/visitor-f3.astc.glb": {
+   "bytes": 1898716,
+   "sha256": "e5ce70ff57210444dc4ef62c667b24cf531712f7402e2e47e4cc1d6e2acd504d",
+   "from": "people/visitor-f3.glb",
+   "source": "bd8be629d5d2f5a2f83a3c643f93d1a68a781aadc627b47d806f89aebb08e381",
+   "family": "astc"
+  },
+  "people/visitor-f3.bc7.glb": {
+   "bytes": 1922412,
+   "sha256": "0a7a1f018d718aa65b09e45692085cb242e7cb6eb072929b1d11facb4086f60b",
+   "from": "people/visitor-f3.glb",
+   "source": "bd8be629d5d2f5a2f83a3c643f93d1a68a781aadc627b47d806f89aebb08e381",
+   "family": "bc7"
+  },
+  "people/visitor-f3.lod1.astc.glb": {
+   "bytes": 652656,
+   "sha256": "a6f611af25e380a36b1b75a456fc029f997d6f8105f0124380c826a2499c90fe",
+   "from": "people/visitor-f3.lod1.glb",
+   "source": "639e001e1c88e97af6b3ec584e2f96aa345063c08af2b31da8ef6aebb559e205",
+   "family": "astc"
+  },
+  "people/visitor-f3.lod1.bc7.glb": {
+   "bytes": 660256,
+   "sha256": "876f88de3859d8daede21814c341242ce406936da02965744e5892e01a3909b2",
+   "from": "people/visitor-f3.lod1.glb",
+   "source": "639e001e1c88e97af6b3ec584e2f96aa345063c08af2b31da8ef6aebb559e205",
+   "family": "bc7"
+  },
+  "people/visitor-m3.astc.glb": {
+   "bytes": 1162856,
+   "sha256": "ffad426bbd25560851f5a68b2d22cd456bc0b6ce3d154d339d1e1ec1512f935a",
+   "from": "people/visitor-m3.glb",
+   "source": "be6aa1ff05df5db525803757268e74034cde0888a537e8154b33acbfe1915a23",
+   "family": "astc"
+  },
+  "people/visitor-m3.bc7.glb": {
+   "bytes": 1196136,
+   "sha256": "dd494e5787b17f011e8f11c75dda0237ceb0e2fd8eec8a99df699e56f459ae51",
+   "from": "people/visitor-m3.glb",
+   "source": "be6aa1ff05df5db525803757268e74034cde0888a537e8154b33acbfe1915a23",
+   "family": "bc7"
+  },
+  "people/visitor-m3.lod1.astc.glb": {
+   "bytes": 487500,
+   "sha256": "530c9f07b44cbf55bdff45c5896c43cdce8318af4f68ab3083154f2262c4c0c8",
+   "from": "people/visitor-m3.lod1.glb",
+   "source": "f94ecd8397aca528e2d8237844df6202ff6b1a5ef3c93f7014c676d1362c64ae",
+   "family": "astc"
+  },
+  "people/visitor-m3.lod1.bc7.glb": {
+   "bytes": 501340,
+   "sha256": "e1fba3baf7fda892ec66ae85cf2e5a363f0f520e8abee5b77dd45f319bd0174d",
+   "from": "people/visitor-m3.lod1.glb",
+   "source": "f94ecd8397aca528e2d8237844df6202ff6b1a5ef3c93f7014c676d1362c64ae",
+   "family": "bc7"
+  },
+  "people/visitor-m4.astc.glb": {
+   "bytes": 1476844,
+   "sha256": "3c39ffd786d005a2018bddedba1cffb9b0678e08ab77e2b304fa7b2531917836",
+   "from": "people/visitor-m4.glb",
+   "source": "72a3e368d2419eb1f58af5be2228fee2d66c33c5548072e1d571343004bfea2b",
+   "family": "astc"
+  },
+  "people/visitor-m4.bc7.glb": {
+   "bytes": 1504120,
+   "sha256": "650d202d0bd6bac59cf3f38c42030b43f5c792861f0d711db4411690fcf365d5",
+   "from": "people/visitor-m4.glb",
+   "source": "72a3e368d2419eb1f58af5be2228fee2d66c33c5548072e1d571343004bfea2b",
+   "family": "bc7"
+  },
+  "people/visitor-m4.lod1.astc.glb": {
+   "bytes": 591008,
+   "sha256": "916e4fa0b0065fdb33b83103b9cdbf9dcd3fb934e65053647f9b02c1f739162f",
+   "from": "people/visitor-m4.lod1.glb",
+   "source": "8135281d7dba3253ce088b16cef08e69aef6872e0c12e9ee64256e0b34295409",
+   "family": "astc"
+  },
+  "people/visitor-m4.lod1.bc7.glb": {
+   "bytes": 604960,
+   "sha256": "32c99f6237bb10771ebc5038446e0d2be1c70c0e96720b3ce87a8ef1a3d7288b",
+   "from": "people/visitor-m4.lod1.glb",
+   "source": "8135281d7dba3253ce088b16cef08e69aef6872e0c12e9ee64256e0b34295409",
+   "family": "bc7"
+  },
+  "textures/asphalt/albedo.astc.ktx2": {
+   "bytes": 316809,
+   "sha256": "296e0c8044e4ff0e5da9087ff91287d6919ae83818ca6e7f268ffbc51cc1b6f0",
+   "from": "textures/asphalt/albedo.ktx2",
+   "source": "6d77775427bc401aa98740569bf92dfdf13828c823ae50f6c4b5efc69ce61eed",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/asphalt/albedo.bc7.ktx2": {
+   "bytes": 332867,
+   "sha256": "0e922ca112f8446bbcd56c8a6eda0318a45f604c3bb8dc7ff7bca1d5918fa7cc",
+   "from": "textures/asphalt/albedo.ktx2",
+   "source": "6d77775427bc401aa98740569bf92dfdf13828c823ae50f6c4b5efc69ce61eed",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/asphalt/arm.astc.ktx2": {
+   "bytes": 289916,
+   "sha256": "0866871233567dac5d18001e4f9aaf8a32167ce5abb18e1835cafd569c8ff6cb",
+   "from": "textures/asphalt/arm.ktx2",
+   "source": "0e58817c396b49adde82615442d279819f7d9c5d1987fb435a49731121e747c4",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/asphalt/arm.bc7.ktx2": {
+   "bytes": 314489,
+   "sha256": "b45241bcc63b551d81155063d59b719948b8c1f5bddb2d19e8863176e9f757e6",
+   "from": "textures/asphalt/arm.ktx2",
+   "source": "0e58817c396b49adde82615442d279819f7d9c5d1987fb435a49731121e747c4",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/asphalt/normal.astc.ktx2": {
+   "bytes": 637197,
+   "sha256": "f72041af34230b8e9dfbe72bf851beccaa326fdc4cf7f5999f07a36b8abb7a6a",
+   "from": "textures/asphalt/normal.ktx2",
+   "source": "95954a87e0d18b390c5e371e3238ec3a80fc82b7982e20f90fcc25a7c48ce04b",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/asphalt/normal.bc7.ktx2": {
+   "bytes": 646417,
+   "sha256": "5f46b029da1834fd75ab9e7816a0a741f5c9e1589fbcb28aea1e0139fbea137e",
+   "from": "textures/asphalt/normal.ktx2",
+   "source": "95954a87e0d18b390c5e371e3238ec3a80fc82b7982e20f90fcc25a7c48ce04b",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/brush/albedo.astc.ktx2": {
+   "bytes": 336665,
+   "sha256": "a4cebff331bbdac7806118a036277cb0f810a55752c4564bcfef9dc1cc0d9335",
+   "from": "textures/brush/albedo.ktx2",
+   "source": "1dc54841b39439c6163b02ce9b6f4bda41573d04c19544c54b5116a8070f3f57",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/brush/albedo.bc7.ktx2": {
+   "bytes": 348505,
+   "sha256": "3cae0da9be8bf931951913225a82d4c233f6c235e544238c69c30a46c7c21e0f",
+   "from": "textures/brush/albedo.ktx2",
+   "source": "1dc54841b39439c6163b02ce9b6f4bda41573d04c19544c54b5116a8070f3f57",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/brush/arm.astc.ktx2": {
+   "bytes": 811444,
+   "sha256": "945891e3fdb2d0be9a4940ce62ab37d0b3f94a4fd4c14dad1a59d175faf2f1d6",
+   "from": "textures/brush/arm.ktx2",
+   "source": "ebf5e7136cb721a4477f93f4676967c7a62835f06d8422edc84dd50df16edc8e",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/brush/arm.bc7.ktx2": {
+   "bytes": 762586,
+   "sha256": "c8186f971619ae176e7f4a1921c866cff44584df76131c12b7323e340bfad9cd",
+   "from": "textures/brush/arm.ktx2",
+   "source": "ebf5e7136cb721a4477f93f4676967c7a62835f06d8422edc84dd50df16edc8e",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/brush/normal.astc.ktx2": {
+   "bytes": 1229156,
+   "sha256": "de68a7ac3fa56ba102ff74993b8c0fcd23038694d234fa7115f00004a619eb32",
+   "from": "textures/brush/normal.ktx2",
+   "source": "c4f763adcafbacd3664490b531b422b767e62a7d0efe59b047e947ca141e5e96",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/brush/normal.bc7.ktx2": {
+   "bytes": 1208654,
+   "sha256": "3c55deb9a1e6e2acb1eb4bb429ad5e5569c6806e8e1b0435061ae81bd45338e2",
+   "from": "textures/brush/normal.ktx2",
+   "source": "c4f763adcafbacd3664490b531b422b767e62a7d0efe59b047e947ca141e5e96",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/CREDITS.md": {
+   "bytes": 8028,
+   "sha256": "019beee58f4bb55ab51613166e049e209081e8c82abe645d223fdefaa1e0e394",
+   "from": "textures/CREDITS.md",
+   "source": "019beee58f4bb55ab51613166e049e209081e8c82abe645d223fdefaa1e0e394"
+  },
+  "textures/exterior/bark_platanus/albedo.astc.ktx2": {
+   "bytes": 428112,
+   "sha256": "e55973599a757a74df2c81f32ff19eead20b213bb506ef74bc032a9f5010b485",
+   "from": "textures/exterior/bark_platanus/albedo.ktx2",
+   "source": "3877c1e3a8e0eea63ba3f688fb0d13abd2d0aaf4345123033b32724854fbce51",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/bark_platanus/albedo.bc7.ktx2": {
+   "bytes": 456437,
+   "sha256": "56ea3c9e921b1a92dc2c5f6bdad17f5b50bcb4335ad3c6020bd4f4476fd76619",
+   "from": "textures/exterior/bark_platanus/albedo.ktx2",
+   "source": "3877c1e3a8e0eea63ba3f688fb0d13abd2d0aaf4345123033b32724854fbce51",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/bark_platanus/arm.astc.ktx2": {
+   "bytes": 273826,
+   "sha256": "a9477a7afcb593a82714f82168923d0ed042f607bcc7777ad16587fadf27bdf7",
+   "from": "textures/exterior/bark_platanus/arm.ktx2",
+   "source": "4f0f3913d0c46d015265870501c3038a9c92e7aa2de9e3ab90401afff5f632be",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/bark_platanus/arm.bc7.ktx2": {
+   "bytes": 286098,
+   "sha256": "a4b8df9ac5a6440780602e77dc66d432b347e9a8c390647071dec3e902a06ef9",
+   "from": "textures/exterior/bark_platanus/arm.ktx2",
+   "source": "4f0f3913d0c46d015265870501c3038a9c92e7aa2de9e3ab90401afff5f632be",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/bark_platanus/normal.astc.ktx2": {
+   "bytes": 1241669,
+   "sha256": "cf74665cb2816b3bf9d9b52c74b7f145fa20e450928a414d833aab33c59d5f42",
+   "from": "textures/exterior/bark_platanus/normal.ktx2",
+   "source": "d4021af06714b8b85c9433bde3f5be30925c775249141fd60ba693db96b6dc69",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/bark_platanus/normal.bc7.ktx2": {
+   "bytes": 1307434,
+   "sha256": "e8214b5622661187feaa09e4ded387f6c5cdae32055862130b302b5383ab0f01",
+   "from": "textures/exterior/bark_platanus/normal.ktx2",
+   "source": "d4021af06714b8b85c9433bde3f5be30925c775249141fd60ba693db96b6dc69",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/concrete_floor_02/albedo.astc.ktx2": {
+   "bytes": 423004,
+   "sha256": "dbd64501d7b524e972fa0a56a13daba08f601fa57397ce6038cbae1126835b2b",
+   "from": "textures/exterior/concrete_floor_02/albedo.ktx2",
+   "source": "ef39366b6ac5f466d882591fb9d848cbd14f772626066189cc8e23e4b7966886",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/concrete_floor_02/albedo.bc7.ktx2": {
+   "bytes": 448742,
+   "sha256": "8647ae1dfc9d5dfa732c3813dcae008dc2ae37c60faea6ae187f6e1831226661",
+   "from": "textures/exterior/concrete_floor_02/albedo.ktx2",
+   "source": "ef39366b6ac5f466d882591fb9d848cbd14f772626066189cc8e23e4b7966886",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/concrete_floor_02/arm.astc.ktx2": {
+   "bytes": 321999,
+   "sha256": "3ba15f1bdc6a8a2b005dd409932ed4a4bbf122b10671582839f2070ae02c6521",
+   "from": "textures/exterior/concrete_floor_02/arm.ktx2",
+   "source": "8baf2121c6a525fc60041329c841fe3ea4b705001cee5d9fbe0e95330bb05a6a",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/concrete_floor_02/arm.bc7.ktx2": {
+   "bytes": 342156,
+   "sha256": "fc06dbf01b41b260b6c2bd88dddea87771d79bd1a9b92c77cbdf1734ffad08e4",
+   "from": "textures/exterior/concrete_floor_02/arm.ktx2",
+   "source": "8baf2121c6a525fc60041329c841fe3ea4b705001cee5d9fbe0e95330bb05a6a",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/concrete_floor_02/normal.astc.ktx2": {
+   "bytes": 993944,
+   "sha256": "d036bc3f76767fff6547eac2dfc74175b233ee7a1d6c4e43a327f0c42138aa6f",
+   "from": "textures/exterior/concrete_floor_02/normal.ktx2",
+   "source": "39191d39b4b00a748ee0aa8ea91d2c03d11787f9acfb6d0348c551489c8afbb1",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/concrete_floor_02/normal.bc7.ktx2": {
+   "bytes": 975332,
+   "sha256": "3ab07bc370b6a8983c5054460391eb7d437086eb40931b79b6ca98d624016e9e",
+   "from": "textures/exterior/concrete_floor_02/normal.ktx2",
+   "source": "39191d39b4b00a748ee0aa8ea91d2c03d11787f9acfb6d0348c551489c8afbb1",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/CREDITS.md": {
+   "bytes": 2685,
+   "sha256": "495532153fdc5112f77606406787e2745ddb5e170be486efc3cff883c1227654",
+   "from": "textures/exterior/CREDITS.md",
+   "source": "495532153fdc5112f77606406787e2745ddb5e170be486efc3cff883c1227654"
+  },
+  "textures/exterior/foliage/albedo.webp": {
+   "bytes": 248584,
+   "sha256": "b2402ce563b3d44400ea5539247fb2446d96d27f06ce269fea954e7c4182b4ae",
+   "from": "textures/exterior/foliage/albedo.webp",
+   "source": "b2402ce563b3d44400ea5539247fb2446d96d27f06ce269fea954e7c4182b4ae"
+  },
+  "textures/exterior/foliage/normal.astc.ktx2": {
+   "bytes": 215267,
+   "sha256": "395ddc4085140d44bda99b80506bc2bfb2c5b8afaea620c30f692784f65363f6",
+   "from": "textures/exterior/foliage/normal.ktx2",
+   "source": "a1f00e82ab6b8f4df4937ebec40c9a6c0372dd05a27877ef9312093b841f6ca8",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/foliage/normal.bc7.ktx2": {
+   "bytes": 215983,
+   "sha256": "203c4bf16cc5912dede960f766c0bc63868644a9d0b3804d13184432087fb5ca",
+   "from": "textures/exterior/foliage/normal.ktx2",
+   "source": "a1f00e82ab6b8f4df4937ebec40c9a6c0372dd05a27877ef9312093b841f6ca8",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/gravel_concrete_04/albedo.astc.ktx2": {
+   "bytes": 397172,
+   "sha256": "096c830ca8e05a3f1468a8308f58cd299ccee651299d322fffbf35c41c0b5bee",
+   "from": "textures/exterior/gravel_concrete_04/albedo.ktx2",
+   "source": "371a34725afd434d35b0d63c17452e4e3795d4ebed1b3fa631903bcbefa1c71b",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/gravel_concrete_04/albedo.bc7.ktx2": {
+   "bytes": 420846,
+   "sha256": "d3c06b2f902a0e0db35473d28d7d6a4f81f4562174d6964154308cf7be1541a8",
+   "from": "textures/exterior/gravel_concrete_04/albedo.ktx2",
+   "source": "371a34725afd434d35b0d63c17452e4e3795d4ebed1b3fa631903bcbefa1c71b",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/gravel_concrete_04/arm.astc.ktx2": {
+   "bytes": 1063814,
+   "sha256": "68e18c564a8509b68033bc0b247d7892186b1ffa3fcb598bc3fc6133fff36b58",
+   "from": "textures/exterior/gravel_concrete_04/arm.ktx2",
+   "source": "ca0dd83ca5b70f5edd8d1194708cddf0421d69b3703c97d93d3557446424750c",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/gravel_concrete_04/arm.bc7.ktx2": {
+   "bytes": 1070403,
+   "sha256": "a8e39e1e8a4c10574ade4980a72e0afab6b94956ff6a3a738186e95a14277a56",
+   "from": "textures/exterior/gravel_concrete_04/arm.ktx2",
+   "source": "ca0dd83ca5b70f5edd8d1194708cddf0421d69b3703c97d93d3557446424750c",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/gravel_concrete_04/normal.astc.ktx2": {
+   "bytes": 1181668,
+   "sha256": "0467899e2cfd48fb539898d5bc9b3d8f3087a98fe917b9f0459299c282be509c",
+   "from": "textures/exterior/gravel_concrete_04/normal.ktx2",
+   "source": "dad932cc51b4cb5c9cead051b329e5365d50f6dbf2eabd2d8653d103685f01fd",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/gravel_concrete_04/normal.bc7.ktx2": {
+   "bytes": 1219090,
+   "sha256": "2bfef11853d6fbb1b0165d8e69b61cae2e5cd7f914515a2cd5ada6fda40b275d",
+   "from": "textures/exterior/gravel_concrete_04/normal.ktx2",
+   "source": "dad932cc51b4cb5c9cead051b329e5365d50f6dbf2eabd2d8653d103685f01fd",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/red_brick_03/albedo.astc.ktx2": {
+   "bytes": 440789,
+   "sha256": "ee56570d279c65ca4d54c62424a66e513a63c11d8e6ccb5b63baa533bb81fcf1",
+   "from": "textures/exterior/red_brick_03/albedo.ktx2",
+   "source": "5d21fb41e02589c9623fba134c34da1916bd0db9941f34cdeb594efd33f97a9e",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/red_brick_03/albedo.bc7.ktx2": {
+   "bytes": 479454,
+   "sha256": "d4b2a030e08da585e60cd9e3ac94f7031a40226235558b8042d0731b1d9edfdc",
+   "from": "textures/exterior/red_brick_03/albedo.ktx2",
+   "source": "5d21fb41e02589c9623fba134c34da1916bd0db9941f34cdeb594efd33f97a9e",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/red_brick_03/arm.astc.ktx2": {
+   "bytes": 817396,
+   "sha256": "388c8ea241dbe824eb56987b3baab5da6f6336a2d8caf2168e19610f7a297221",
+   "from": "textures/exterior/red_brick_03/arm.ktx2",
+   "source": "6a465710d013ef23e4c85ed3537fc0f4273a3924efc77e32d6cbf5aa6f2f5c93",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/red_brick_03/arm.bc7.ktx2": {
+   "bytes": 823302,
+   "sha256": "f6a216f0d65434642e31787b05848543b574754f01dfdc0127df6f400eeb04a4",
+   "from": "textures/exterior/red_brick_03/arm.ktx2",
+   "source": "6a465710d013ef23e4c85ed3537fc0f4273a3924efc77e32d6cbf5aa6f2f5c93",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/red_brick_03/normal.astc.ktx2": {
+   "bytes": 1148637,
+   "sha256": "7a4f45a0482087d04291c3cfb8aabf9f5447349ef118ddef8aff981f22084c23",
+   "from": "textures/exterior/red_brick_03/normal.ktx2",
+   "source": "b864d682dc2e963ad34693d8f5cc9780b682ab8ed96f4aa031563f711d4c70ae",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/exterior/red_brick_03/normal.bc7.ktx2": {
+   "bytes": 1181507,
+   "sha256": "63459a7252c3b406cec5d25254a46332ad4d291edca47c28c109d215601c63c3",
+   "from": "textures/exterior/red_brick_03/normal.ktx2",
+   "source": "b864d682dc2e963ad34693d8f5cc9780b682ab8ed96f4aa031563f711d4c70ae",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/fabric/albedo.astc.ktx2": {
+   "bytes": 149420,
+   "sha256": "e645298ae7a7863dcef63f562a7c401278657e0c887cd85f08f8ae1ac6a0b5ad",
+   "from": "textures/fabric/albedo.ktx2",
+   "source": "86d2309139e554cdd221a40eb90f971404be89b57d9f89bba923af75fdaf2411",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/fabric/albedo.bc7.ktx2": {
+   "bytes": 155188,
+   "sha256": "b4ec252e3e647af1adca9fe5961986eab1220d1cdc27f323f8f2cb487634f836",
+   "from": "textures/fabric/albedo.ktx2",
+   "source": "86d2309139e554cdd221a40eb90f971404be89b57d9f89bba923af75fdaf2411",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/fabric/arm.astc.ktx2": {
+   "bytes": 215589,
+   "sha256": "78181313ace9bd82be0d3df9591ec49edb92eb7cf22f98694e27930451e1398f",
+   "from": "textures/fabric/arm.ktx2",
+   "source": "8cc91405c1593dba10127deb8c4fa0510bf5fb90433471d0344f8186d25c5cb4",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/fabric/arm.bc7.ktx2": {
+   "bytes": 233091,
+   "sha256": "9a57088926e18a3a2c04378964a4a1f6eb78ce272aa4a3c8325a142634b6c2a2",
+   "from": "textures/fabric/arm.ktx2",
+   "source": "8cc91405c1593dba10127deb8c4fa0510bf5fb90433471d0344f8186d25c5cb4",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/fabric/normal.astc.ktx2": {
+   "bytes": 466341,
+   "sha256": "713a7d48961ddbb60f69db6e4e7186f5c31fe58e85c3c528d49ec4bab8f76f41",
+   "from": "textures/fabric/normal.ktx2",
+   "source": "e86e3c1ceec82ee9dc05698b004f48b54248097bb2127d1b4ab0ed2c23a273b8",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/fabric/normal.bc7.ktx2": {
+   "bytes": 462715,
+   "sha256": "936fabb36b36cc9f206720f0a4465969114098b4adda8a230300f65ee6ac8f9d",
+   "from": "textures/fabric/normal.ktx2",
+   "source": "e86e3c1ceec82ee9dc05698b004f48b54248097bb2127d1b4ab0ed2c23a273b8",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/floor_concrete/albedo.astc.ktx2": {
+   "bytes": 346955,
+   "sha256": "04329cea2feba1c726433b33b9423d55c5e2f429d31cf1d7c67bb21f4f50dfe3",
+   "from": "textures/floor_concrete/albedo.ktx2",
+   "source": "a356f43519d649e40cb791f731ff635e8e58d32a078b6292afdb2f3a3435b272",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/floor_concrete/albedo.bc7.ktx2": {
+   "bytes": 344739,
+   "sha256": "06d12bd7cf685af8a635286a5bf980a1c0dcd9d192a7479aaf85d37018a14447",
+   "from": "textures/floor_concrete/albedo.ktx2",
+   "source": "a356f43519d649e40cb791f731ff635e8e58d32a078b6292afdb2f3a3435b272",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/floor_concrete/arm.astc.ktx2": {
+   "bytes": 335723,
+   "sha256": "2a56bdd52a705080e9c56bc7c74d7c124e692d6da2f701457d1c6bb05d7b87cc",
+   "from": "textures/floor_concrete/arm.ktx2",
+   "source": "33d619342fcf62c2193ca0a7bd28903d7aa8a62576924c8a63529d1d3623019f",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/floor_concrete/arm.bc7.ktx2": {
+   "bytes": 349941,
+   "sha256": "97f1e217a311730435d44d568b09edaa6acd648432e24cf1bcaa053b2b3944f8",
+   "from": "textures/floor_concrete/arm.ktx2",
+   "source": "33d619342fcf62c2193ca0a7bd28903d7aa8a62576924c8a63529d1d3623019f",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/floor_concrete/normal.astc.ktx2": {
+   "bytes": 413077,
+   "sha256": "e6955be75a9dbd740509b675adc7cc965202ad436b35d1be312193ddc79cba73",
+   "from": "textures/floor_concrete/normal.ktx2",
+   "source": "e671bcfefcf24c7634c129d3e17430994c2be960ed47619929c9c921e0068d3e",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/floor_concrete/normal.bc7.ktx2": {
+   "bytes": 420288,
+   "sha256": "bc6b653e0b36d4980aa582f142ddcb165ba565a92fb0d3332343867a86b0555d",
+   "from": "textures/floor_concrete/normal.ktx2",
+   "source": "e671bcfefcf24c7634c129d3e17430994c2be960ed47619929c9c921e0068d3e",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/hdpe/albedo.astc.ktx2": {
+   "bytes": 106903,
+   "sha256": "2811db9a44e6934851e65d5ee7820c98e428d4ab9908a1c71eb921e2e029b374",
+   "from": "textures/hdpe/albedo.ktx2",
+   "source": "0c999bc669f72250db14dfcc5a303ce47105996b0fbd7bbaf3761a4e3ddfeb0d",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/hdpe/albedo.bc7.ktx2": {
+   "bytes": 109580,
+   "sha256": "3066f19d7ab851b42fdbaeeb02f10bd463918c4a2097957d27dca77f91b0a2b5",
+   "from": "textures/hdpe/albedo.ktx2",
+   "source": "0c999bc669f72250db14dfcc5a303ce47105996b0fbd7bbaf3761a4e3ddfeb0d",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/hdpe/arm.astc.ktx2": {
+   "bytes": 317430,
+   "sha256": "7ff090884ed51e70542f10fc37ae7734e04bee430463ad4b2e9bc8ccc84b1b1a",
+   "from": "textures/hdpe/arm.ktx2",
+   "source": "52c7e5efbe98a0097606dc65355b99d925339661eb15b30563abfe41c40a3acb",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/hdpe/arm.bc7.ktx2": {
+   "bytes": 318572,
+   "sha256": "7c9c5ec876098137281c4028629f01f2bb8eee4cea6111612f15f2bd321ca82f",
+   "from": "textures/hdpe/arm.ktx2",
+   "source": "52c7e5efbe98a0097606dc65355b99d925339661eb15b30563abfe41c40a3acb",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/hdpe/normal.astc.ktx2": {
+   "bytes": 300391,
+   "sha256": "1d18b211f80623ebfa24a572537dc4e94efeb25056cd8842e7876a04e47c7488",
+   "from": "textures/hdpe/normal.ktx2",
+   "source": "94d7c121160ca46f10a45104c6519c317fbfbdae739f290cfa441bdf15bb04ad",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/hdpe/normal.bc7.ktx2": {
+   "bytes": 320702,
+   "sha256": "808e773fd1c5ce05ab2f23af9c2fb67452a4d316029adbbd39b91ab22b2301bc",
+   "from": "textures/hdpe/normal.ktx2",
+   "source": "94d7c121160ca46f10a45104c6519c317fbfbdae739f290cfa441bdf15bb04ad",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/hdri/empty_warehouse_01_1k.hdr": {
+   "bytes": 1672140,
+   "sha256": "9b3d611cadc32c3a0c7e084ce5611c0650293881c4a041e7fa13748fe0dc6451",
+   "from": "textures/hdri/empty_warehouse_01_1k.hdr",
+   "source": "9b3d611cadc32c3a0c7e084ce5611c0650293881c4a041e7fa13748fe0dc6451"
+  },
+  "textures/hdri/kloofendal_48d_partly_cloudy_puresky_1k.hdr": {
+   "bytes": 1435119,
+   "sha256": "fd94c84997b8a3c353b62c2125a9b44e19509956986a126e472684432a02d798",
+   "from": "textures/hdri/kloofendal_48d_partly_cloudy_puresky_1k.hdr",
+   "source": "fd94c84997b8a3c353b62c2125a9b44e19509956986a126e472684432a02d798"
+  },
+  "textures/manifest.json": {
+   "bytes": 15923,
+   "sha256": "651f79e6472f0e752e989bc8b0a5c65fb3a5b8af0edee4f3a9172fdcbbed091a",
+   "from": "textures/manifest.json",
+   "source": "651f79e6472f0e752e989bc8b0a5c65fb3a5b8af0edee4f3a9172fdcbbed091a"
+  },
+  "textures/net/alpha.png": {
+   "bytes": 6182,
+   "sha256": "d438827bb9e890333f901d146b98576de409bc3b2bae1499cb4374c4aba6ef85",
+   "from": "textures/net/alpha.png",
+   "source": "d438827bb9e890333f901d146b98576de409bc3b2bae1499cb4374c4aba6ef85"
+  },
+  "textures/net/normal.astc.ktx2": {
+   "bytes": 54191,
+   "sha256": "04fbf0764295ebf0af1b0d3f032a503fc5664550927f21e7b506dc28b6fc99a6",
+   "from": "textures/net/normal.ktx2",
+   "source": "af43826ac869b8f338eb25759a1e58f635911c9771286bb963656eb3636a46c2",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 512,
+   "height": 512,
+   "levels": 10,
+   "supercompression": 2
+  },
+  "textures/net/normal.bc7.ktx2": {
+   "bytes": 58563,
+   "sha256": "4c189a7768fac594d3d91e8631c061aee3533255ee18afbcf40da46065e59468",
+   "from": "textures/net/normal.ktx2",
+   "source": "af43826ac869b8f338eb25759a1e58f635911c9771286bb963656eb3636a46c2",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 512,
+   "height": 512,
+   "levels": 10,
+   "supercompression": 2
+  },
+  "textures/neveplast/albedo_far.jpg": {
+   "bytes": 46480,
+   "sha256": "a25ba9ec38bc2a2ce61b4cad51077e7e6c97208c0c7eca4a8479c85aac3a1c48",
+   "from": "textures/neveplast/albedo_far.jpg",
+   "source": "a25ba9ec38bc2a2ce61b4cad51077e7e6c97208c0c7eca4a8479c85aac3a1c48"
+  },
+  "textures/neveplast/albedo_green_far.jpg": {
+   "bytes": 38414,
+   "sha256": "c8fd0f24b76ac413543f1f8ddbd29f3d58459327d00d272bd9b2a9ad49b7aaf6",
+   "from": "textures/neveplast/albedo_green_far.jpg",
+   "source": "c8fd0f24b76ac413543f1f8ddbd29f3d58459327d00d272bd9b2a9ad49b7aaf6"
+  },
+  "textures/neveplast/albedo_green.jpg": {
+   "bytes": 600665,
+   "sha256": "3fe0d528fed5c2a19bf82c2c7e0f416d0f40cc9ec58c46b0f829e71813d43167",
+   "from": "textures/neveplast/albedo_green.jpg",
+   "source": "3fe0d528fed5c2a19bf82c2c7e0f416d0f40cc9ec58c46b0f829e71813d43167"
+  },
+  "textures/neveplast/albedo.jpg": {
+   "bytes": 711237,
+   "sha256": "a30a8405b24665170cfd1f2f151e1fc513bc561e5a28f16b48e0d759d20e243e",
+   "from": "textures/neveplast/albedo.jpg",
+   "source": "a30a8405b24665170cfd1f2f151e1fc513bc561e5a28f16b48e0d759d20e243e"
+  },
+  "textures/neveplast/arm_far.jpg": {
+   "bytes": 53138,
+   "sha256": "7f926beb43ca0d09e5566035c0f51efb67c9bb1d5eb667aae86df733e3cf83e4",
+   "from": "textures/neveplast/arm_far.jpg",
+   "source": "7f926beb43ca0d09e5566035c0f51efb67c9bb1d5eb667aae86df733e3cf83e4"
+  },
+  "textures/neveplast/arm.jpg": {
+   "bytes": 731735,
+   "sha256": "cd922e2467faa17b53512cd469da4b7dc1125efa80c782df6783869f5e02f9ea",
+   "from": "textures/neveplast/arm.jpg",
+   "source": "cd922e2467faa17b53512cd469da4b7dc1125efa80c782df6783869f5e02f9ea"
+  },
+  "textures/neveplast/fringe_alpha.astc.ktx2": {
+   "bytes": 7264,
+   "sha256": "99353976c208b15a689be231f41d67e5f272621ad84d2436fbda647e4266ef5c",
+   "from": "textures/neveplast/fringe_alpha.ktx2",
+   "source": "6f0cf43271790a76b50353b7a67f5ff745ddb64dcb81032eea1ef830f6bcf9bd",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 128,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/neveplast/fringe_alpha.bc7.ktx2": {
+   "bytes": 7776,
+   "sha256": "9df9542f7dcca6a6ba664780a4c23809ee55d428d7d7f7041572f46654636d95",
+   "from": "textures/neveplast/fringe_alpha.ktx2",
+   "source": "6f0cf43271790a76b50353b7a67f5ff745ddb64dcb81032eea1ef830f6bcf9bd",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 128,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/neveplast/fringe_alpha.rgba8.ktx2": {
+   "bytes": 7920,
+   "sha256": "d3838f5adf9a856af8dd2b59933292246649a17ce497434c7740bb1f94c52a60",
+   "from": "textures/neveplast/fringe_alpha.ktx2",
+   "source": "6f0cf43271790a76b50353b7a67f5ff745ddb64dcb81032eea1ef830f6bcf9bd",
+   "family": "rgba8",
+   "vkFormat": 37,
+   "width": 1024,
+   "height": 128,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/neveplast/fringe_green.astc.ktx2": {
+   "bytes": 28688,
+   "sha256": "f17058f45b3810c606603d0d58bce7a2cc29216e90878f6c659f515ca419926a",
+   "from": "textures/neveplast/fringe_green.ktx2",
+   "source": "98123b461adace0ad323d4e55a759427c23cf5d75c2bed2c555adf38962b3b20",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 128,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/neveplast/fringe_green.bc7.ktx2": {
+   "bytes": 29817,
+   "sha256": "3e62527419e2c2fbf568c77840986874b7efc9e8a0dc4df90a87b50075b7952c",
+   "from": "textures/neveplast/fringe_green.ktx2",
+   "source": "98123b461adace0ad323d4e55a759427c23cf5d75c2bed2c555adf38962b3b20",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 128,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/neveplast/fringe_green.rgba8.ktx2": {
+   "bytes": 37819,
+   "sha256": "ffcc6a95b24b432f315eff0b910be09e3c65c1b6eec3cb762da8e687c65566a9",
+   "from": "textures/neveplast/fringe_green.ktx2",
+   "source": "98123b461adace0ad323d4e55a759427c23cf5d75c2bed2c555adf38962b3b20",
+   "family": "rgba8",
+   "vkFormat": 43,
+   "width": 1024,
+   "height": 128,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/neveplast/fringe.astc.ktx2": {
+   "bytes": 29746,
+   "sha256": "2499c8191180451b4245408803654300af7de7d007fc01373bf44dc37e0c3ec1",
+   "from": "textures/neveplast/fringe.ktx2",
+   "source": "abac594b2855b2c1a7e8126057b1534695de7964f54baee0162608e058745463",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 128,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/neveplast/fringe.bc7.ktx2": {
+   "bytes": 30269,
+   "sha256": "8e33bc6b61677c65562ed366d3e93d0ea359c49fdba35244a70b39536fea56bb",
+   "from": "textures/neveplast/fringe.ktx2",
+   "source": "abac594b2855b2c1a7e8126057b1534695de7964f54baee0162608e058745463",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 128,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/neveplast/fringe.rgba8.ktx2": {
+   "bytes": 36758,
+   "sha256": "d10bac99a5cac886950068bafbbecd96c989f84a26385a4cf3e73ee85606d9af",
+   "from": "textures/neveplast/fringe.ktx2",
+   "source": "abac594b2855b2c1a7e8126057b1534695de7964f54baee0162608e058745463",
+   "family": "rgba8",
+   "vkFormat": 43,
+   "width": 1024,
+   "height": 128,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/neveplast/height.ktx2": {
+   "bytes": 847673,
+   "sha256": "1e464d6d32192f72c095cc470fee060bd9595508eb83f5cf14535fb4d294d6e0",
+   "from": "textures/neveplast/height.ktx2",
+   "source": "1e464d6d32192f72c095cc470fee060bd9595508eb83f5cf14535fb4d294d6e0"
+  },
+  "textures/neveplast/normal.astc.ktx2": {
+   "bytes": 1698939,
+   "sha256": "87d79cd1e73b27f9bd72f1d7d8ff08498820ff0893a28f08e985362853e10f9f",
+   "from": "textures/neveplast/normal.ktx2",
+   "source": "aa41d119e696557d6ece8ae0cd4284625a9710268d7d8c08f812d3a14084e422",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 2048,
+   "height": 2048,
+   "levels": 12,
+   "supercompression": 2
+  },
+  "textures/neveplast/normal.bc7.ktx2": {
+   "bytes": 1777226,
+   "sha256": "7b88281a262f5cc82b6088fb2da93531b950a62b7b71540a83e5641e9489025e",
+   "from": "textures/neveplast/normal.ktx2",
+   "source": "aa41d119e696557d6ece8ae0cd4284625a9710268d7d8c08f812d3a14084e422",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 2048,
+   "height": 2048,
+   "levels": 12,
+   "supercompression": 2
+  },
+  "textures/neveplast/sheen.astc.ktx2": {
+   "bytes": 337787,
+   "sha256": "7b6ecb1ef69c5935e86069acccfdf2a17b6e8f6bafeb5afd6bb1e52eabdd9a4e",
+   "from": "textures/neveplast/sheen.ktx2",
+   "source": "108c4d75ee51c3b4ea548709a16a821548ab715313a9d8d2ab6721018c4cc1da",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 2048,
+   "height": 2048,
+   "levels": 12,
+   "supercompression": 2
+  },
+  "textures/neveplast/sheen.bc7.ktx2": {
+   "bytes": 354976,
+   "sha256": "f4f04b732bf801c914b1a1e4ed52995b956edb83e9c13d3b7f39d08aaeac273a",
+   "from": "textures/neveplast/sheen.ktx2",
+   "source": "108c4d75ee51c3b4ea548709a16a821548ab715313a9d8d2ab6721018c4cc1da",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 2048,
+   "height": 2048,
+   "levels": 12,
+   "supercompression": 2
+  },
+  "textures/painted_metal/albedo.astc.ktx2": {
+   "bytes": 22029,
+   "sha256": "e80bd1cc91d2c611146f83cc537458ed4ec205e103b4cdaa20b13c07e7f3f994",
+   "from": "textures/painted_metal/albedo.ktx2",
+   "source": "256552d2ccabe386eeb68aa70a26e3c97cbddbb2a87fa08d0f337d4b13a99faf",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/painted_metal/albedo.bc7.ktx2": {
+   "bytes": 22337,
+   "sha256": "e1c7a2aca0e1d813bd5dfcf0b59182fcb2fbcc0a93c83e41c7930b6978a9ecd4",
+   "from": "textures/painted_metal/albedo.ktx2",
+   "source": "256552d2ccabe386eeb68aa70a26e3c97cbddbb2a87fa08d0f337d4b13a99faf",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/painted_metal/arm.astc.ktx2": {
+   "bytes": 149305,
+   "sha256": "df80e7149d8c541ad8262a4b23677eb1aeda42cda1cbfa31291aae11dfa63041",
+   "from": "textures/painted_metal/arm.ktx2",
+   "source": "59a6267cd0137516beb588e6ed0a5de16ec43fdfe106328b988442f57a41c373",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/painted_metal/arm.bc7.ktx2": {
+   "bytes": 156302,
+   "sha256": "814acfd60c8c8f158db7d919b6ed4282ea990edfa1df942763df97cdaf819309",
+   "from": "textures/painted_metal/arm.ktx2",
+   "source": "59a6267cd0137516beb588e6ed0a5de16ec43fdfe106328b988442f57a41c373",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/painted_metal/normal.astc.ktx2": {
+   "bytes": 25639,
+   "sha256": "4071ae3a04dba4520f2f5b697e6a960ab2e4a81530d9c24c5e26c3ba443eb0e1",
+   "from": "textures/painted_metal/normal.ktx2",
+   "source": "5b119f652261f38ebe069703c4113aac45b14bd17aabead7f688c73df595814c",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/painted_metal/normal.bc7.ktx2": {
+   "bytes": 28255,
+   "sha256": "27521a6da38e594e175243d4c4fb7de03787f8acabf4ebdf441a981b75ac05f4",
+   "from": "textures/painted_metal/normal.ktx2",
+   "source": "5b119f652261f38ebe069703c4113aac45b14bd17aabead7f688c73df595814c",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/painted_ply/albedo.astc.ktx2": {
+   "bytes": 738322,
+   "sha256": "155d81df44cec2378f5d849ef9ee495ef5fd3a35ec94d5cbd0794270787395db",
+   "from": "textures/painted_ply/albedo.ktx2",
+   "source": "eb72c6dd393bb7dc234c756e2408d26ce8357e27f9d117ea8d1203736605a78d",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 2048,
+   "height": 2048,
+   "levels": 12,
+   "supercompression": 2
+  },
+  "textures/painted_ply/albedo.bc7.ktx2": {
+   "bytes": 759743,
+   "sha256": "19810c05b02dc0236f59724c2514bc60ff37e5042b8b6c72a23deb1c1b16fcfc",
+   "from": "textures/painted_ply/albedo.ktx2",
+   "source": "eb72c6dd393bb7dc234c756e2408d26ce8357e27f9d117ea8d1203736605a78d",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 2048,
+   "height": 2048,
+   "levels": 12,
+   "supercompression": 2
+  },
+  "textures/painted_ply/arm.astc.ktx2": {
+   "bytes": 1020339,
+   "sha256": "a91b44ec74f8655c2529babf8590b691137d9251fcb8dff9c6aeeae27493ac84",
+   "from": "textures/painted_ply/arm.ktx2",
+   "source": "4feef4717bfdce2f4010b7b18514790ba775902677d852dd7770139086f52e19",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 2048,
+   "height": 2048,
+   "levels": 12,
+   "supercompression": 2
+  },
+  "textures/painted_ply/arm.bc7.ktx2": {
+   "bytes": 1059410,
+   "sha256": "168dfc8f8517a18510d071bf512f951e0f6ecfeb94a3f9d5271acb9a8356d3da",
+   "from": "textures/painted_ply/arm.ktx2",
+   "source": "4feef4717bfdce2f4010b7b18514790ba775902677d852dd7770139086f52e19",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 2048,
+   "height": 2048,
+   "levels": 12,
+   "supercompression": 2
+  },
+  "textures/painted_ply/normal.astc.ktx2": {
+   "bytes": 1134794,
+   "sha256": "787b247880b2cc5719aa06deeeec0349d351b1a682ee1f8d6da82c47d5dea7f3",
+   "from": "textures/painted_ply/normal.ktx2",
+   "source": "4b4de32b8e922a769546b0e7df3b92eb13a07722cc27ee4634fffb679e407c24",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 2048,
+   "height": 2048,
+   "levels": 12,
+   "supercompression": 2
+  },
+  "textures/painted_ply/normal.bc7.ktx2": {
+   "bytes": 1144749,
+   "sha256": "cabad31e86f5ccc519adc4e629d16a8f893367cdd3b12eea80f3e0ad1141464c",
+   "from": "textures/painted_ply/normal.ktx2",
+   "source": "4b4de32b8e922a769546b0e7df3b92eb13a07722cc27ee4634fffb679e407c24",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 2048,
+   "height": 2048,
+   "levels": 12,
+   "supercompression": 2
+  },
+  "textures/plywood/albedo.astc.ktx2": {
+   "bytes": 401142,
+   "sha256": "b225beb149067efc43d72e06e37544537a07665f4940c6e01056854c8b47073d",
+   "from": "textures/plywood/albedo.ktx2",
+   "source": "5b1bd6915ac87a704803b3e5c1c96256914b8552a08ff9a226e7fea14420e5d0",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/plywood/albedo.bc7.ktx2": {
+   "bytes": 429680,
+   "sha256": "19cda313eebc9182434f4493956c2c207ed8bbf665bf204ce4a15e9509ca7a0c",
+   "from": "textures/plywood/albedo.ktx2",
+   "source": "5b1bd6915ac87a704803b3e5c1c96256914b8552a08ff9a226e7fea14420e5d0",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/plywood/arm.astc.ktx2": {
+   "bytes": 300091,
+   "sha256": "ab7452ca9822a7b9b7c4f5c2567c4b4bc932f6e584dfd5a3597a231aae77d343",
+   "from": "textures/plywood/arm.ktx2",
+   "source": "986f1e4c79e652aaf37963344e8c331d82479df3d699720c958bd4fbd6864d17",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/plywood/arm.bc7.ktx2": {
+   "bytes": 330517,
+   "sha256": "81398e388ea177cd25c62ce94efc6ac10f4282caf1db862221aa3d50dc3ac388",
+   "from": "textures/plywood/arm.ktx2",
+   "source": "986f1e4c79e652aaf37963344e8c331d82479df3d699720c958bd4fbd6864d17",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/plywood/normal.astc.ktx2": {
+   "bytes": 665955,
+   "sha256": "5d29fc28bb96980ba9fdffab159ffc98d86cd7e31278dcd0b80dbc24fe5aae49",
+   "from": "textures/plywood/normal.ktx2",
+   "source": "9d1363ba46823dadc50c47b07588b72e604db2b3afa33dafa674b9432f801cf9",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/plywood/normal.bc7.ktx2": {
+   "bytes": 670039,
+   "sha256": "38023c1d30689a6e7c00c61197c732b4d81a9fa7fcfba25b46d24d6a6571ede6",
+   "from": "textures/plywood/normal.ktx2",
+   "source": "9d1363ba46823dadc50c47b07588b72e604db2b3afa33dafa674b9432f801cf9",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/rail/albedo.astc.ktx2": {
+   "bytes": 58288,
+   "sha256": "9e8b59630cb281481503c8d115c95e09a55a6161a3bfd7df6ed1cbaa296701b4",
+   "from": "textures/rail/albedo.ktx2",
+   "source": "3a7641f3dc6959096df52b5c8da317344e1c85485b0c7255e21dd896b27341eb",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 256,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/rail/albedo.bc7.ktx2": {
+   "bytes": 60659,
+   "sha256": "30762d1554857d6752d4014ebc09dcc9fa74383d8064951809dbf1d0f29f9abf",
+   "from": "textures/rail/albedo.ktx2",
+   "source": "3a7641f3dc6959096df52b5c8da317344e1c85485b0c7255e21dd896b27341eb",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 256,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/rail/arm.astc.ktx2": {
+   "bytes": 145501,
+   "sha256": "804e281e7ed82878ede7cc2191f8c8d377387976e6c7ad0233f738177ba971ec",
+   "from": "textures/rail/arm.ktx2",
+   "source": "14f79bbf8585995ca2cfd1df0899da8890eed177f2cf52f4a549430bf28cc9d8",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 256,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/rail/arm.bc7.ktx2": {
+   "bytes": 140582,
+   "sha256": "d38a842ed751e190f162327f65946dee163248a614a51cba2f0d38b43db8d6d6",
+   "from": "textures/rail/arm.ktx2",
+   "source": "14f79bbf8585995ca2cfd1df0899da8890eed177f2cf52f4a549430bf28cc9d8",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 256,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/rail/normal.astc.ktx2": {
+   "bytes": 17761,
+   "sha256": "b854f379b6f9201b2de3c5491f3d96a800a3997ba405c386cf6d9581a65c34fc",
+   "from": "textures/rail/normal.ktx2",
+   "source": "cc6dd6d09bdefe19f12d1c97fd5a0a41a63954f4860a0ef4adf27cc70a09fee0",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 256,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/rail/normal.bc7.ktx2": {
+   "bytes": 19045,
+   "sha256": "5569454346e9cc4799723bb42372cd0349e8fcecb1542dd444fdaa51cea5e201",
+   "from": "textures/rail/normal.ktx2",
+   "source": "cc6dd6d09bdefe19f12d1c97fd5a0a41a63954f4860a0ef4adf27cc70a09fee0",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 256,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/roof_metal/albedo.astc.ktx2": {
+   "bytes": 40452,
+   "sha256": "69714dea59ce11168c6e76dfb6efd6f239e223f9f69a81fcf9dbb7bc73e4ab66",
+   "from": "textures/roof_metal/albedo.ktx2",
+   "source": "ef10938708d0ecbf07bc774a02370f59bc9fc75f52b82e344b3ce6cafd62ce3b",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/roof_metal/albedo.bc7.ktx2": {
+   "bytes": 41801,
+   "sha256": "02546ef54c82b0927e360073f36116d0c4f0c3cdb87f79d3e5a8d12ec9a8515f",
+   "from": "textures/roof_metal/albedo.ktx2",
+   "source": "ef10938708d0ecbf07bc774a02370f59bc9fc75f52b82e344b3ce6cafd62ce3b",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/roof_metal/arm.astc.ktx2": {
+   "bytes": 303422,
+   "sha256": "8f7667e03cc6878d4d17ab233ae338f730f504bfab2901441ed645113f24cb57",
+   "from": "textures/roof_metal/arm.ktx2",
+   "source": "ebeaa2a7d83505cb3b3cc4dd46c566eba39304d0adcfdf45c5ddcde9f2cc492f",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/roof_metal/arm.bc7.ktx2": {
+   "bytes": 323111,
+   "sha256": "37d2c5ab732f1a7c74230b30932be032a4848e820ae920c4884b5540f9343d6e",
+   "from": "textures/roof_metal/arm.ktx2",
+   "source": "ebeaa2a7d83505cb3b3cc4dd46c566eba39304d0adcfdf45c5ddcde9f2cc492f",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/roof_metal/normal.astc.ktx2": {
+   "bytes": 437139,
+   "sha256": "2baf4fd692be67a433d473f86420c85caa3e187d9b71fb522eb2fe8cea65c0ec",
+   "from": "textures/roof_metal/normal.ktx2",
+   "source": "9fdc118ed7df0297024b17c84421d0245953c8ef68efdf21cc03d2ac6107e685",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/roof_metal/normal.bc7.ktx2": {
+   "bytes": 436952,
+   "sha256": "ef72670de0f0a4d6ca9b7d18144426640eabc23aa8e2d533a388b7bca2fbf342",
+   "from": "textures/roof_metal/normal.ktx2",
+   "source": "9fdc118ed7df0297024b17c84421d0245953c8ef68efdf21cc03d2ac6107e685",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/rubber_floor/albedo.astc.ktx2": {
+   "bytes": 460883,
+   "sha256": "6eaa4ce131c767616d7c2ad85890f0f3d1e86fe4154e1ae07f1ed7be85c52ae6",
+   "from": "textures/rubber_floor/albedo.ktx2",
+   "source": "ebe43b19ff372df76c1a026027471c017df35aabc255ce7997250bc756db0d2a",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/rubber_floor/albedo.bc7.ktx2": {
+   "bytes": 439996,
+   "sha256": "6dbfe5c555688f46c6d5ccda2af5b4c0db29b1db93bfb76872450eae012e1e56",
+   "from": "textures/rubber_floor/albedo.ktx2",
+   "source": "ebe43b19ff372df76c1a026027471c017df35aabc255ce7997250bc756db0d2a",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/rubber_floor/arm.astc.ktx2": {
+   "bytes": 728008,
+   "sha256": "008f4d98fd346220ec006e55a156f9f7d6f64ffe4d4fafa2fa5456857dfb5c0f",
+   "from": "textures/rubber_floor/arm.ktx2",
+   "source": "11ddf752378bf27aa10931bf24a56219bb6dcfa66048a0f6490d8fc7d21ca857",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/rubber_floor/arm.bc7.ktx2": {
+   "bytes": 673705,
+   "sha256": "885aea176103e9012073a7a0648c8b459bc5852f7e9a770ea952b53adecae172",
+   "from": "textures/rubber_floor/arm.ktx2",
+   "source": "11ddf752378bf27aa10931bf24a56219bb6dcfa66048a0f6490d8fc7d21ca857",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/rubber_floor/normal.astc.ktx2": {
+   "bytes": 1056412,
+   "sha256": "420d8598b7596772e93efd802b3ff22751a96b41670637afcf2e6beb57174ebd",
+   "from": "textures/rubber_floor/normal.ktx2",
+   "source": "7c632638c13e557f1d754b432272d1e4466d7ea526d41f595c633c7f6872b58d",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/rubber_floor/normal.bc7.ktx2": {
+   "bytes": 1043558,
+   "sha256": "32e14ff33ccd72eee3b8a9eeb338904012220ffe9d77f566577fda4dbafab93c",
+   "from": "textures/rubber_floor/normal.ktx2",
+   "source": "7c632638c13e557f1d754b432272d1e4466d7ea526d41f595c633c7f6872b58d",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/sidewalk/albedo.astc.ktx2": {
+   "bytes": 280781,
+   "sha256": "98ea02fa8539ccfe25b347a23063c95160dffbf63c4da8745ac23ed31b72e8f3",
+   "from": "textures/sidewalk/albedo.ktx2",
+   "source": "467a490a0e00ad730bd88da15e4b3f06fec04c29c8d27ff8359f7fd028ef145d",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/sidewalk/albedo.bc7.ktx2": {
+   "bytes": 292167,
+   "sha256": "e403356ae1b402c97145b30ca0a693afab20a7a1f3e55b87493b2fe9709c69e1",
+   "from": "textures/sidewalk/albedo.ktx2",
+   "source": "467a490a0e00ad730bd88da15e4b3f06fec04c29c8d27ff8359f7fd028ef145d",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/sidewalk/arm.astc.ktx2": {
+   "bytes": 672712,
+   "sha256": "31e1dd2a7d2bea921c0221d99f5eda78f93ef9e44dabb8d5fa21122340349a44",
+   "from": "textures/sidewalk/arm.ktx2",
+   "source": "79b1c9ed3b1aadb3fa6e236cb733534620a21a8cc63f4264215b7434c784dd5c",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/sidewalk/arm.bc7.ktx2": {
+   "bytes": 670031,
+   "sha256": "b34dab6c1226ff983611200362f1f1886484bda5a13a59609ffa5b63e4aa7823",
+   "from": "textures/sidewalk/arm.ktx2",
+   "source": "79b1c9ed3b1aadb3fa6e236cb733534620a21a8cc63f4264215b7434c784dd5c",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/sidewalk/normal.astc.ktx2": {
+   "bytes": 1101786,
+   "sha256": "44ac0398ac1b3335d2f6b3146f17c74e2c5a0c521c7e2f73a371b93e41103a96",
+   "from": "textures/sidewalk/normal.ktx2",
+   "source": "45019978d7c7127e04d304cebd7d2a50e2d66520f0b567c70c74782bdd4a30d3",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/sidewalk/normal.bc7.ktx2": {
+   "bytes": 1104890,
+   "sha256": "e46c0b75908c4059a2b1260f17890d04d6ebbd2b04860bd268f81de5036f251a",
+   "from": "textures/sidewalk/normal.ktx2",
+   "source": "45019978d7c7127e04d304cebd7d2a50e2d66520f0b567c70c74782bdd4a30d3",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/sky/kloofendal_48d_partly_cloudy_puresky.cycles.bc6h.ktx2": {
+   "bytes": 4945141,
+   "sha256": "ef2a2885ef0d9fcb0143bd2508446fe8cf5393bdc3c196304c9350ddc2b2520b",
+   "from": "textures/sky/kloofendal_48d_partly_cloudy_puresky.cycles.bc6h.ktx2",
+   "source": "ef2a2885ef0d9fcb0143bd2508446fe8cf5393bdc3c196304c9350ddc2b2520b"
+  },
+  "textures/tiles_wc/albedo.astc.ktx2": {
+   "bytes": 22271,
+   "sha256": "24cfc1396af6240d83a454d7c73c042ed0371b787001c3281c969f2c0a2ba552",
+   "from": "textures/tiles_wc/albedo.ktx2",
+   "source": "48b45ad6418dd4b8e7b97db58478dcbbe1d27657ac0e45a4668a628d1c7046ee",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/tiles_wc/albedo.bc7.ktx2": {
+   "bytes": 22391,
+   "sha256": "385dd1e29cb24110d48eef5af5321dedbb0ec5cb0ad2fd9cd6b540bd51abfcd0",
+   "from": "textures/tiles_wc/albedo.ktx2",
+   "source": "48b45ad6418dd4b8e7b97db58478dcbbe1d27657ac0e45a4668a628d1c7046ee",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/tiles_wc/arm.astc.ktx2": {
+   "bytes": 333657,
+   "sha256": "e9992b19e8f4f3b9b5aaec2b36e54ef1974953950d55d09c0da25247ab010df1",
+   "from": "textures/tiles_wc/arm.ktx2",
+   "source": "92372c1fbcef2b2514e85d1137fcf4b37e63e2161a2b126a797153cb2e47ca75",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/tiles_wc/arm.bc7.ktx2": {
+   "bytes": 332683,
+   "sha256": "6dcd4b357e69f0a4aa40bbab87fcb282fd966c5b4e6c28c07fb9ba227ee2570e",
+   "from": "textures/tiles_wc/arm.ktx2",
+   "source": "92372c1fbcef2b2514e85d1137fcf4b37e63e2161a2b126a797153cb2e47ca75",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/tiles_wc/normal.astc.ktx2": {
+   "bytes": 32861,
+   "sha256": "2ecb33ada9d1e2616910e9109c7add7b207a11d5ec2e7e3878a46c3d9e8fd0f2",
+   "from": "textures/tiles_wc/normal.ktx2",
+   "source": "489f89fa5504ca7c9e24d248a062320005fa23e45d0c99a72d4f16e6384c833d",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/tiles_wc/normal.bc7.ktx2": {
+   "bytes": 34940,
+   "sha256": "975c55de0d1480bcaef9ca3be5b51ed3e89e8e081237b8ed792505c6a642c9d1",
+   "from": "textures/tiles_wc/normal.ktx2",
+   "source": "489f89fa5504ca7c9e24d248a062320005fa23e45d0c99a72d4f16e6384c833d",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/turf/albedo.astc.ktx2": {
+   "bytes": 419414,
+   "sha256": "4e9bc80f2d33c29cf1993f13bfd3aa30d006a7e2e080c6612ee4c3a93301cc2c",
+   "from": "textures/turf/albedo.ktx2",
+   "source": "6b64aedb9a5ea6713378e9e92b3c97cc21186ae5e37459b2102c741130f53c81",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/turf/albedo.bc7.ktx2": {
+   "bytes": 441348,
+   "sha256": "6f4158e5f45dc71e853f75b8c8f4c588467effeba517770cc537270e7cef116b",
+   "from": "textures/turf/albedo.ktx2",
+   "source": "6b64aedb9a5ea6713378e9e92b3c97cc21186ae5e37459b2102c741130f53c81",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/turf/arm.astc.ktx2": {
+   "bytes": 1022844,
+   "sha256": "39c90882089d40591206bd7f35be078202b53d8d6163debd3fd845239c22562b",
+   "from": "textures/turf/arm.ktx2",
+   "source": "89a972f51b59203075e1e5201335e807e8ce768fece1b955d2434b7ae3c44bf2",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/turf/arm.bc7.ktx2": {
+   "bytes": 1014478,
+   "sha256": "85eafa1765acc4fdebd508bad24b56fd0e51acb2b6d15e7b06647edac4193b58",
+   "from": "textures/turf/arm.ktx2",
+   "source": "89a972f51b59203075e1e5201335e807e8ce768fece1b955d2434b7ae3c44bf2",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/turf/normal.astc.ktx2": {
+   "bytes": 1232374,
+   "sha256": "19cba3f390e556da2c781e5d98f4d7739b8e12b80d019d74dc43386dcdf52126",
+   "from": "textures/turf/normal.ktx2",
+   "source": "b5023a8f7b3f3243e016e9a06615ff7a808b7acd1e2f01b12a9fb07d8fba3375",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/turf/normal.bc7.ktx2": {
+   "bytes": 1209966,
+   "sha256": "ca8153829933f5a6c0b07fd56517c2f52dc861cbb90b7a207bcc228e816f5740",
+   "from": "textures/turf/normal.ktx2",
+   "source": "b5023a8f7b3f3243e016e9a06615ff7a808b7acd1e2f01b12a9fb07d8fba3375",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wall_block/albedo.astc.ktx2": {
+   "bytes": 19161,
+   "sha256": "f2348dfcfe3a2fed2bba8335423386c4fac14fac09c645c984d25c897e864d52",
+   "from": "textures/wall_block/albedo.ktx2",
+   "source": "d42d932ad13c0e95d47f8ab34c22dcf02b21b021af282c503797cf0f3caa3b2e",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wall_block/albedo.bc7.ktx2": {
+   "bytes": 19877,
+   "sha256": "f69f640a9d7fb10f28a852ee738064171cf75543f53fa98665fa5f9041c7a3f8",
+   "from": "textures/wall_block/albedo.ktx2",
+   "source": "d42d932ad13c0e95d47f8ab34c22dcf02b21b021af282c503797cf0f3caa3b2e",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wall_block/arm.astc.ktx2": {
+   "bytes": 593748,
+   "sha256": "fa01dadedfcdbebb821febee6e09a84dd266941032b794127903ca95dc0acaf0",
+   "from": "textures/wall_block/arm.ktx2",
+   "source": "4c78c8cec484fedd19b1816c37d821c13a26d2033759dc5d79b0da0143cb0060",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wall_block/arm.bc7.ktx2": {
+   "bytes": 580890,
+   "sha256": "69f6c3fa10c2b719733ff9aaa2a495c8ea693b260806013c5a298de6d51c2d40",
+   "from": "textures/wall_block/arm.ktx2",
+   "source": "4c78c8cec484fedd19b1816c37d821c13a26d2033759dc5d79b0da0143cb0060",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wall_block/normal.astc.ktx2": {
+   "bytes": 722557,
+   "sha256": "ea2e1e7056c3aa92170f2b4a926a301432e376ad4ea6c1ae2564fd03ecead54f",
+   "from": "textures/wall_block/normal.ktx2",
+   "source": "c2a1ef28b2fe3635c300dbee533118b19e0e561c346cb72ee188811b5c6ec0eb",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wall_block/normal.bc7.ktx2": {
+   "bytes": 723904,
+   "sha256": "27816f0fa6649bf01d96876b0bdaf6ac96e7860bd14d3109b44ed81f623875ee",
+   "from": "textures/wall_block/normal.ktx2",
+   "source": "c2a1ef28b2fe3635c300dbee533118b19e0e561c346cb72ee188811b5c6ec0eb",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wall_precast/albedo.astc.ktx2": {
+   "bytes": 77107,
+   "sha256": "8f55e9c1efa43352872fc438424471560f107625bc7cabddd51b42f5b158103e",
+   "from": "textures/wall_precast/albedo.ktx2",
+   "source": "43db9525b5137a4933e0d78d6b27c32c7e07350349a264240230dd4a12fdf51e",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wall_precast/albedo.bc7.ktx2": {
+   "bytes": 79992,
+   "sha256": "228a35f1b6281cd3d354b7e94619d9ef0e4f382bf14671b4068fa9e452014b85",
+   "from": "textures/wall_precast/albedo.ktx2",
+   "source": "43db9525b5137a4933e0d78d6b27c32c7e07350349a264240230dd4a12fdf51e",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wall_precast/arm.astc.ktx2": {
+   "bytes": 125566,
+   "sha256": "586a9dc3eebf85fd706e79c849b8a1ceeccde083cf5d755373ca859236351730",
+   "from": "textures/wall_precast/arm.ktx2",
+   "source": "24a9fb2576e50b005e59284a2a82bfb964e7f39eb6ecf64bfc0aaddbd091a801",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wall_precast/arm.bc7.ktx2": {
+   "bytes": 137096,
+   "sha256": "dc928edefa1a500050fc763550a3625d7963b88a9cd01a4b3d0f0651a036021f",
+   "from": "textures/wall_precast/arm.ktx2",
+   "source": "24a9fb2576e50b005e59284a2a82bfb964e7f39eb6ecf64bfc0aaddbd091a801",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wall_precast/normal.astc.ktx2": {
+   "bytes": 339510,
+   "sha256": "18bbb7f3401ce5d44fcdbedd290bbd7a9ab734a01d64f8f4bc8f3d683fd3d876",
+   "from": "textures/wall_precast/normal.ktx2",
+   "source": "c7ddfde96e784a01370a6b8c17a3b8c80da40c914ab158e3eb000cae542e7b3e",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wall_precast/normal.bc7.ktx2": {
+   "bytes": 351501,
+   "sha256": "8dbe55c94d15472de0c31922d3bd9da9149b2e950c047acc6b8896a0dcc861bb",
+   "from": "textures/wall_precast/normal.ktx2",
+   "source": "c7ddfde96e784a01370a6b8c17a3b8c80da40c914ab158e3eb000cae542e7b3e",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wood_veneer/albedo.astc.ktx2": {
+   "bytes": 390158,
+   "sha256": "b1de00910770133f19a671dcb900d710408a2145ad2622b4d4af4f2a493793bc",
+   "from": "textures/wood_veneer/albedo.ktx2",
+   "source": "78a44e17f3f4eeca9a99562313c691b57cddb355386dba6cd2d69b0fd493cd39",
+   "family": "astc",
+   "vkFormat": 158,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wood_veneer/albedo.bc7.ktx2": {
+   "bytes": 398859,
+   "sha256": "e5ac912c60d8791c3f313e75a5008c338f66de7c6f9a179933f4eeec22f5c1fb",
+   "from": "textures/wood_veneer/albedo.ktx2",
+   "source": "78a44e17f3f4eeca9a99562313c691b57cddb355386dba6cd2d69b0fd493cd39",
+   "family": "bc7",
+   "vkFormat": 146,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wood_veneer/arm.astc.ktx2": {
+   "bytes": 268562,
+   "sha256": "85b86eae22191c08c8f16b443ee58b4451facf9cec33894417deb86ef2f61004",
+   "from": "textures/wood_veneer/arm.ktx2",
+   "source": "039ed8f004536ca7f0587e588a97eaa0eb3471a7f61263011d966433f90285d7",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wood_veneer/arm.bc7.ktx2": {
+   "bytes": 274117,
+   "sha256": "4d709b9b819dfe4267222d841bc39ee1e22967a6da4aee623bd75234248a8672",
+   "from": "textures/wood_veneer/arm.ktx2",
+   "source": "039ed8f004536ca7f0587e588a97eaa0eb3471a7f61263011d966433f90285d7",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wood_veneer/normal.astc.ktx2": {
+   "bytes": 211276,
+   "sha256": "1a3858b04342940d8995e187d779180ebcbeb96b260f0647dab4aa928e1cbc0e",
+   "from": "textures/wood_veneer/normal.ktx2",
+   "source": "3766fe79d02089765eaa7a26cb489aba8ac337107fab7746ee1affbf89fe5468",
+   "family": "astc",
+   "vkFormat": 157,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  },
+  "textures/wood_veneer/normal.bc7.ktx2": {
+   "bytes": 211405,
+   "sha256": "24463ba5fa945e3f6ecece9b048dd672659d3ee4bc059a58b95fe10fbf023438",
+   "from": "textures/wood_veneer/normal.ktx2",
+   "source": "3766fe79d02089765eaa7a26cb489aba8ac337107fab7746ee1affbf89fe5468",
+   "family": "bc7",
+   "vkFormat": 145,
+   "width": 1024,
+   "height": 1024,
+   "levels": 11,
+   "supercompression": 2
+  }
+ }
+}

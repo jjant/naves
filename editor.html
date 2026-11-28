@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16324F">
+<title>Editor de naves · Snowpark Barcelona</title>
+<link rel="icon" href="brand/icon.png">
+<!-- park3d (dist/ del paquete): lo copia scripts/editor-build.mjs con lo que se alcanza desde los módulos de esta página -->
+<script type="importmap">{"imports":{"@snowpark-bcn/park3d":"./park3d/index.js","@snowpark-bcn/park3d/plan":"./park3d/plan.js"}}</script>
+<link rel="stylesheet" href="editor.css">
+<link rel="stylesheet" href="editor-park.css">
+</head>
+<body>
+<!--
+  Editor de naves: se dibuja la nave (el edificio: contorno, alturas, cubierta, pilares, huecos, altillos y escaleras
+  existentes) y el panel de la derecha muestra el park que arma autoLayout dentro, en vivo. Todo en el navegador: la
+  nave se guarda sola en localStorage y se importa y exporta en JSON.
+  - js/editor/state.js: la nave y deshacer/rehacer (el contrato, arriba del archivo).
+  - js/editor/draw*.js: el dibujo (barra de herramientas, plano e inspector de la izquierda).
+  - js/editor/park*.js: el panel del park (#parkPanel) y lo que dibuja en #parkLayer.
+-->
+<header class="top">
+  <a class="brand" href="./" title="Volver a las naves"><img src="brand/icon.png" alt=""><span>Editor de naves</span></a>
+  <input id="naveName" class="name" spellcheck="false" aria-label="Nombre de la nave">
+  <div class="menu">
+    <button id="newBtn" aria-haspopup="true" title="Empezar otra nave">Nueva ▾</button>
+    <div id="newMenu" class="pop" hidden>
+      <button data-new="blank">En blanco: dibujar el contorno</button>
+      <button data-new="rect">Rectángulo de ancho × largo…</button>
+      <div class="sep">Una de las naves del sitio (su edificio)</div>
+      <div id="naveMenu" class="naves"></div>
+    </div>
+  </div>
+  <button id="importBtn" title="Importar el JSON de una nave o de un layout (también se puede soltar en el plano)">Importar</button>
+  <button id="exportBtn" title="Descargar el JSON de la nave">Exportar JSON</button>
+  <button id="copyBtn" title="Copiar el JSON de la nave">Copiar</button>
+  <span class="gap"></span>
+  <button id="undoBtn" title="Deshacer (⌘Z)">↶</button>
+  <button id="redoBtn" title="Rehacer (⇧⌘Z)">↷</button>
+  <span id="saved" class="saved"></span>
+  <input id="fileInput" type="file" accept=".json,application/json,image/*" hidden>
+</header>
+<div class="main">
+  <nav id="tools" aria-label="Herramientas">
+    <button data-tool="select" title="Seleccionar y mover (V)">⬚<small>V</small></button>
+    <button data-tool="outline" title="Contorno: clic en cada vértice, se cierra en el primero (P)">⬠<small>P</small></button>
+    <button data-tool="opening" title="Hueco en un muro: puerta, portón, ventana… (D)">🚪<small>D</small></button>
+    <button data-tool="column" title="Pilar (C)">▪<small>C</small></button>
+    <button data-tool="mezzanine" title="Altillo existente: arrastrar el rectángulo (M)">▤<small>M</small></button>
+    <button data-tool="stairs" title="Escalera existente: arrastrar el rectángulo (E)">≡<small>E</small></button>
+    <button data-tool="calibrate" title="Fondo: calibrar la escala con dos puntos (B)">📐<small>B</small></button>
+    <span class="gap"></span>
+    <button id="fitBtn" title="Ver toda la nave (F)">⤢</button>
+    <button id="helpBtn" title="Atajos de teclado (?)">?</button>
+  </nav>
+  <aside id="inspector" class="panel" aria-label="Propiedades"></aside>
+  <section id="canvas">
+    <svg id="plan" tabindex="0" aria-label="Plano de la nave">
+      <defs>
+        <pattern id="hatchMezz" width="0.5" height="0.5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="0.5" stroke="#7f8b99" stroke-width="0.06"/></pattern>
+      </defs>
+      <g id="bgWorld"></g>
+      <g id="gridLayer"></g>
+      <g id="world">
+        <g id="floorLayer"></g>
+        <!-- del panel del park (js/editor/park*.js): coordenadas de planta en metros (x → x, z → y), como el layout;
+             #plan lleva --m-per-px (metros por píxel de pantalla) y avisa con el evento `editorview` -->
+        <g id="parkLayer"></g>
+        <g id="shellLayer"></g>
+      </g>
+      <g id="uiLayer"></g>
+    </svg>
+    <div id="hud"><span id="cursorPos"></span></div>
+    <!-- la herramienta de ahora y qué hacer después (js/editor/draw.js, nextStep) -->
+    <div id="hint" aria-live="polite"></div>
+    <div id="snapBar">
+      <label title="Ajustar a la rejilla"><input type="checkbox" id="snapGrid" checked> rejilla</label>
+      <select id="snapStep" title="Paso de la rejilla">
+        <option value="0.01">1 cm</option><option value="0.05">5 cm</option><option value="0.1" selected>10 cm</option>
+        <option value="0.25">25 cm</option><option value="0.5">50 cm</option><option value="1">1 m</option>
+      </select>
+      <label title="Ángulos de 0, 45 y 90° (⇧ los fuerza)"><input type="checkbox" id="snapAngle" checked> 45°</label>
+      <label title="Alinear con los vértices y los pilares"><input type="checkbox" id="snapVertex" checked> vértices</label>
+      <label id="bgToggle" title="Ver el plano de fondo para calcar: el park se aclara encima (I)" hidden><input type="checkbox" id="bgShow"> fondo <kbd>I</kbd></label>
+      <span class="muted">⌥ sin ajustes</span>
+    </div>
+    <div id="typeBox" hidden></div>
+    <div id="toast" hidden></div>
+  </section>
+  <!-- el panel del park (js/editor/park*.js) -->
+  <aside id="parkPanel" class="panel" aria-label="El park que arma autoLayout"></aside>
+</div>
+<dialog id="rectDialog">
+  <form method="dialog">
+    <h3>Nave rectangular</h3>
+    <label>Ancho (x) <input name="w" value="15" inputmode="decimal"> m</label>
+    <label>Largo (z) <input name="l" value="40" inputmode="decimal"> m</label>
+    <label>Altura libre <input name="h" value="7" inputmode="decimal"> m</label>
+    <label class="check"><input type="checkbox" name="doors" checked> portón y puerta en la fachada (arista 0)</label>
+    <menu><button value="cancel" formnovalidate>Cancelar</button><button value="ok" class="primary">Crear</button></menu>
+  </form>
+</dialog>
+<dialog id="helpDialog">
+  <form method="dialog">
+    <h3>Atajos</h3>
+    <table>
+      <tr><td>V · P · D · C · M · E · B</td><td>seleccionar · contorno · hueco · pilar · altillo · escalera · calibrar el fondo</td></tr>
+      <tr><td>clic en el primer vértice · Enter</td><td>cierra el contorno; ⌫ borra el último punto</td></tr>
+      <tr><td>un número + Enter</td><td>mientras se dibuja: el largo del tramo (acepta «12,5», «16.4/2»)</td></tr>
+      <tr><td>⇧ · ⌥</td><td>fuerza 0/45/90° · sin ajustes (rejilla, ángulos, vértices)</td></tr>
+      <tr><td>doble clic en un muro</td><td>agrega un vértice</td></tr>
+      <tr><td>⌫ · Supr</td><td>borra lo seleccionado</td></tr>
+      <tr><td>flechas</td><td>mueven lo seleccionado un paso de la rejilla (⇧: ×10)</td></tr>
+      <tr><td>⌘Z · ⇧⌘Z</td><td>deshacer · rehacer</td></tr>
+      <tr><td>dos dedos · pellizcar · espacio + arrastrar</td><td>mover el plano · zoom · mover el plano</td></tr>
+      <tr><td>F · + · −</td><td>ver toda la nave · acercar · alejar</td></tr>
+      <tr><td>I</td><td>ver u ocultar el plano de fondo (con el plano a la vista, el park se aclara encima)</td></tr>
+      <tr><td>Esc</td><td>cancela lo que se está dibujando y vuelve a seleccionar</td></tr>
+    </table>
+    <menu><button value="ok" class="primary">Listo</button></menu>
+  </form>
+</dialog>
+<!-- las naves del sitio (id, nombre, ciudad): las escribe scripts/editor-build.mjs -->
+<script type="application/json" id="naveList">[{"id":"montigala","name":"Montigalà","city":"Badalona"},{"id":"abrera-franklin","name":"Abrera · Franklin 3351","city":"Abrera"},{"id":"ripollet-canmasachs","name":"Can Masachs","city":"Ripollet"},{"id":"perpetua","name":"Santa Perpètua","city":"Santa Perpètua de Mogoda"},{"id":"comelles-881","name":"Can Comelles · Premsa 22","city":"Esparreguera"},{"id":"montcada-molibisbe782","name":"Molí d’en Bisbe · planta de 782 m²","city":"Montcada i Reixac"},{"id":"vilassar-serrapons","name":"Serra d’en Pons","city":"Vilassar de Dalt"},{"id":"terrassa-canpalet","name":"Can Palet · Masachs","city":"Terrassa"},{"id":"lesfranqueses-corro","name":"Corró d’Avall · planta de 537 m²","city":"Les Franqueses del Vallès"},{"id":"sabadell-hermetica","name":"Zona Hermética (nave tipo B)","city":"Sabadell"},{"id":"montcada-molibisbe663","name":"Molí d’en Bisbe · planta de 663 m²","city":"Montcada i Reixac"},{"id":"barbera-marconi","name":"Marconi 23","city":"Barberà del Vallès"},{"id":"despi","name":"Sant Joan Despí · INVERTICA","city":"Sant Joan Despí"},{"id":"rubi-schumann","name":"Compositor Schumann 10","city":"Rubí"},{"id":"sabadell-canfeu","name":"Can Feu · Masachs","city":"Sabadell"},{"id":"barbera-santamaria","name":"Polígono Santa Maria","city":"Barberà del Vallès"},{"id":"granland-895","name":"Granland · nave 15","city":"Badalona"}]</script>
+<script type="module" src="js/editor/draw.js"></script>
+<script type="module" src="js/editor/park.js"></script>
+</body>
+</html>

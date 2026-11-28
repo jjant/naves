@@ -1,0 +1,21 @@
+{
+ "version": "e7d49d3+cambios",
+ "commit": "e7d49d3+",
+ "published": "2026-11-28T12:32:02+00:00",
+ "duration_s": 126.83,
+ "master": [
+  640,
+  360
+ ],
+ "size_mb": 14.1,
+ "encodes": [
+  {
+   "file": "snowpark-draft.mp4",
+   "codec": "h264",
+   "width": 640,
+   "height": 360,
+   "mb": 14.1,
+   "type": "video/mp4; codecs=\"avc1.64001e,mp4a.40.2\""
+  }
+ ]
+}

@@ -1,0 +1,1334 @@
+{
+ "version": 1,
+ "rig": "game_engine (MPFB 2)",
+ "people": [
+  {
+   "id": "rider-f1",
+   "body": "f1",
+   "outfit": "snow",
+   "roles": [
+    "rider",
+    "instructor"
+   ],
+   "gender": "f",
+   "ageYears": 23,
+   "stature": 1.644,
+   "soleY": -0.0391,
+   "ankleAboveSole": 0.1068,
+   "footCentre": 0.0426,
+   "footLength": 0.3255,
+   "goggles": true,
+   "gogglesUp": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0.529919,
+    0.848048,
+    0.720669,
+    0,
+    -0.848048,
+    0.529919,
+    1.327725,
+    0,
+    0,
+    0,
+    1
+   ],
+   "triangles": 15134,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "young_caucasian_female - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "elvs_hooded_sweat_jacket1 - Elvaerwyn, shirts02 (CC-BY 4.0)",
+    "bottom": "cortu_cargo_pants - Cortu, pants01 (CC0)",
+    "hands": "toigo_gloves_short - MargaretToigo, gloves01 (CC0)",
+    "feet": "toigo_ankle_boots_male - MargaretToigo, shoes01 (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     0.8502,
+     0.0207
+    ],
+    "thigh_l": [
+     0.0924,
+     0.8347,
+     0.0183
+    ],
+    "calf_l": [
+     0.1337,
+     0.4567,
+     0.0471
+    ],
+    "foot_l": [
+     0.1631,
+     0.0677,
+     0.0231
+    ],
+    "ball_l": [
+     0.1691,
+     0.0105,
+     0.1294
+    ],
+    "upperarm_l": [
+     0.1535,
+     1.2724,
+     0.0197
+    ],
+    "lowerarm_l": [
+     0.3134,
+     1.0977,
+     0.0226
+    ],
+    "hand_l": [
+     0.4245,
+     0.9779,
+     0.1639
+    ],
+    "neck_01": [
+     0,
+     1.3566,
+     -0.0002
+    ],
+    "head": [
+     0,
+     1.466,
+     0.0387
+    ]
+   },
+   "file": "rider-f1.glb",
+   "lod": "rider-f1.lod1.glb",
+   "bytes": 1605852,
+   "bytesLod": 567448
+  },
+  {
+   "id": "rider-f2",
+   "body": "f2",
+   "outfit": "hoodie",
+   "roles": [
+    "rider"
+   ],
+   "gender": "f",
+   "ageYears": 21,
+   "stature": 1.611,
+   "soleY": -0.0392,
+   "ankleAboveSole": 0.105,
+   "footCentre": 0.0411,
+   "footLength": 0.3215,
+   "goggles": true,
+   "gogglesUp": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0.529919,
+    0.848048,
+    0.706885,
+    0,
+    -0.848048,
+    0.529919,
+    1.301949,
+    0,
+    0,
+    0,
+    1
+   ],
+   "triangles": 15135,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "young_asian_female - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "elvs_hooded_sweat_jacket1 - Elvaerwyn, shirts02 (CC-BY 4.0)",
+    "bottom": "cortu_cargo_pants - Cortu, pants01 (CC0)",
+    "hands": "toigo_gloves_short - MargaretToigo, gloves01 (CC0)",
+    "feet": "toigo_ankle_boots_male - MargaretToigo, shoes01 (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     0.8393,
+     0.02
+    ],
+    "thigh_l": [
+     0.0895,
+     0.8227,
+     0.0188
+    ],
+    "calf_l": [
+     0.1293,
+     0.4392,
+     0.0456
+    ],
+    "foot_l": [
+     0.1582,
+     0.0658,
+     0.0201
+    ],
+    "ball_l": [
+     0.1639,
+     0.0101,
+     0.1242
+    ],
+    "upperarm_l": [
+     0.1483,
+     1.2488,
+     0.0187
+    ],
+    "lowerarm_l": [
+     0.3067,
+     1.0751,
+     0.0218
+    ],
+    "hand_l": [
+     0.4153,
+     0.959,
+     0.162
+    ],
+    "neck_01": [
+     0,
+     1.3307,
+     0.0002
+    ],
+    "head": [
+     0,
+     1.4339,
+     0.0402
+    ]
+   },
+   "file": "rider-f2.glb",
+   "lod": "rider-f2.lod1.glb",
+   "bytes": 1531456,
+   "bytesLod": 537648
+  },
+  {
+   "id": "rider-m1",
+   "body": "m1",
+   "outfit": "snow",
+   "roles": [
+    "rider",
+    "instructor"
+   ],
+   "gender": "m",
+   "ageYears": 24,
+   "stature": 1.763,
+   "soleY": -0.0383,
+   "ankleAboveSole": 0.1094,
+   "footCentre": 0.0467,
+   "footLength": 0.3763,
+   "goggles": true,
+   "gogglesUp": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0.529919,
+    0.848048,
+    0.767636,
+    0,
+    -0.848048,
+    0.529919,
+    1.431927,
+    0,
+    0,
+    0,
+    1
+   ],
+   "triangles": 15133,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "mindfront_aksel_skin - Mindfront, skins02 (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "elvs_hooded_sweat_jacket1 - Elvaerwyn, shirts02 (CC-BY 4.0)",
+    "bottom": "cortu_cargo_pants - Cortu, pants01 (CC0)",
+    "hands": "toigo_gloves_short - MargaretToigo, gloves01 (CC0)",
+    "feet": "toigo_ankle_boots_male - MargaretToigo, shoes01 (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     0.9292,
+     0.0064
+    ],
+    "thigh_l": [
+     0.1082,
+     0.9238,
+     -0.0037
+    ],
+    "calf_l": [
+     0.1478,
+     0.5033,
+     0.0314
+    ],
+    "foot_l": [
+     0.1956,
+     0.0711,
+     0.0172
+    ],
+    "ball_l": [
+     0.1987,
+     0.0079,
+     0.1428
+    ],
+    "upperarm_l": [
+     0.1958,
+     1.378,
+     0.0205
+    ],
+    "lowerarm_l": [
+     0.3589,
+     1.1903,
+     0.0185
+    ],
+    "hand_l": [
+     0.4898,
+     1.0656,
+     0.2038
+    ],
+    "neck_01": [
+     0,
+     1.4808,
+     0.0141
+    ],
+    "head": [
+     0,
+     1.5763,
+     0.0465
+    ]
+   },
+   "file": "rider-m1.glb",
+   "lod": "rider-m1.lod1.glb",
+   "bytes": 2165580,
+   "bytesLod": 693852
+  },
+  {
+   "id": "rider-m2",
+   "body": "m2",
+   "outfit": "snow",
+   "roles": [
+    "rider",
+    "instructor"
+   ],
+   "gender": "m",
+   "ageYears": 22,
+   "stature": 1.778,
+   "soleY": -0.039,
+   "ankleAboveSole": 0.1117,
+   "footCentre": 0.0478,
+   "footLength": 0.3794,
+   "goggles": true,
+   "gogglesUp": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0.529919,
+    0.848048,
+    0.77437,
+    0,
+    -0.848048,
+    0.529919,
+    1.442581,
+    0,
+    0,
+    0,
+    1
+   ],
+   "triangles": 14740,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "young_african_male - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "elvs_hooded_sweat_jacket1 - Elvaerwyn, shirts02 (CC-BY 4.0)",
+    "bottom": "cortu_cargo_pants - Cortu, pants01 (CC0)",
+    "hands": "toigo_gloves_short - MargaretToigo, gloves01 (CC0)",
+    "feet": "toigo_ankle_boots_male - MargaretToigo, shoes01 (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     0.934,
+     0.0067
+    ],
+    "thigh_l": [
+     0.1091,
+     0.9293,
+     -0.0034
+    ],
+    "calf_l": [
+     0.1486,
+     0.5243,
+     0.0334
+    ],
+    "foot_l": [
+     0.2059,
+     0.0727,
+     0.0158
+    ],
+    "ball_l": [
+     0.2112,
+     0.0084,
+     0.1433
+    ],
+    "upperarm_l": [
+     0.1936,
+     1.3867,
+     0.0202
+    ],
+    "lowerarm_l": [
+     0.3575,
+     1.1983,
+     0.0185
+    ],
+    "hand_l": [
+     0.4948,
+     1.0658,
+     0.2166
+    ],
+    "neck_01": [
+     0,
+     1.4907,
+     0.014
+    ],
+    "head": [
+     0,
+     1.5886,
+     0.0483
+    ]
+   },
+   "file": "rider-m2.glb",
+   "lod": "rider-m2.lod1.glb",
+   "bytes": 1496620,
+   "bytesLod": 533228
+  },
+  {
+   "id": "rider-m3",
+   "body": "m3",
+   "outfit": "hoodie",
+   "roles": [
+    "rider"
+   ],
+   "gender": "m",
+   "ageYears": 25,
+   "stature": 1.718,
+   "soleY": -0.0396,
+   "ankleAboveSole": 0.1084,
+   "footCentre": 0.0421,
+   "footLength": 0.3679,
+   "goggles": true,
+   "gogglesUp": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0.529919,
+    0.848048,
+    0.754339,
+    0,
+    -0.848048,
+    0.529919,
+    1.389211,
+    0,
+    0,
+    0,
+    1
+   ],
+   "triangles": 15134,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "young_asian_male - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "elvs_hooded_sweat_jacket1 - Elvaerwyn, shirts02 (CC-BY 4.0)",
+    "bottom": "cortu_cargo_pants - Cortu, pants01 (CC0)",
+    "hands": "toigo_gloves_short - MargaretToigo, gloves01 (CC0)",
+    "feet": "toigo_ankle_boots_male - MargaretToigo, shoes01 (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     0.8933,
+     -0.001
+    ],
+    "thigh_l": [
+     0.105,
+     0.8886,
+     -0.0114
+    ],
+    "calf_l": [
+     0.1461,
+     0.4786,
+     0.0222
+    ],
+    "foot_l": [
+     0.1874,
+     0.0688,
+     0.0112
+    ],
+    "ball_l": [
+     0.1907,
+     0.0079,
+     0.1308
+    ],
+    "upperarm_l": [
+     0.187,
+     1.3322,
+     0.0137
+    ],
+    "lowerarm_l": [
+     0.3473,
+     1.1479,
+     0.0116
+    ],
+    "hand_l": [
+     0.4761,
+     1.026,
+     0.1933
+    ],
+    "neck_01": [
+     0,
+     1.434,
+     0.0075
+    ],
+    "head": [
+     0,
+     1.5275,
+     0.0467
+    ]
+   },
+   "file": "rider-m3.glb",
+   "lod": "rider-m3.lod1.glb",
+   "bytes": 1513076,
+   "bytesLod": 525796
+  },
+  {
+   "id": "rider-m4",
+   "body": "m4",
+   "outfit": "snow",
+   "roles": [
+    "rider",
+    "instructor"
+   ],
+   "gender": "m",
+   "ageYears": 41,
+   "stature": 1.928,
+   "soleY": -0.0403,
+   "ankleAboveSole": 0.1177,
+   "footCentre": 0.0554,
+   "footLength": 0.404,
+   "goggles": true,
+   "gogglesUp": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0.529919,
+    0.848048,
+    0.83952,
+    0,
+    -0.848048,
+    0.529919,
+    1.564564,
+    0,
+    0,
+    0,
+    1
+   ],
+   "triangles": 15059,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "middleage_caucasian_male - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "elvs_hooded_sweat_jacket1 - Elvaerwyn, shirts02 (CC-BY 4.0)",
+    "bottom": "cortu_cargo_pants - Cortu, pants01 (CC0)",
+    "hands": "toigo_gloves_short - MargaretToigo, gloves01 (CC0)",
+    "feet": "toigo_ankle_boots_male - MargaretToigo, shoes01 (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     1.0319,
+     0.0069
+    ],
+    "thigh_l": [
+     0.1181,
+     1.0192,
+     -0.004
+    ],
+    "calf_l": [
+     0.1609,
+     0.5463,
+     0.0312
+    ],
+    "foot_l": [
+     0.2032,
+     0.0774,
+     0.0097
+    ],
+    "ball_l": [
+     0.2062,
+     0.009,
+     0.1488
+    ],
+    "upperarm_l": [
+     0.1987,
+     1.5217,
+     0.0188
+    ],
+    "lowerarm_l": [
+     0.3825,
+     1.3135,
+     0.0234
+    ],
+    "hand_l": [
+     0.5209,
+     1.1812,
+     0.2201
+    ],
+    "neck_01": [
+     0,
+     1.6309,
+     0.0138
+    ],
+    "head": [
+     0,
+     1.7309,
+     0.0448
+    ]
+   },
+   "file": "rider-m4.glb",
+   "lod": "rider-m4.lod1.glb",
+   "bytes": 1573124,
+   "bytesLod": 555360
+  },
+  {
+   "id": "kid-k1",
+   "body": "k1",
+   "outfit": "snow",
+   "roles": [
+    "kid"
+   ],
+   "gender": "m",
+   "ageYears": 11,
+   "stature": 1.421,
+   "soleY": -0.0365,
+   "ankleAboveSole": 0.092,
+   "footCentre": 0.0291,
+   "footLength": 0.3178,
+   "goggles": true,
+   "gogglesUp": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0.529919,
+    0.848048,
+    0.611778,
+    0,
+    -0.848048,
+    0.529919,
+    1.147423,
+    0,
+    0,
+    0,
+    1
+   ],
+   "triangles": 14713,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "young_caucasian_male - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "elvs_hooded_sweat_jacket1 - Elvaerwyn, shirts02 (CC-BY 4.0)",
+    "bottom": "cortu_cargo_pants - Cortu, pants01 (CC0)",
+    "hands": "toigo_gloves_short - MargaretToigo, gloves01 (CC0)",
+    "feet": "toigo_ankle_boots_male - MargaretToigo, shoes01 (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     0.7183,
+     0.0063
+    ],
+    "thigh_l": [
+     0.0863,
+     0.7215,
+     -0.0009
+    ],
+    "calf_l": [
+     0.1169,
+     0.3973,
+     0.0421
+    ],
+    "foot_l": [
+     0.1603,
+     0.0555,
+     0.0126
+    ],
+    "ball_l": [
+     0.1642,
+     0.0061,
+     0.1087
+    ],
+    "upperarm_l": [
+     0.1477,
+     1.0764,
+     0.0139
+    ],
+    "lowerarm_l": [
+     0.2746,
+     0.9338,
+     0.0146
+    ],
+    "hand_l": [
+     0.3724,
+     0.8406,
+     0.1525
+    ],
+    "neck_01": [
+     0,
+     1.1652,
+     0.0109
+    ],
+    "head": [
+     0,
+     1.2412,
+     0.0472
+    ]
+   },
+   "file": "kid-k1.glb",
+   "lod": "kid-k1.lod1.glb",
+   "bytes": 1536816,
+   "bytesLod": 542144
+  },
+  {
+   "id": "kid-k2",
+   "body": "k2",
+   "outfit": "snow",
+   "roles": [
+    "kid"
+   ],
+   "gender": "f",
+   "ageYears": 9,
+   "stature": 1.277,
+   "soleY": -0.0393,
+   "ankleAboveSole": 0.0912,
+   "footCentre": 0.0234,
+   "footLength": 0.2745,
+   "goggles": true,
+   "gogglesUp": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0.529919,
+    0.848048,
+    0.568278,
+    0,
+    -0.848048,
+    0.529919,
+    1.017755,
+    0,
+    0,
+    0,
+    1
+   ],
+   "triangles": 15133,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "young_african_female - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "elvs_hooded_sweat_jacket1 - Elvaerwyn, shirts02 (CC-BY 4.0)",
+    "bottom": "cortu_cargo_pants - Cortu, pants01 (CC0)",
+    "hands": "toigo_gloves_short - MargaretToigo, gloves01 (CC0)",
+    "feet": "toigo_ankle_boots_male - MargaretToigo, shoes01 (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     0.6647,
+     0.0148
+    ],
+    "thigh_l": [
+     0.0723,
+     0.6343,
+     0.0258
+    ],
+    "calf_l": [
+     0.1081,
+     0.346,
+     0.0383
+    ],
+    "foot_l": [
+     0.1369,
+     0.0519,
+     0.009
+    ],
+    "ball_l": [
+     0.1391,
+     0.0076,
+     0.0851
+    ],
+    "upperarm_l": [
+     0.1156,
+     0.9604,
+     0.0111
+    ],
+    "lowerarm_l": [
+     0.2358,
+     0.8263,
+     0.0034
+    ],
+    "hand_l": [
+     0.3285,
+     0.7399,
+     0.1339
+    ],
+    "neck_01": [
+     0,
+     1.0269,
+     0.0026
+    ],
+    "head": [
+     0,
+     1.1073,
+     0.022
+    ]
+   },
+   "file": "kid-k2.glb",
+   "lod": "kid-k2.lod1.glb",
+   "bytes": 1540796,
+   "bytesLod": 546724
+  },
+  {
+   "id": "kid-k3",
+   "body": "k3",
+   "outfit": "hoodie",
+   "roles": [
+    "kid"
+   ],
+   "gender": "m",
+   "ageYears": 13,
+   "stature": 1.494,
+   "soleY": -0.0376,
+   "ankleAboveSole": 0.0944,
+   "footCentre": 0.0323,
+   "footLength": 0.3297,
+   "goggles": true,
+   "gogglesUp": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0.529919,
+    0.848048,
+    0.653572,
+    0,
+    -0.848048,
+    0.529919,
+    1.208144,
+    0,
+    0,
+    0,
+    1
+   ],
+   "triangles": 15134,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "young_asian_male - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "elvs_hooded_sweat_jacket1 - Elvaerwyn, shirts02 (CC-BY 4.0)",
+    "bottom": "cortu_cargo_pants - Cortu, pants01 (CC0)",
+    "hands": "toigo_gloves_short - MargaretToigo, gloves01 (CC0)",
+    "feet": "toigo_ankle_boots_male - MargaretToigo, shoes01 (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     0.7626,
+     0.0044
+    ],
+    "thigh_l": [
+     0.0898,
+     0.7648,
+     -0.0035
+    ],
+    "calf_l": [
+     0.1222,
+     0.4141,
+     0.0381
+    ],
+    "foot_l": [
+     0.165,
+     0.0568,
+     0.011
+    ],
+    "ball_l": [
+     0.1689,
+     0.0065,
+     0.112
+    ],
+    "upperarm_l": [
+     0.1554,
+     1.1386,
+     0.0135
+    ],
+    "lowerarm_l": [
+     0.2918,
+     0.9848,
+     0.0145
+    ],
+    "hand_l": [
+     0.396,
+     0.8846,
+     0.1623
+    ],
+    "neck_01": [
+     0,
+     1.2306,
+     0.0099
+    ],
+    "head": [
+     0,
+     1.3173,
+     0.0465
+    ]
+   },
+   "file": "kid-k3.glb",
+   "lod": "kid-k3.lod1.glb",
+   "bytes": 1512192,
+   "bytesLod": 525152
+  },
+  {
+   "id": "staff-f1",
+   "body": "f1",
+   "outfit": "tee_f",
+   "roles": [
+    "staff"
+   ],
+   "gender": "f",
+   "ageYears": 23,
+   "stature": 1.605,
+   "soleY": 0,
+   "ankleAboveSole": 0.0677,
+   "footCentre": 0.0671,
+   "footLength": 0.2231,
+   "goggles": false,
+   "gogglesUp": null,
+   "triangles": 14385,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "young_caucasian_female - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "toigo_basic_tucked_t-shirt - MargaretToigo, shirts01 (CC0)",
+    "bottom": "punkduck_female_tight_jeans - punkduck, pants02 (CC-BY 4.0)",
+    "feet": "shoes06 - makehuman_system_assets (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     0.8502,
+     0.0207
+    ],
+    "thigh_l": [
+     0.0924,
+     0.8347,
+     0.0183
+    ],
+    "calf_l": [
+     0.1337,
+     0.4567,
+     0.0471
+    ],
+    "foot_l": [
+     0.1631,
+     0.0677,
+     0.0231
+    ],
+    "ball_l": [
+     0.1691,
+     0.0105,
+     0.1294
+    ],
+    "upperarm_l": [
+     0.1535,
+     1.2724,
+     0.0197
+    ],
+    "lowerarm_l": [
+     0.3134,
+     1.0977,
+     0.0226
+    ],
+    "hand_l": [
+     0.4245,
+     0.9779,
+     0.1639
+    ],
+    "neck_01": [
+     0,
+     1.3566,
+     -0.0002
+    ],
+    "head": [
+     0,
+     1.466,
+     0.0387
+    ]
+   },
+   "file": "staff-f1.glb",
+   "lod": "staff-f1.lod1.glb",
+   "bytes": 1377944,
+   "bytesLod": 460296
+  },
+  {
+   "id": "staff-m2",
+   "body": "m2",
+   "outfit": "polo",
+   "roles": [
+    "staff"
+   ],
+   "gender": "m",
+   "ageYears": 22,
+   "stature": 1.739,
+   "soleY": 0,
+   "ankleAboveSole": 0.0727,
+   "footCentre": 0.0695,
+   "footLength": 0.2823,
+   "goggles": false,
+   "gogglesUp": null,
+   "triangles": 14330,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "young_african_male - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "namuhekam_male_polo_shirt - Namuhekam, shirts01 (CC0)",
+    "bottom": "toigo_wool_pants - MargaretToigo, pants01 (CC0)",
+    "feet": "shoes06 - makehuman_system_assets (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     0.934,
+     0.0067
+    ],
+    "thigh_l": [
+     0.1091,
+     0.9293,
+     -0.0034
+    ],
+    "calf_l": [
+     0.1486,
+     0.5243,
+     0.0334
+    ],
+    "foot_l": [
+     0.2059,
+     0.0727,
+     0.0158
+    ],
+    "ball_l": [
+     0.2112,
+     0.0084,
+     0.1433
+    ],
+    "upperarm_l": [
+     0.1936,
+     1.3867,
+     0.0202
+    ],
+    "lowerarm_l": [
+     0.3575,
+     1.1983,
+     0.0185
+    ],
+    "hand_l": [
+     0.4948,
+     1.0658,
+     0.2166
+    ],
+    "neck_01": [
+     0,
+     1.4907,
+     0.014
+    ],
+    "head": [
+     0,
+     1.5886,
+     0.0483
+    ]
+   },
+   "file": "staff-m2.glb",
+   "lod": "staff-m2.lod1.glb",
+   "bytes": 648456,
+   "bytesLod": 253124
+  },
+  {
+   "id": "visitor-f3",
+   "body": "f3",
+   "outfit": "tee_f",
+   "roles": [
+    "visitor"
+   ],
+   "gender": "f",
+   "ageYears": 38,
+   "stature": 1.657,
+   "soleY": 0,
+   "ankleAboveSole": 0.0725,
+   "footCentre": 0.0714,
+   "footLength": 0.2319,
+   "goggles": false,
+   "gogglesUp": null,
+   "triangles": 14387,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "middleage_african_female - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "toigo_basic_tucked_t-shirt - MargaretToigo, shirts01 (CC0)",
+    "bottom": "punkduck_female_tight_jeans - punkduck, pants02 (CC-BY 4.0)",
+    "feet": "shoes06 - makehuman_system_assets (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     0.8649,
+     0.0247
+    ],
+    "thigh_l": [
+     0.1,
+     0.8511,
+     0.0188
+    ],
+    "calf_l": [
+     0.139,
+     0.4671,
+     0.0491
+    ],
+    "foot_l": [
+     0.1772,
+     0.0725,
+     0.0281
+    ],
+    "ball_l": [
+     0.1814,
+     0.0111,
+     0.1404
+    ],
+    "upperarm_l": [
+     0.162,
+     1.3148,
+     0.0287
+    ],
+    "lowerarm_l": [
+     0.324,
+     1.139,
+     0.0344
+    ],
+    "hand_l": [
+     0.4392,
+     1.0165,
+     0.1789
+    ],
+    "neck_01": [
+     0,
+     1.4012,
+     0.0076
+    ],
+    "head": [
+     0,
+     1.5037,
+     0.0461
+    ]
+   },
+   "file": "visitor-f3.glb",
+   "lod": "visitor-f3.lod1.glb",
+   "bytes": 1266112,
+   "bytesLod": 419968
+  },
+  {
+   "id": "visitor-m3",
+   "body": "m3",
+   "outfit": "tee_m",
+   "roles": [
+    "visitor"
+   ],
+   "gender": "m",
+   "ageYears": 25,
+   "stature": 1.679,
+   "soleY": 0,
+   "ankleAboveSole": 0.0688,
+   "footCentre": 0.0629,
+   "footLength": 0.2699,
+   "goggles": false,
+   "gogglesUp": null,
+   "triangles": 13753,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "young_asian_male - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "elvs_crude_t-shirt_male - Elvaerwyn, shirts01 (CC0)",
+    "bottom": "elvs_jeans_straight_leg - Elvaerwyn, pants02 (CC-BY 4.0)",
+    "feet": "shoes06 - makehuman_system_assets (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     0.8933,
+     -0.001
+    ],
+    "thigh_l": [
+     0.105,
+     0.8886,
+     -0.0114
+    ],
+    "calf_l": [
+     0.1461,
+     0.4786,
+     0.0222
+    ],
+    "foot_l": [
+     0.1874,
+     0.0688,
+     0.0112
+    ],
+    "ball_l": [
+     0.1907,
+     0.0079,
+     0.1308
+    ],
+    "upperarm_l": [
+     0.187,
+     1.3322,
+     0.0137
+    ],
+    "lowerarm_l": [
+     0.3473,
+     1.1479,
+     0.0116
+    ],
+    "hand_l": [
+     0.4761,
+     1.026,
+     0.1933
+    ],
+    "neck_01": [
+     0,
+     1.434,
+     0.0075
+    ],
+    "head": [
+     0,
+     1.5275,
+     0.0467
+    ]
+   },
+   "file": "visitor-m3.glb",
+   "lod": "visitor-m3.lod1.glb",
+   "bytes": 703812,
+   "bytesLod": 286868
+  },
+  {
+   "id": "visitor-m4",
+   "body": "m4",
+   "outfit": "sweater",
+   "roles": [
+    "visitor"
+   ],
+   "gender": "m",
+   "ageYears": 41,
+   "stature": 1.887,
+   "soleY": 0,
+   "ankleAboveSole": 0.0774,
+   "footCentre": 0.0768,
+   "footLength": 0.3064,
+   "goggles": false,
+   "gogglesUp": null,
+   "triangles": 14985,
+   "materials": 3,
+   "credits": {
+    "body": "MakeHuman hm08 + targets via MPFB 2 (CC0)",
+    "skin": "middleage_caucasian_male - makehuman_system_assets (CC0)",
+    "eyes/brows/lashes/hair": "makehuman_system_assets (CC0)",
+    "top": "toigo_fisherman_sweater - MargaretToigo, shirts01 (CC0)",
+    "bottom": "elvs_jeans_straight_leg - Elvaerwyn, pants02 (CC-BY 4.0)",
+    "feet": "shoes06 - makehuman_system_assets (CC0)"
+   },
+   "joints": {
+    "pelvis": [
+     0,
+     1.0319,
+     0.0069
+    ],
+    "thigh_l": [
+     0.1181,
+     1.0192,
+     -0.004
+    ],
+    "calf_l": [
+     0.1609,
+     0.5463,
+     0.0312
+    ],
+    "foot_l": [
+     0.2032,
+     0.0774,
+     0.0097
+    ],
+    "ball_l": [
+     0.2062,
+     0.009,
+     0.1488
+    ],
+    "upperarm_l": [
+     0.1987,
+     1.5217,
+     0.0188
+    ],
+    "lowerarm_l": [
+     0.3825,
+     1.3135,
+     0.0234
+    ],
+    "hand_l": [
+     0.5209,
+     1.1812,
+     0.2201
+    ],
+    "neck_01": [
+     0,
+     1.6309,
+     0.0138
+    ],
+    "head": [
+     0,
+     1.7309,
+     0.0448
+    ]
+   },
+   "file": "visitor-m4.glb",
+   "lod": "visitor-m4.lod1.glb",
+   "bytes": 917768,
+   "bytesLod": 355152
+  }
+ ]
+}

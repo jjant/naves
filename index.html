@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#16324F"><title>Naves candidatas · simulador 3D · Snowpark Barcelona</title>
+<link rel="icon" href="brand/icon.png">
+<style>
+:root{--night:#16324F;--pink:#DF0763;--yellow:#FFE53D;--paper:#f5f4ee;--ink:#152535;--muted:#536171;--line:#d4d5cf}
+*{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--night);color:#fff;padding:28px max(18px,4vw) 26px}
+header.photo{background-size:cover;background-position:center 60%;padding-top:40px;padding-bottom:60px}
+header .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.03em} header img{width:40px;height:40px}
+h1{font-size:clamp(30px,5vw,52px);line-height:1.02;letter-spacing:-.04em;margin:18px 0 10px;max-width:900px}
+header p{max-width:760px;color:#cdd8e2;margin:0} header a{color:var(--yellow)}
+main{padding:24px max(14px,4vw) 60px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;max-width:1400px;margin:auto}
+.card{background:#fffefa;border:1px solid var(--line);border-radius:12px;overflow:hidden;color:inherit;text-decoration:none;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(22,50,79,.15)}
+.thumb{aspect-ratio:16/10;background:#dfe5ea linear-gradient(135deg,#dfe5ea,#c7d1da);position:relative} .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.rank{position:absolute;left:10px;top:10px;background:var(--yellow);color:var(--ink);font-weight:800;border-radius:6px;padding:2px 8px}
+.body{padding:12px 14px 14px} h2{margin:0;font-size:19px;letter-spacing:-.02em} .city{margin:2px 0 8px;color:var(--muted);font-size:13px}
+dl{margin:0;display:grid;gap:2px} dl div{display:flex;justify-content:space-between;gap:8px;font-size:13px;border-bottom:1px dashed #e4e3dc;padding:3px 0} dt{color:var(--muted)} dd{margin:0;text-align:right}
+.have{margin:8px 0 0;font-size:12px;color:var(--night)}
+.pill{font-size:11px;border-radius:999px;padding:1px 7px;margin-left:4px} .pill.ok{background:#d7f0e3;color:#12604a} .pill.pre{background:#fff1bf;color:#7a5b00}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:20px} footer a{color:var(--yellow)}
+.cmp{max-width:1400px;margin:34px auto 0} .cmp h2{font-size:24px;letter-spacing:-.02em} .scroll{overflow-x:auto}
+.cmp table{border-collapse:collapse;width:100%;font-size:13px;background:#fffefa;border:1px solid var(--line)} .cmp th,.cmp td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap} .cmp th{background:#ecebe4}
+.cmp a{color:var(--night);font-weight:650} .note{color:var(--muted);font-size:12px;max-width:900px}
+</style></head><body>
+<header class="photo" style="background-image:linear-gradient(90deg,rgba(14,30,48,.92),rgba(14,30,48,.55) 60%,rgba(14,30,48,.25)),url(renders/montigala/hero.webp)"><div class="brand"><img src="brand/icon.png" alt="">SNOWPARK BARCELONA</div>
+<h1>Cómo quedaría el snowpark en cada nave</h1>
+<p>Simuladores 3D de las 17 naves del ranking, con medidas reales o estimadas del anuncio, plano o fotos: pista, plataforma, recepción, alquiler de tablas, taquillas, vestuarios, gym, trampolines y salidas. Se recorren a pie o como maqueta (render en tiempo real con WebGPU: mejor en un ordenador reciente con Chrome). <a href="ranking.html">Ver el ranking completo con mapa y fotos ↗</a> <a href="visita/">Checklist de visita de cada nave ↗</a> <a href="editor.html">Dibujar una nave ↗</a></p></header>
+<main><div class="grid"><a class="card" href="sim.html?id=montigala">
+  <div class="thumb"><img loading="lazy" src="renders/montigala/plataforma.thumb.jpg" alt="Maqueta 3D de Montigalà"><span class="rank">1</span></div>
+  <div class="body"><h2>Montigalà</h2><p class="city">Badalona · <b>90</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>14,6 × 40,4 m · 585 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>7 m</dd></div>
+  <div><dt>Pista</dt><dd>3 líneas · 27,4 m · salida a 3,45 m</dd></div>
+  <div><dt>Alquiler</dt><dd>6.472,5 €/mes (7,50 €/m²)</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · gym · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=abrera-franklin">
+  <div class="thumb"><img loading="lazy" src="renders/abrera-franklin/plataforma.thumb.jpg" alt="Maqueta 3D de Abrera · Franklin 3351"><span class="rank">2</span></div>
+  <div class="body"><h2>Abrera · Franklin 3351</h2><p class="city">Abrera · <b>85</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>14,0 × 55,0 m · 770 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>7 m</dd></div>
+  <div><dt>Pista</dt><dd>3 líneas · 36,4 m · salida a 4,2 m</dd></div>
+  <div><dt>Alquiler</dt><dd>4.500 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=ripollet-canmasachs">
+  <div class="thumb"><img loading="lazy" src="renders/ripollet-canmasachs/plataforma.thumb.jpg" alt="Maqueta 3D de Can Masachs"><span class="rank">3</span></div>
+  <div class="body"><h2>Can Masachs</h2><p class="city">Ripollet · <b>85</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>25,0 × 32,0 m · 800 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>8,8 m</dd></div>
+  <div><dt>Pista</dt><dd>3 líneas · 30,8 m · salida a 4,5 m</dd></div>
+  <div><dt>Alquiler</dt><dd>4.500 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · trampolines · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=perpetua">
+  <div class="thumb"><img loading="lazy" src="renders/perpetua/plataforma.thumb.jpg" alt="Maqueta 3D de Santa Perpètua"><span class="rank">4</span></div>
+  <div class="body"><h2>Santa Perpètua</h2><p class="city">Santa Perpètua de Mogoda · <b>85</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>15,6 × 49,6 m · 774 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>8 m</dd></div>
+  <div><dt>Pista</dt><dd>3 líneas · 38,1 m · salida a 5 m</dd></div>
+  <div><dt>Alquiler</dt><dd>6.000 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · gym · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=comelles-881">
+  <div class="thumb"><img loading="lazy" src="renders/comelles-881/plataforma.thumb.jpg" alt="Maqueta 3D de Can Comelles · Premsa 22"><span class="rank">5</span></div>
+  <div class="body"><h2>Can Comelles · Premsa 22</h2><p class="city">Esparreguera · <b>80</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>15,8 × 46,4 m · 713 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>7,4 m</dd></div>
+  <div><dt>Pista</dt><dd>3 líneas · 32,4 m · salida a 4,5 m</dd></div>
+  <div><dt>Alquiler</dt><dd>4.864 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · trampolines · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=montcada-molibisbe782">
+  <div class="thumb"><img loading="lazy" src="renders/montcada-molibisbe782/plataforma.thumb.jpg" alt="Maqueta 3D de Molí d’en Bisbe · planta de 782 m²"><span class="rank">6</span></div>
+  <div class="body"><h2>Molí d’en Bisbe · planta de 782 m²</h2><p class="city">Montcada i Reixac · <b>75</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>14,6 × 52,4 m · 765 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>5,7 m</dd></div>
+  <div><dt>Pista</dt><dd>3 líneas · 26,9 m · salida a 2,9 m</dd></div>
+  <div><dt>Alquiler</dt><dd>3.900 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · gym · trampolines · lounge</p></div></a>
+<a class="card" href="sim.html?id=vilassar-serrapons">
+  <div class="thumb"><img loading="lazy" src="renders/vilassar-serrapons/plataforma.thumb.jpg" alt="Maqueta 3D de Serra d’en Pons"><span class="rank">7</span></div>
+  <div class="body"><h2>Serra d’en Pons</h2><p class="city">Vilassar de Dalt · <b>75</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>15,6 × 47,8 m · 746 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>4,2 m</dd></div>
+  <div><dt>Pista</dt><dd>3 líneas · 28,5 m · salida a 1,4 m</dd></div>
+  <div><dt>Alquiler</dt><dd>5.325,30 €/mes (Habitaclia redondea a 5.300 €)</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · gym · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=terrassa-canpalet">
+  <div class="thumb"><img loading="lazy" src="renders/terrassa-canpalet/plataforma.thumb.jpg" alt="Maqueta 3D de Can Palet · Masachs"><span class="rank">8</span></div>
+  <div class="body"><h2>Can Palet · Masachs</h2><p class="city">Terrassa · <b>70</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>29,5 × 28,8 m · 850 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>6 m</dd></div>
+  <div><dt>Pista</dt><dd>4 líneas · 26,9 m · salida a 3,2 m</dd></div>
+  <div><dt>Alquiler</dt><dd>3.000 €/mes (3,53 €/m²)</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · gym · trampolines · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=lesfranqueses-corro">
+  <div class="thumb"><img loading="lazy" src="renders/lesfranqueses-corro/plataforma.thumb.jpg" alt="Maqueta 3D de Corró d’Avall · planta de 537 m²"><span class="rank">9</span></div>
+  <div class="body"><h2>Corró d’Avall · planta de 537 m²</h2><p class="city">Les Franqueses del Vallès · <b>70</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>19,5 × 26,2 m · 512 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>10,6 m</dd></div>
+  <div><dt>Pista</dt><dd>3 líneas · 26,2 m · salida a 3 m</dd></div>
+  <div><dt>Alquiler</dt><dd>3.222 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · gym · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=sabadell-hermetica">
+  <div class="thumb"><img loading="lazy" src="renders/sabadell-hermetica/plataforma.thumb.jpg" alt="Maqueta 3D de Zona Hermética (nave tipo B)"><span class="rank">10</span></div>
+  <div class="body"><h2>Zona Hermética (nave tipo B)</h2><p class="city">Sabadell · <b>70</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>16,2 × 46,4 m · 752 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>8,4 m</dd></div>
+  <div><dt>Pista</dt><dd>3 líneas · 30,4 m · salida a 4,7 m</dd></div>
+  <div><dt>Alquiler</dt><dd>3.750 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=montcada-molibisbe663">
+  <div class="thumb"><img loading="lazy" src="renders/montcada-molibisbe663/plataforma.thumb.jpg" alt="Maqueta 3D de Molí d’en Bisbe · planta de 663 m²"><span class="rank">11</span></div>
+  <div class="body"><h2>Molí d’en Bisbe · planta de 663 m²</h2><p class="city">Montcada i Reixac · <b>70</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>14,5 × 45,7 m · 663 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>5,5 m</dd></div>
+  <div><dt>Pista</dt><dd>2 líneas · 22,9 m · salida a 1,7 m</dd></div>
+  <div><dt>Alquiler</dt><dd>3.900 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · trampolines · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=barbera-marconi">
+  <div class="thumb"><img loading="lazy" src="renders/barbera-marconi/plataforma.thumb.jpg" alt="Maqueta 3D de Marconi 23"><span class="rank">12</span></div>
+  <div class="body"><h2>Marconi 23</h2><p class="city">Barberà del Vallès · <b>70</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>14,6 × 32,3 m · 472 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>5,3 m</dd></div>
+  <div><dt>Pista</dt><dd>2 líneas · 22,9 m · salida a 2 m</dd></div>
+  <div><dt>Alquiler</dt><dd>3.910 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · lounge</p></div></a>
+<a class="card" href="sim.html?id=despi">
+  <div class="thumb"><img loading="lazy" src="renders/despi/plataforma.thumb.jpg" alt="Maqueta 3D de Sant Joan Despí · INVERTICA"><span class="rank">13</span></div>
+  <div class="body"><h2>Sant Joan Despí · INVERTICA</h2><p class="city">Sant Joan Despí · <b>70</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>16,6 × 37,0 m · 614 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>7 m</dd></div>
+  <div><dt>Pista</dt><dd>3 líneas · 24,6 m · salida a 3,8 m</dd></div>
+  <div><dt>Alquiler</dt><dd>3.950 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · gym · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=rubi-schumann">
+  <div class="thumb"><img loading="lazy" src="renders/rubi-schumann/plataforma.thumb.jpg" alt="Maqueta 3D de Compositor Schumann 10"><span class="rank">14</span></div>
+  <div class="body"><h2>Compositor Schumann 10</h2><p class="city">Rubí · <b>70</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>31,2 × 21,0 m · 579 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>5,6 m</dd></div>
+  <div><dt>Pista</dt><dd>2 líneas · 26,6 m · salida a 2,8 m</dd></div>
+  <div><dt>Alquiler</dt><dd>4.000 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · gym · lounge</p></div></a>
+<a class="card" href="sim.html?id=sabadell-canfeu">
+  <div class="thumb"><img loading="lazy" src="renders/sabadell-canfeu/plataforma.thumb.jpg" alt="Maqueta 3D de Can Feu · Masachs"><span class="rank">15</span></div>
+  <div class="body"><h2>Can Feu · Masachs</h2><p class="city">Sabadell · <b>70</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>14,7 × 44,0 m · 647 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>7,8 m</dd></div>
+  <div><dt>Pista</dt><dd>3 líneas · 27,7 m · salida a 3,7 m</dd></div>
+  <div><dt>Alquiler</dt><dd>4.900 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · gym · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=barbera-santamaria">
+  <div class="thumb"><img loading="lazy" src="renders/barbera-santamaria/plataforma.thumb.jpg" alt="Maqueta 3D de Polígono Santa Maria"><span class="rank">16</span></div>
+  <div class="body"><h2>Polígono Santa Maria</h2><p class="city">Barberà del Vallès · <b>70</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>15,8 × 53,6 m · 847 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>7,2 m</dd></div>
+  <div><dt>Pista</dt><dd>4 líneas · 34,5 m · salida a 4,2 m</dd></div>
+  <div><dt>Alquiler</dt><dd>6.000 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · gym · lounge · café</p></div></a>
+<a class="card" href="sim.html?id=granland-895">
+  <div class="thumb"><img loading="lazy" src="renders/granland-895/plataforma.thumb.jpg" alt="Maqueta 3D de Granland · nave 15"><span class="rank">17</span></div>
+  <div class="body"><h2>Granland · nave 15</h2><p class="city">Badalona · <b>70</b>/100 <span class="pill ok">programa completo</span></p>
+  <dl><div><dt>Planta</dt><dd>11,0 × 39,1 m · 426 m²</dd></div>
+  <div><dt>Altura libre</dt><dd>6,4 m</dd></div>
+  <div><dt>Pista</dt><dd>2 líneas · 22,6 m · salida a 3 m</dd></div>
+  <div><dt>Alquiler</dt><dd>8.500 €/mes</dd></div></dl>
+  <p class="have">recepción · alquiler · taquillas · vestuarios · gym · lounge</p></div></a></div><section class="cmp"><h2>Comparación</h2><div class="scroll"><table><tr><th>Nave</th><th>Altura libre</th><th>Líneas</th><th>Pista</th><th>Salida</th><th>Recepción</th><th>Alquiler</th><th>Taquillas</th><th>Vestuarios</th><th>Gym</th><th>Camas elásticas</th><th>Plano</th><th>Visita</th></tr><tr><td><a href="sim.html?id=montigala">Montigalà</a></td><td>7 m</td>
+<td>3 × 3 m</td><td>27,4 m</td><td>3,45 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>✓</td><td>–</td><td>verificado</td><td><a href="visita/montigala.html">checklist</a></td></tr><tr><td><a href="sim.html?id=abrera-franklin">Abrera · Franklin 3351</a></td><td>7 m</td>
+<td>3 × 3,3 m</td><td>36,4 m</td><td>4,2 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>–</td><td>–</td><td>verificado</td><td><a href="visita/abrera-franklin.html">checklist</a></td></tr><tr><td><a href="sim.html?id=ripollet-canmasachs">Can Masachs</a></td><td>8,8 m</td>
+<td>3 × 3,15 m</td><td>30,8 m</td><td>4,5 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>–</td><td>2</td><td>verificado</td><td><a href="visita/ripollet-canmasachs.html">checklist</a></td></tr><tr><td><a href="sim.html?id=perpetua">Santa Perpètua</a></td><td>8 m</td>
+<td>3 × 3,2 m</td><td>38,1 m</td><td>5 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>✓</td><td>–</td><td>verificado</td><td><a href="visita/perpetua.html">checklist</a></td></tr><tr><td><a href="sim.html?id=comelles-881">Can Comelles · Premsa 22</a></td><td>7,4 m</td>
+<td>3 × 3,1 m</td><td>32,4 m</td><td>4,5 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>–</td><td>1</td><td>verificado</td><td><a href="visita/comelles-881.html">checklist</a></td></tr><tr><td><a href="sim.html?id=montcada-molibisbe782">Molí d’en Bisbe · planta de 782 m²</a></td><td>5,7 m</td>
+<td>3 × 3,1 m</td><td>26,9 m</td><td>2,9 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>✓</td><td>2</td><td>verificado</td><td><a href="visita/montcada-molibisbe782.html">checklist</a></td></tr><tr><td><a href="sim.html?id=vilassar-serrapons">Serra d’en Pons</a></td><td>4,2 m</td>
+<td>3 × 3,2 m</td><td>28,5 m</td><td>1,4 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>✓</td><td>–</td><td>verificado</td><td><a href="visita/vilassar-serrapons.html">checklist</a></td></tr><tr><td><a href="sim.html?id=terrassa-canpalet">Can Palet · Masachs</a></td><td>6 m</td>
+<td>4 × 3,2 m</td><td>26,9 m</td><td>3,2 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>✓</td><td>2</td><td>verificado</td><td><a href="visita/terrassa-canpalet.html">checklist</a></td></tr><tr><td><a href="sim.html?id=lesfranqueses-corro">Corró d’Avall · planta de 537 m²</a></td><td>10,6 m</td>
+<td>3 × 3 m</td><td>26,2 m</td><td>3 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>✓</td><td>–</td><td>verificado</td><td><a href="visita/lesfranqueses-corro.html">checklist</a></td></tr><tr><td><a href="sim.html?id=sabadell-hermetica">Zona Hermética (nave tipo B)</a></td><td>8,4 m</td>
+<td>3 × 3 m</td><td>30,4 m</td><td>4,7 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>–</td><td>–</td><td>verificado</td><td><a href="visita/sabadell-hermetica.html">checklist</a></td></tr><tr><td><a href="sim.html?id=montcada-molibisbe663">Molí d’en Bisbe · planta de 663 m²</a></td><td>5,5 m</td>
+<td>2 × 3,3 m</td><td>22,9 m</td><td>1,7 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>–</td><td>2</td><td>verificado</td><td><a href="visita/montcada-molibisbe663.html">checklist</a></td></tr><tr><td><a href="sim.html?id=barbera-marconi">Marconi 23</a></td><td>5,3 m</td>
+<td>2 × 3,2 m</td><td>22,9 m</td><td>2 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>–</td><td>–</td><td>verificado</td><td><a href="visita/barbera-marconi.html">checklist</a></td></tr><tr><td><a href="sim.html?id=despi">Sant Joan Despí · INVERTICA</a></td><td>7 m</td>
+<td>3 × 3,3 m</td><td>24,6 m</td><td>3,8 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>✓</td><td>–</td><td>verificado</td><td><a href="visita/despi.html">checklist</a></td></tr><tr><td><a href="sim.html?id=rubi-schumann">Compositor Schumann 10</a></td><td>5,6 m</td>
+<td>2 × 3,3 m</td><td>26,6 m</td><td>2,8 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>✓</td><td>–</td><td>verificado</td><td><a href="visita/rubi-schumann.html">checklist</a></td></tr><tr><td><a href="sim.html?id=sabadell-canfeu">Can Feu · Masachs</a></td><td>7,8 m</td>
+<td>3 × 3 m</td><td>27,7 m</td><td>3,7 m</td>
+<td>✓</td><td>✓</td><td>52</td><td>2</td><td>✓</td><td>–</td><td>verificado</td><td><a href="visita/sabadell-canfeu.html">checklist</a></td></tr><tr><td><a href="sim.html?id=barbera-santamaria">Polígono Santa Maria</a></td><td>7,2 m</td>
+<td>4 × 3,12 m</td><td>34,5 m</td><td>4,2 m</td>
+<td>✓</td><td>✓</td><td>50</td><td>2</td><td>✓</td><td>–</td><td>verificado</td><td><a href="visita/barbera-santamaria.html">checklist</a></td></tr><tr><td><a href="sim.html?id=granland-895">Granland · nave 15</a></td><td>6,4 m</td>
+<td>2 × 3 m</td><td>22,6 m</td><td>3 m</td>
+<td>✓</td><td>✓</td><td>51</td><td>2</td><td>✓</td><td>–</td><td>verificado</td><td><a href="visita/granland-895.html">checklist</a></td></tr></table></div>
+<p class="note">«Verificado»: plano rehecho a partir del anuncio, las fotos y los planos publicados, cotejados entre sí; cada cota lleva su fuente en la ficha del simulador. «Boceto»: versión preliminar convertida del ranking anterior, a la espera de su revisión.</p></section></main>
+<footer>Texturas CC0 (Poly Haven / ambientCG) · motor 3D en Rust sobre Bevy (MIT/Apache-2.0) · Cotas pendientes de medición en visita.</footer>
+</body></html>
